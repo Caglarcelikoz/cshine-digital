@@ -49,7 +49,7 @@ const ServicesPage = () => {
       <section className="bg-gradient-to-b from-primary to-slate-800 text-white pt-28 pb-8">
         <div className="container mx-auto text-center">
           <h1 className="text-4xl font-extrabold mb-4">Our Services</h1>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-100">
             We provide a wide range of services to meet your needs.
           </p>
         </div>

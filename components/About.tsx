@@ -10,33 +10,22 @@ const About = () => {
     <>
       <section id="about" className="bg-white py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-6">
+          <h1 className="text-4xl font-extrabold text-center text-primary mb-6">
             Crafting Digital Excellence
-          </h2>
+          </h1>
           <div className="md:flex md:space-x-12 items-center">
             <div className="md:w-1/2 md:text-left text-center">
               <p className="text-gray-700 text-lg">
-                C-Shine Digital is an IT consultancy and software development
-                company based in Belgium. We help companies to build and
-                maintain their digital products.
+                C-Shine Digital, based in Belgium, is an IT consultancy company
+                specializing in software development. We are digital artisans
+                dedicated to transforming ideas into impactful digital
+                solutions.
               </p>
-              <p className="text-gray-700 text-lg mt-4">
-                At C-Shine Digital, we are not just technologists; we are
-                digital artisans. Our journey began with a vision to transform
-                ideas into digital reality, illuminating the digital landscape
-                with innovation and creativity.
-              </p>
-              <p className="text-gray-700 text-lg mt-4">
-                With a strong foundation in software development, we have
-                evolved to become a hub of digital ingenuity. We believe in code
-                craftsmanship, design mastery, and a collaborative approach that
-                reflects in every project we undertake.
-              </p>
-              <p className="text-gray-700 text-lg mt-4">
-                Our team of experts thrives on challenges, finding elegant
-                solutions and embracing cutting-edge technologies. We bridge the
-                gap between vision and reality, creating impactful digital
-                experiences that resonate globally.
+              <p className="text-gray-700 text-lg mt-2">
+                {" "}
+                With expertise in code craftsmanship and design excellence, we
+                bridge the gap between vision and reality, crafting innovative
+                digital experiences for businesses globally.
               </p>
               <div className="mt-6 flex text-gray-700">
                 <FaMapMarkerAlt className="h-6 w-6 mr-2 text-cshine-blue-500" />
@@ -55,7 +44,7 @@ const About = () => {
             </div>
           </div>
           <div className="mt-16 text-center">
-            <motion.h3 className="text-3xl font-extrabold text-gray-900 mb-8">
+            <motion.h3 className="text-3xl font-extrabold text-primary mb-8">
               What Sets Us Apart
             </motion.h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

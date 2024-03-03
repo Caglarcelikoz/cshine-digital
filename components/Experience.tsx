@@ -10,9 +10,9 @@ const Experience = () => {
   return (
     <section id="experience" className="bg-primary">
       <div className="container px-4 mx-auto text-cshine-blue-500">
-        <div className="flex flex-wrap justify-between pt-4 pb-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4 pb-4">
           <motion.div
-            className="hover-up-5 flex w-full md:w-1/2 lg:w-auto py-4  animate__animated animate__fadeIn"
+            className="hover-up-5 flex py-4 animate__animated animate__fadeIn"
             data-wow-delay=".1s"
           >
             <div className="flex justify-center items-center rounded-xl h-16 w-16 sm:h-20 sm:w-20 bg-gradient-to-r from-cyan-500 to-cshine-blue-500">
@@ -28,7 +28,7 @@ const Experience = () => {
             </div>
           </motion.div>
           <motion.div
-            className="hover-up-5 flex w-full md:w-1/2 lg:w-auto py-4  animate__animated animate__fadeIn"
+            className="hover-up-5 flex py-4  animate__animated animate__fadeIn"
             data-wow-delay=".2s"
           >
             <div className="flex justify-center items-center rounded-xl h-16 w-16 sm:h-20 sm:w-20 bg-gradient-to-r from-cyan-500 to-cshine-blue-500">
@@ -44,7 +44,7 @@ const Experience = () => {
             </div>
           </motion.div>
           <motion.div
-            className="hover-up-5 flex w-full md:w-1/2 lg:w-auto py-4  animate__animated animate__fadeIn"
+            className="hover-up-5 flex py-4 animate__animated animate__fadeIn"
             data-wow-delay=".3s"
           >
             <div className="flex justify-center items-center rounded-xl h-16 w-16 sm:h-20 sm:w-20 bg-gradient-to-r from-cyan-500 to-cshine-blue-500">
@@ -60,7 +60,7 @@ const Experience = () => {
             </div>
           </motion.div>
           <motion.div
-            className="hover-up-5 flex w-full md:w-1/2 lg:w-auto py-4  animate__animated animate__fadeIn"
+            className="hover-up-5 flex  py-4  animate__animated animate__fadeIn"
             data-wow-delay=".4s"
           >
             <div className="flex justify-center items-center rounded-xl h-16 w-16 sm:h-20 sm:w-20 bg-gradient-to-r from-cyan-500 to-cshine-blue-500">

@@ -59,10 +59,10 @@ const HowWeWorkPage = () => {
   return (
     <>
       <div className="bg-white text-dark">
-        <section className="bg-gradient-to-r bg-primary text-white pt-28 pb-8">
+        <section className="bg-gradient-to-b from-primary to-slate-800 text-white pt-28 pb-8">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl font-extrabold mb-4">How we work</h1>
-            <p className="text-lg text-gray-300 px-4">
+            <p className="text-lg text-gray-100 px-4">
               At C-Shine Digital, we are not just a team; we are your technology
               partners. We blend innovation, creativity, and expertise to drive
               your success.
@@ -114,31 +114,40 @@ const HowWeWorkPage = () => {
                         strive to deliver cutting-edge solutions and pioneer
                         innovation.
                       </p>
-                      <div className="flex flex-wrap justify-center items-center">
-                        <img
+                      <div className="flex justify-center items-center">
+                        <Image
                           src="/images/ravago.png"
-                          alt="Company Logo 1"
-                          className="w-16 mx-4 my-2"
+                          alt="Ravago"
+                          width={64}
+                          height={64}
+                          className="mx-2 my-2"
                         />
-                        <img
+                        <Image
                           src="/images/mkm.png"
-                          alt="Company Logo 2"
-                          className="w-40 mx-4 my-2"
+                          alt="MKM Solutions"
+                          width={160}
+                          height={64}
+                          className="mx-2 my-2"
                         />
-                        <img
+                        <Image
                           src="/images/telenet-logo.png"
-                          alt="Company Logo 3"
-                          className="w-24 mx-4 my-2"
+                          alt="Telenet"
+                          width={96}
+                          height={64}
+                          className="mx-2 my-2"
                         />
                       </div>
                     </div>
                   </div>
                   <div className="md:w-1/2 md:-ml-12 mt-0 md:mt-0">
                     <div className="w-full rounded-lg shadow-lg">
-                      <img
+                      <Image
                         src="/images/trusted.jpeg"
                         alt="Trusted Partners"
-                        className="w-full h-full rounded-lg object-cover"
+                        layout="responsive"
+                        width={0}
+                        height={0}
+                        className="rounded-lg w-full h-full"
                       />
                     </div>
                   </div>
