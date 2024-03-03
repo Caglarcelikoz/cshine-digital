@@ -2,7 +2,7 @@
 import { Display } from "@styled-icons/bootstrap";
 import { Mobile, ShoppingCart } from "@styled-icons/entypo";
 import { DesignServices } from "@styled-icons/material/DesignServices";
-
+import { People } from "@styled-icons/material-rounded";
 const ServicesPage = () => {
   const services = [
     {
@@ -20,8 +20,8 @@ const ServicesPage = () => {
     {
       title: "IT Consultancy",
       description:
-        "Elevate your brand with captivating visuals, including logos, brochures, and branding materials.",
-      icon: DesignServices,
+        "Access tailored solutions and strategic guidance from our IT consultancy team, empowering your business with innovative technologies and robust IT strategies.",
+      icon: People,
     },
     {
       title: "E-commerce Solutions",
