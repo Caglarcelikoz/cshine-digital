@@ -11,7 +11,7 @@ const Privacy = () => {
       </p>
       <p className="mb-6">
         In this Privacy Policy, we explain the personal information we collect
-        as the 'data controller' and how we use and share it to improve our
+        as the &rsquo;data controller&rsquo; and how we use and share it to improve our
         services. This Privacy Policy is an integral part of our Terms and
         Conditions.
       </p>
@@ -161,11 +161,11 @@ const Privacy = () => {
         Your privacy is important to us. We make every effort to protect it and
         attach great importance to compliance with (i) the Law of 8 December
         1992 on the protection of privacy with regard to the processing of
-        personal data (as amended by the Law of 11 December 1998, "Data
-        Processing Act"); (ii) the anti-spam provisions of Book XII of the
+        personal data (as amended by the Law of 11 December 1998, &quot;Data
+        Processing Act&quot;); (ii) the anti-spam provisions of Book XII of the
         Economic Law Code regarding the right of the electronic economy; and
         (iii) European Regulation 2016/679 of 27 April 2016 on the protection of
-        personal data ("General Data Protection Regulation").
+        personal data (&quot;General Data Protection Regulation&quot;).
       </p>
 
       <h2 className="text-xl font-semibold mb-2">

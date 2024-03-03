@@ -43,11 +43,11 @@ const Contact = () => {
               </div>
               <div className="mt-6">
                 <p className="text-gray-300">
-                  We're available during business hours to answer your
+                  We&apos;re available during business hours to answer your
                   questions.
                 </p>
                 <p className="text-gray-300">
-                  Feel free to reach out, and we'll get back to you as soon as
+                  Feel free to reach out, and we&apos;ll get back to you as soon as
                   possible.
                 </p>
               </div>

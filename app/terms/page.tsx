@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 const Terms = () => {
   return (
     <div className=" p-8 ">
