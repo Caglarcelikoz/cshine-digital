@@ -61,7 +61,7 @@ const HowWeWorkPage = () => {
       <div className="bg-white text-dark">
         <section className="bg-gradient-to-b from-primary to-slate-800 text-white pt-28 pb-8">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl font-extrabold mb-4">How we work</h1>
+            <h1 className="text-4xl font-extrabold mb-4">How We Work</h1>
             <p className="text-lg text-gray-100 px-4">
               At C-Shine Digital, we are not just a team; we are your technology
               partners. We blend innovation, creativity, and expertise to drive
