@@ -8,6 +8,16 @@ export const metadata = {
   title: "C-Shine Digital",
   description:
     "C-Shine Digital is an IT consultancy and software development company based in Belgium. We help companies to build and maintain their digital products.",
+  keywords: [
+    "software development",
+    "IT consultancy",
+    "Belgium",
+    "C-Shine Digital",
+    "web development",
+    "mobile development",
+    "C-Shine",
+    "Digital",
+  ],
 };
 
 export default function RootLayout({
