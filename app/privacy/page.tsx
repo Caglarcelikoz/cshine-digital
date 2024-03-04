@@ -11,9 +11,9 @@ const Privacy = () => {
       </p>
       <p className="mb-6">
         In this Privacy Policy, we explain the personal information we collect
-        as the &rsquo;data controller&rsquo; and how we use and share it to improve our
-        services. This Privacy Policy is an integral part of our Terms and
-        Conditions.
+        as the &rsquo;data controller&rsquo; and how we use and share it to
+        improve our services. This Privacy Policy is an integral part of our
+        Terms and Conditions.
       </p>
       <h2 className="text-xl font-semibold mb-2">1. Personal Data</h2>
       <p className="mb-6">
@@ -24,8 +24,7 @@ const Privacy = () => {
         <li>
           <strong>Website:</strong> When you visit our website, certain data is
           recorded through cookies (including your IP address) to maintain and
-          enhance our website. More information about these cookies can be found
-          in our separate Cookie Policy.
+          enhance our website.
         </li>
         <li>
           <strong>Business Relationship:</strong> When you contact us regarding
@@ -146,7 +145,8 @@ const Privacy = () => {
         States of America, we require a separate processing agreement or
         certification under the Privacy Shield Framework (
         <a
-          href="www.privacyshield.gov"
+          href="https://www.dataprivacyframework.gov/"
+          target="_blank"
           className="text-blue-500 hover:underline"
         >
           www.privacyshield.gov

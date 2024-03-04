@@ -17,7 +17,7 @@ const About = () => {
             <div className="md:w-1/2 md:text-left text-center">
               <p className="text-gray-700 text-lg">
                 C-Shine Digital, based in Belgium, is an IT consultancy company
-                specialized in software development. We are digital artisans
+                specializing in software development. We are digital artisans
                 dedicated to transforming ideas into impactful digital
                 solutions.
               </p>

@@ -15,8 +15,8 @@ const Contact = () => {
                 Get in Touch
               </h3>
               <p className="mb-4 text-gray-100">
-                Have a question, an idea, or just want to say hi? Feel free to
-                contact us.
+                Have a question, a proposition, or just want to say hi? Feel
+                free to contact us.
               </p>
               <div className="flex items-center space-x-4">
                 <MailIcon className="h-6 w-6 text-cshine-blue-500" />
@@ -45,7 +45,7 @@ const Contact = () => {
               </div>
               <div className="mt-6">
                 <p className="text-gray-100">
-                  We&apos;re available during business hours to answer your
+                  We are available during business hours to answer your
                   questions.
                 </p>
                 <p className="text-gray-100">
