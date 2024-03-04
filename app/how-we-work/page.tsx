@@ -15,7 +15,7 @@ const HowWeWorkPage = () => {
       title: "Listening/Analyze",
       icon: UserIcon,
       description:
-        "We listen to your needs and analyze your requirements thoroughly to understand your business objectives.",
+        "We listen to your needs and analyze your requirements thoroughly to understand your business goals.",
       image: "/images/analysis.jpg",
     },
     {
@@ -36,7 +36,7 @@ const HowWeWorkPage = () => {
       title: "Develop",
       icon: CodeIcon,
       description:
-        "We will commence the development of the desired product. Throughout the development phase, we actively seek feedback on the progress made, ensuring prompt adjustments can be made whenever necessary.",
+        "We are all set to embark on bringing your vision to life! As we dive into development, your input remains key. We actively seek your feedback throughout this phase, ensuring agility to adapt and refine promptly.",
       image: "/images/develop.jpg",
       URL,
     },

@@ -8,7 +8,7 @@ const ServicesPage = () => {
     {
       title: "Web Development",
       description:
-        "We stunning websites tailored to your brand with our expert web development team.",
+        "We develop web applications tailored to your brand with our expert web development team.",
       icon: Display,
     },
     {
