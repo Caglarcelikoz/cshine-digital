@@ -160,7 +160,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="#contact"
                   onClick={toggleMenu}
                   className={` ${
                     currentRoute === "/contact"
