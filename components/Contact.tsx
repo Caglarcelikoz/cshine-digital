@@ -55,7 +55,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/images/logo_transparent.png"
+                  src="/images/c-shine-digital-transparent.png"
                   alt="C-Shine Digital Logo"
                   width={250}
                   height={50}
