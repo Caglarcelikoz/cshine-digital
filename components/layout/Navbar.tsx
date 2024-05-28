@@ -23,8 +23,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full py-4  bg-white transition duration-300 z-20 ${
-        scroll && "shadow-md"
+      className={`fixed top-0 w-full py-2  bg-primary transition duration-300 z-20 ${
+        scroll && "shadow-lg"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -32,9 +32,9 @@ const Navbar = () => {
           <div>
             <Link href="/">
               <Image
-                src="/images/cshine.png"
+                src="/images/logo_img_transparent.png"
                 alt="C-Shine Digital Logo"
-                width={300}
+                width={100}
                 height={50}
               />
             </Link>
@@ -72,7 +72,7 @@ const Navbar = () => {
                 className={` ${
                   currentRoute === "/"
                     ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-primary"
+                    : "text-white"
                 } hover:text-cshine-blue-500 font-semibold`}
               >
                 Home
@@ -84,7 +84,7 @@ const Navbar = () => {
                 className={` ${
                   currentRoute === "/how-we-work"
                     ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-primary"
+                    : "text-white"
                 } hover:text-cshine-blue-500 font-semibold`}
               >
                 How we work
@@ -96,7 +96,7 @@ const Navbar = () => {
                 className={` ${
                   currentRoute === "/services"
                     ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-primary"
+                    : "text-white"
                 } hover:text-cshine-blue-500 font-semibold`}
               >
                 Services
@@ -108,7 +108,7 @@ const Navbar = () => {
                 className={` ${
                   currentRoute === "/contact"
                     ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-primary"
+                    : "text-white"
                 } hover:text-cshine-blue-500 font-semibold`}
               >
                 Contact
@@ -126,7 +126,7 @@ const Navbar = () => {
                   className={` ${
                     currentRoute === "/"
                       ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-primary"
+                      : "text-white"
                   } hover:text-cshine-blue-500`}
                 >
                   Home
@@ -139,7 +139,7 @@ const Navbar = () => {
                   className={` ${
                     currentRoute === "/how-we-work"
                       ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-primary"
+                      : "text-white"
                   } hover:text-cshine-blue-500`}
                 >
                   How we work
@@ -152,7 +152,7 @@ const Navbar = () => {
                   className={` ${
                     currentRoute === "/services"
                       ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-primary"
+                      : "text-white"
                   } hover:text-cshine-blue-500`}
                 >
                   Services
@@ -165,7 +165,7 @@ const Navbar = () => {
                   className={` ${
                     currentRoute === "/contact"
                       ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-primary"
+                      : "text-white"
                   } hover:text-cshine-blue-500`}
                 >
                   Contact

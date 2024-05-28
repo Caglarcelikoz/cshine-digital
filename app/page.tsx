@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Divider />
       <About />
       <Experience />
       <Services />

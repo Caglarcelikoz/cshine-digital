@@ -1,3 +1,5 @@
+"use client";
+import Breadcrumb from "@/components/BreadCrumb";
 import Divider from "@/components/Divider";
 import Partners from "@/components/Partners";
 import {
@@ -13,28 +15,28 @@ import Image from "next/image";
 const HowWeWorkPage = () => {
   const services = [
     {
-      title: "Listening/Analyze",
+      title: "Listen & Analyze",
       icon: UserIcon,
       description:
         "We listen to your needs and analyze your requirements thoroughly to understand your business goals.",
       image: "/images/analysis.jpg",
     },
     {
-      title: "Plan",
+      title: "Plan & Design",
       icon: ChartBarIcon,
       description:
         "Based on the analysis, we design and plan the implementation process ensuring alignment with your goals.",
       image: "/images/plan.jpg",
     },
     {
-      title: "Offer",
+      title: "Proposal & Agreement",
       icon: ClipboardListIcon,
       description:
         "We present our proposal and action plan to you. We review it together and refine the details to create a finalized proposal that satisfies both parties. Additionally, we will agree on a deadline for the initial version.",
       image: "/images/offer.jpg",
     },
     {
-      title: "Develop",
+      title: "Develop & Implement",
       icon: CodeIcon,
       description:
         "We are all set to embark on bringing your vision to life! As we dive into development, your input remains key. We actively seek your feedback throughout this phase, ensuring agility to adapt and refine promptly.",
@@ -42,14 +44,14 @@ const HowWeWorkPage = () => {
       URL,
     },
     {
-      title: "Deliver",
+      title: "Deliver & Quality Assurance",
       icon: CubeTransparentIcon,
       description:
         "We ensure seamless delivery of the developed solutions, adhering to quality standards and timelines.",
       image: "/images/deliver.jpg",
     },
     {
-      title: "Support",
+      title: "Ongoing Support & Maintenance",
       icon: SupportIcon,
       description:
         "Our support doesn't end with delivery. We provide ongoing support to ensure smooth operation and maintenance.",
@@ -60,17 +62,29 @@ const HowWeWorkPage = () => {
   return (
     <>
       <div className="bg-white text-dark">
-        <section className="bg-gradient-to-b from-primary to-slate-800 text-white pt-28 pb-8">
-          <div className="container mx-auto text-center">
-            <h1 className="text-4xl font-extrabold mb-4">How We Work</h1>
-            <p className="text-lg text-gray-100 px-4">
+        <section className="mt-24 ">
+          <div className="container mx-auto">
+            <Breadcrumb current="How we work" />
+          </div>
+        </section>
+        <section className="relative text-white py-16">
+          <div
+            className="absolute inset-0 w-full bg-cover bg-center brightness-50"
+            style={{
+              backgroundImage: "url('/images/our-services.jpg')",
+            }}
+          ></div>
+          <div className="container mx-auto relative z-10 text-center">
+            <h1 className="heading-1">How We Work</h1>
+            <p className="text-lg md:text-xl px-4">
               At C-Shine Digital, we are not just a team; we are your technology
               partners. We blend innovation, creativity, and expertise to drive
               your success.
             </p>
           </div>
         </section>
-        <div className="container mx-auto py-12 px-4">
+
+        <div className="container mx-auto py-8 px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
               <div

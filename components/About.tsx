@@ -8,7 +8,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="about" className="bg-white py-4">
+      <section id="about" className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl font-extrabold text-center text-primary mb-6">
             Crafting Digital Excellence
@@ -42,7 +42,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="mt-16 text-center">
+          {/* <div className="mt-16 text-center">
             <motion.h3 className="text-3xl font-extrabold text-primary mb-8">
               What Sets Us Apart
             </motion.h3>
@@ -80,7 +80,7 @@ const About = () => {
                 <p className="text-sm">Innovative solutions that shine.</p>
               </motion.div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

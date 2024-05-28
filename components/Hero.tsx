@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
-    <section className="hero gradient-conic text-white pt-12 pb-8">
-      <div className="max-w-xl mx-auto text-center m-auto text-primary">
+    <section className="hero bg-primary text-white pt-20 pb-12">
+      <div className="max-w-xl mx-auto text-center m-auto">
         <img
-          src="/images/logo_transparent.png"
+          src="/images/c-shine-digital-transparent.png"
           alt="Company Logo"
           className="w-auto mx-auto"
         />
