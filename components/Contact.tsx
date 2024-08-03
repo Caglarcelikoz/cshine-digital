@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="contact">
       <div
         id="contact"
-        className="bg-[radial-gradient(ellipse_200%_150%_at_top_right,#04C4D4_10%,#000001_60%)] py-12"
+        className="bg-[radial-gradient(ellipse_200%_150%_at_top_right,#04C4D4_1%,#000001_60%)] py-12"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <h1 className="text-4xl font-extrabold text-center text-white mb-8">
