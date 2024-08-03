@@ -33,9 +33,7 @@ const Services = () => {
     <section className="services">
       <div id="services" className=" py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h1 className="text-4xl font-extrabold text-center mb-8">
-            Our Services
-          </h1>
+          <h2 className="section-title mb-8">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {services.map((service, index) => (
               <div

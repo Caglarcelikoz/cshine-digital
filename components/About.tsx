@@ -10,9 +10,7 @@ const About = () => {
     <>
       <section id="about" className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h1 className="text-4xl font-extrabold text-center text-primary mb-6">
-            Crafting Digital Excellence
-          </h1>
+          <h2 className="section-title  mb-6">Crafting Digital Excellence</h2>
           <div className="md:flex md:space-x-12 items-center">
             <div className="md:w-1/2 md:text-left text-center">
               <p className="text-gray-700 text-lg">

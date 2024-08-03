@@ -11,7 +11,7 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const [scroll, setScroll] = useState(false); // Update initial state to boolean
+  const [scroll, setScroll] = useState(false);
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const scrollCheck = window.scrollY > 100;
@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full py-2  bg-primary transition duration-300 z-20 ${
+      className={`fixed top-0 w-full py-2  bg-[radial-gradient(ellipse_80%_60%_at_top,#04C4D4_1%,#000001_50%)]  transition duration-300 z-20 ${
         scroll && "shadow-lg"
       }`}
     >
