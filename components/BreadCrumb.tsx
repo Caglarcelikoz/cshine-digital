@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { ChevronRight } from "@styled-icons/heroicons-outline/ChevronRight";
 import React from "react";
