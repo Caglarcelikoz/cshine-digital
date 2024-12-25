@@ -1,87 +1,87 @@
-"use client";
-import { motion } from "framer-motion"; // Import the motion component from Framer Motion
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FiMonitor, FiCode, FiLayers, FiUsers } from "react-icons/fi";
-
 import Image from "next/image";
 
 const About = () => {
   return (
-    <>
-      <section id="about" className="bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="section-title  mb-6">Crafting Digital Excellence</h2>
-          <div className="md:flex md:space-x-12 items-center">
-            <div className="md:w-1/2 md:text-left text-center">
-              <p className="text-gray-700 text-lg">
-                C-Shine Digital, based in Belgium, is an IT consultancy company
-                specializing in software development. We are digital artisans
-                dedicated to transforming ideas into impactful digital
-                solutions.
-              </p>
-              <p className="text-gray-700 text-lg mt-2">
-                With expertise in code craftsmanship and design excellence, we
-                bridge the gap between vision and reality, crafting innovative
-                digital experiences for businesses globally.
-              </p>
-              <div className="mt-6 flex text-gray-700">
-                <FaMapMarkerAlt className="h-6 w-6 mr-2 text-cshine-blue-500" />
-                <p>Located in Belgium, radiating innovation worldwide.</p>
+    <section className="relative py-20 bg-white">
+      <div className="container relative mx-auto px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <h2 className="text-3xl md:text-4xl font-bold text-midnight-900">
+                Building Tomorrow&rsquo;s Digital Solutions Today
+              </h2>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700">
+                  At C-Shine Digital, we are more than just developers – we are
+                  your strategic partners in digital transformation. Our passion
+                  lies in turning complex challenges into elegant, efficient
+                  solutions that drive real business value.
+                </p>
+
+                <div className="grid gap-8">
+                  <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-cshine-blue-500 before:to-cyan-500">
+                    <h3 className="text-xl font-semibold text-midnight-900 mb-2">
+                      Innovative Solutions
+                    </h3>
+                    <p className="text-gray-600">
+                      We combine cutting-edge technologies with creative
+                      thinking to develop solutions that not only solve
+                      today&rsquo;s challenges but are built to evolve with your
+                      business.
+                    </p>
+                  </div>
+
+                  <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-cyan-500 before:to-cshine-blue-500">
+                    <h3 className="text-xl font-semibold text-midnight-900 mb-2">
+                      Collaborative Approach
+                    </h3>
+                    <p className="text-gray-600">
+                      Your success is our priority. We work closely with you,
+                      ensuring clear communication and alignment throughout the
+                      development process to deliver exactly what you need.
+                    </p>
+                  </div>
+
+                  <div className="relative pl-8 before:absolute before:left-0 before:top-0 before:h-full before:w-[2px] before:bg-gradient-to-b before:from-cshine-blue-500 before:to-cyan-500">
+                    <h3 className="text-xl font-semibold text-midnight-900 mb-2">
+                      Quality & Reliability
+                    </h3>
+                    <p className="text-gray-600">
+                      Every line of code we write, every solution we design is
+                      crafted with precision and tested thoroughly to ensure
+                      robust, reliable performance.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3 text-gray-700 pt-4">
+                  <FaMapMarkerAlt className="h-5 w-5 text-cshine-blue-500" />
+                  <p className="text-lg">
+                    Delivering Excellence from Belgium to the World
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center items-center">
-              <Image
-                src="/images/hero.svg"
-                alt="services"
-                width={0}
-                height={0}
-                sizes="80vw"
-                style={{ width: "32rem" }}
-              />
+
+            <div className="relative flex justify-center items-center">
+              <div className="relative w-full">
+                <div className="absolute -inset-4 bg-gradient-to-r from-cshine-blue-500/10 to-transparent rounded-3xl blur-2xl" />
+                <Image
+                  src="/images/hero.svg"
+                  alt="Digital Solutions Visualization"
+                  width={0}
+                  height={0}
+                  sizes="80vw"
+                  style={{ width: "32rem" }}
+                  className="w-full h-auto relative"
+                />
+              </div>
             </div>
           </div>
-          {/* <div className="mt-16 text-center">
-            <motion.h3 className="text-3xl font-extrabold text-primary mb-8">
-              What Sets Us Apart
-            </motion.h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <motion.div
-                className="p-4 rounded-lg bg-primary hover:bg-cshine-blue-500 text-white text-center shadow-cshine-blue-500 shadow-md"
-                whileHover={{ scale: 1.05 }}
-              >
-                <FiCode className="h-8 w-8 mx-auto mb-2" />
-                <p className="text-lg font-semibold">Code Craftsmanship</p>
-                <p className="text-sm">Elegant code that performs.</p>
-              </motion.div>
-              <motion.div
-                className="p-4 rounded-lg bg-primary hover:bg-cshine-blue-500 text-white text-center shadow-cshine-blue-500 shadow-md"
-                whileHover={{ scale: 1.05 }}
-              >
-                <FiLayers className="h-8 w-8 mx-auto mb-2" />
-                <p className="text-lg font-semibold">Design Mastery</p>
-                <p className="text-sm">Beautiful aesthetics meet function.</p>
-              </motion.div>
-              <motion.div
-                className="p-4 rounded-lg bg-primary hover:bg-cshine-blue-500 text-white text-center shadow-cshine-blue-500 shadow-md"
-                whileHover={{ scale: 1.05 }}
-              >
-                <FiUsers className="h-8 w-8 mx-auto mb-2" />
-                <p className="text-lg font-semibold">Collaborative Approach</p>
-                <p className="text-sm">Your vision, our expertise.</p>
-              </motion.div>
-              <motion.div
-                className="p-4 rounded-lg bg-primary hover:bg-cshine-blue-500 text-white text-center shadow-cshine-blue-500 shadow-md"
-                whileHover={{ scale: 1.05 }}
-              >
-                <FiMonitor className="h-8 w-8 mx-auto mb-2" />
-                <p className="text-lg font-semibold">Cutting-Edge Tech</p>
-                <p className="text-sm">Innovative solutions that shine.</p>
-              </motion.div>
-            </div>
-          </div> */}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
