@@ -1,183 +1,202 @@
 const Privacy = () => {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6 mt-20 text-center">
-        Privacy Policy
-      </h1>
+    <div className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50">
+      <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="max-w-3xl mx-auto">
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl font-bold text-midnight-900 mb-4">
+              Privacy Policy
+            </h1>
+            <div className="h-1 w-20 bg-gradient-to-r from-cshine-blue-500 to-cyan-500 mx-auto rounded-full" />
+            <p className="text-gray-600 mt-4">Last Updated: March 2024</p>
+          </div>
 
-      <p className="mb-6">
-        Welcome to the website of C-Shine Digital, located in Zutendaal, Limburg
-        (BE), with company registration number BE0802.504.061.
-      </p>
-      <p className="mb-6">
-        In this Privacy Policy, we explain the personal information we collect
-        as the &rsquo;data controller&rsquo; and how we use and share it to
-        improve our services. This Privacy Policy is an integral part of our
-        Terms and Conditions.
-      </p>
-      <h2 className="text-xl font-semibold mb-2">1. Personal Data</h2>
-      <p className="mb-6">
-        The limited personal data we retain is collected through the following
-        methods:
-      </p>
-      <ul className="list-disc ml-6 mb-6">
-        <li>
-          <strong>Website:</strong> When you visit our website, certain data is
-          recorded through cookies (including your IP address) to maintain and
-          enhance our website.
-        </li>
-        <li>
-          <strong>Business Relationship:</strong> When you contact us regarding
-          our services as a (potential) customer or partner, we process your
-          full name, contact information (email address, phone number, office
-          and/or residential address), and other data necessary for orders,
-          invoicing, or collaboration (such as bank details, contact history, or
-          data related to your previous orders).
-        </li>
-        <li>
-          <strong>Marketing:</strong> If you grant us explicit permission, we
-          process your full name and email address for sending direct marketing,
-          newsletters, promotions, and actions related to our products and
-          services. You can always unsubscribe easily.
-        </li>
-      </ul>
+          {/* Table of Contents */}
+          <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
+            <h2 className="text-xl font-semibold text-midnight-900 mb-4">
+              Contents
+            </h2>
+            <ul className="space-y-2 text-gray-600">
+              <li>1. Introduction and Overview</li>
+              <li>2. Information Collection</li>
+              <li>3. Use of Cookies and Analytics</li>
+              <li>4. How We Use Your Information</li>
+              <li>5. Third-Party Service Providers</li>
+              <li>6. Data Protection and Security</li>
+              <li>7. Your Privacy Rights</li>
+              <li>8. Contact Forms and Communications</li>
+              <li>9. Updates to This Policy</li>
+            </ul>
+          </div>
 
-      <p className="mb-6">
-        While you are never obliged to disclose personal data, refusing to
-        provide necessary information may hinder or make it impossible for us to
-        provide our services.
-      </p>
+          <div className="prose prose-lg max-w-none space-y-8">
+            <Section title="1. Introduction and Overview">
+              <p>
+                Welcome to the website of C-Shine Digital, located in Zutendaal,
+                Limburg (BE), with company registration number BE0802.504.061.
+                This Privacy Policy explains how we collect, use, disclose, and
+                safeguard your information when you visit our website or engage
+                with our services. Please read this privacy policy carefully. If
+                you do not agree with the terms of this privacy policy, please
+                do not access the site.
+              </p>
+              <p className="mt-4">
+                We reserve the right to make changes to this Privacy Policy at
+                any time and for any reason. We will alert you about any changes
+                by updating the "Last Updated" date of this Privacy Policy. You
+                are encouraged to periodically review this Privacy Policy to
+                stay informed of updates.
+              </p>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">2. Processing Purposes</h2>
-      <p className="mb-6">
-        We process personal data for general customer and order management or to
-        deliver our services. This includes customer administration, order
-        tracking and delivery, invoicing, answering questions, and marketing.
-        Processing is based on the following legal grounds:
-      </p>
-      <ul className="list-disc ml-6 mb-6">
-        <li>Based on your consent;</li>
-        <li>Necessary for the performance of a contract;</li>
-        <li>Necessary to comply with a legal obligation;</li>
-        <li>
-          Necessary for the pursuit of our legitimate interests in conducting
-          business.
-        </li>
-      </ul>
-      <p className="mb-6">
-        Where personal data processing is based on your explicit consent, you
-        have the right to withdraw your consent at any time.
-      </p>
+            <Section title="2. Information Collection">
+              <p>We collect information in the following ways:</p>
+              <h3 className="text-lg font-semibold text-midnight-900 mt-4 mb-2">
+                Information You Provide:
+              </h3>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Contact information (name, email, phone number)</li>
+                <li>Business details for project collaboration</li>
+                <li>Project requirements and specifications</li>
+                <li>Communication preferences</li>
+              </ul>
 
-      <h2 className="text-xl font-semibold mb-2">
-        3. Sharing with Third Parties
-      </h2>
-      <p className="mb-6">
-        If necessary to achieve the stated purposes, we may share personal data
-        with employees and professional partners. Our partners, in turn, will
-        take the necessary technical and organizational measures to protect this
-        personal data. We will never commercialize your personal data to third
-        parties. In the event of a potential reorganization, bankruptcy, or
-        transfer of business activities, data related to our business operations
-        may be transferred to third parties. In limited cases, we may also be
-        obliged to share personal data based on a court order or mandatory
-        legislation.
-      </p>
+              <h3 className="text-lg font-semibold text-midnight-900 mt-6 mb-2">
+                Automatically Collected Information:
+              </h3>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Device information (browser type, operating system)</li>
+                <li>IP address and location data</li>
+                <li>Website usage data</li>
+                <li>Cookies and similar technologies</li>
+              </ul>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">4. Retention Period</h2>
-      <p className="mb-6">
-        We retain your personal data for as long as necessary for the purposes
-        for which it is processed. To determine the appropriate retention
-        period, we consider the quantity, nature, and sensitivity of the
-        personal data, the reasons for processing, and whether we can achieve
-        those purposes through other means. We must also consider periods for
-        which we may need to retain personal data to comply with our legal
-        obligations or handle complaints, queries, and protect our legal rights
-        in case of a claim. When we no longer need your personal data, we will
-        securely delete or destroy it. We will also consider how we can reduce
-        the personal data we use over time and whether we can anonymize your
-        personal data so that it can no longer be linked to you or identify you,
-        in which case we may use this information without further notice to you.
-      </p>
+            <Section title="3. Use of Cookies and Analytics">
+              <p>
+                We use Google Analytics to understand how visitors interact with
+                our website. This service may collect:
+              </p>
+              <ul className="list-disc ml-6 space-y-2 mt-4">
+                <li>Pages visited and time spent</li>
+                <li>Traffic sources and navigation paths</li>
+                <li>Device and browser information</li>
+                <li>Geographic location (country/city level)</li>
+              </ul>
+              <p className="mt-4">
+                You can opt-out of Google Analytics by installing the Google
+                Analytics Opt-out Browser Add-on or by managing your cookie
+                preferences through our cookie consent banner.
+              </p>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">5. Your Rights</h2>
-      <p className="mb-6">
-        All individuals whose personal data we hold have the right to:
-      </p>
-      <ul className="list-disc ml-6 mb-6">
-        <li>Access their personal data;</li>
-        <li>
-          Rectify or supplement their personal data if it is incorrect or
-          incomplete;
-        </li>
-        <li>Delete their personal data;</li>
-        <li>Restrict the processing of their personal data;</li>
-        <li>
-          Object to the processing of their personal data for compelling and
-          legitimate reasons;
-        </li>
-        <li>Transfer their personal data to another company.</li>
-      </ul>
-      <p className="mb-6">
-        To exercise these rights, you can contact us by mail or via
-        info@chsinedigital.com.
-      </p>
+            <Section title="4. How We Use Your Information">
+              <p>We use collected information for:</p>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Providing and improving our services</li>
+                <li>Communicating about projects and services</li>
+                <li>Website optimization and security</li>
+                <li>Legal compliance and business operations</li>
+              </ul>
+              <p className="mt-4">
+                All processing is based on legitimate interests, contractual
+                necessity, legal obligations, or your explicit consent.
+              </p>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">6. Complaints</h2>
-      <p className="mb-6">
-        If you have comments or questions about our privacy policy, please feel
-        free to contact us. Email us at info@cshinedigital.com, and we will
-        address your inquiry promptly. All individuals whose personal data we
-        hold also have the right to file a complaint with the Commission for the
-        Protection of Personal Privacy (Drukpersstraat 35, 1000 Brussels,
-        commission@privacycommission.be).
-      </p>
+            <Section title="5. Third-Party Service Providers">
+              <p>We work with trusted service providers for:</p>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Website hosting and maintenance</li>
+                <li>Analytics services</li>
+                <li>Project management tools</li>
+                <li>Communication platforms</li>
+              </ul>
+              <p className="mt-4">
+                All service providers are carefully selected and required to
+                maintain appropriate security measures. We only share
+                information necessary for service provision.
+              </p>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">7. Security</h2>
-      <p className="mb-6">
-        We implement at least the customary technical and organizational
-        security measures that can reasonably be expected of us to protect your
-        personal data against destruction, loss, alteration, falsification,
-        distribution, or unauthorized access. Personal data will only be
-        transferred to a partner in a country outside the European Economic Area
-        if that country guarantees an appropriate level of protection for your
-        personal data. Before sharing personal data with a partner in the United
-        States of America, we require a separate processing agreement or
-        certification under the Privacy Shield Framework (
-        <a
-          href="https://www.dataprivacyframework.gov/"
-          target="_blank"
-          className="text-blue-500 hover:underline"
-        >
-          www.privacyshield.gov
-        </a>
-        ). We cannot be held liable for incorrect or unlawful use of personal
-        data by a third party. You remain responsible for the confidentiality
-        and use of your computer, IP address, login, and identification data.
-      </p>
+            <Section title="6. Data Protection and Security">
+              <p>
+                We implement appropriate technical and organizational measures
+                to protect your personal data, including:
+              </p>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Secure data transmission (SSL/TLS encryption)</li>
+                <li>Access controls and authentication</li>
+                <li>Regular security assessments</li>
+                <li>Data backup and recovery procedures</li>
+              </ul>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">8. Your Privacy</h2>
-      <p className="mb-6">
-        Your privacy is important to us. We make every effort to protect it and
-        attach great importance to compliance with (i) the Law of 8 December
-        1992 on the protection of privacy with regard to the processing of
-        personal data (as amended by the Law of 11 December 1998, &quot;Data
-        Processing Act&quot;); (ii) the anti-spam provisions of Book XII of the
-        Economic Law Code regarding the right of the electronic economy; and
-        (iii) European Regulation 2016/679 of 27 April 2016 on the protection of
-        personal data (&quot;General Data Protection Regulation&quot;).
-      </p>
+            <Section title="7. Your Privacy Rights">
+              <p>Under GDPR, you have the right to:</p>
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Access your personal data</li>
+                <li>Correct inaccurate data</li>
+                <li>Request data deletion</li>
+                <li>Restrict processing</li>
+                <li>Data portability</li>
+                <li>Object to processing</li>
+              </ul>
+              <p className="mt-4">
+                To exercise these rights, contact us at info@cshinedigital.com.
+                We'll respond to your request within 30 days.
+              </p>
+            </Section>
 
-      <h2 className="text-xl font-semibold mb-2">
-        9. Revision of this Privacy Policy
-      </h2>
-      <p className="mb-6">
-        Our privacy policy may be revised from time to time, and any changes to
-        the policy will be communicated to you by email or through a publication
-        on our website.
-      </p>
+            <Section title="8. Contact Forms and Communications">
+              <p>
+                When you use our contact forms, we collect necessary information
+                to respond to your inquiry. This data is stored securely and
+                used only for communication purposes.
+              </p>
+              <p className="mt-4">
+                If you opt-in to marketing communications, you can unsubscribe
+                at any time using the link in our emails or by contacting us
+                directly.
+              </p>
+            </Section>
+
+            <Section title="9. Updates to This Policy">
+              <p>
+                This privacy policy may be updated periodically. Significant
+                changes will be communicated through our website or direct
+                communication.
+              </p>
+              <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-100">
+                <p className="text-gray-600">
+                  For questions about our privacy practices, contact us at{" "}
+                  <a
+                    href="mailto:info@cshinedigital.com"
+                    className="text-cshine-blue-500 hover:underline"
+                  >
+                    info@cshinedigital.com
+                  </a>
+                </p>
+              </div>
+            </Section>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
+
+const Section = ({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) => (
+  <div className="bg-white rounded-xl shadow-sm p-8">
+    <h2 className="text-xl font-semibold text-midnight-900 mb-4">{title}</h2>
+    <div className="text-gray-600 leading-relaxed">{children}</div>
+  </div>
+);
 
 export default Privacy;
