@@ -9,7 +9,7 @@ import Footer from "./layout/Footer";
 
 const Contact = () => {
   return (
-    <section className="relative overflow-hidden bg-midnight-900">
+    <section className="relative overflow-hidden bg-midnight-900" id="contact">
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-midnight-900 via-midnight-800 to-midnight-900" />
