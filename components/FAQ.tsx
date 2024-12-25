@@ -53,7 +53,7 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="min-h-[700px]">
+          <div className="min-h-[650px]">
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <div
