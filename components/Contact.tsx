@@ -1,108 +1,231 @@
-import {
-  FaLinkedin,
-  FaInstagram,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaClock,
-} from "react-icons/fa";
-import Footer from "./layout/Footer";
+"use client";
+import { useState } from "react";
+import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
+import BackgroundPattern from "./layout/BackgroundPattern";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      setStatus({
+        type: "success",
+        message: "Message sent successfully! We'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (error) {
+      setStatus({
+        type: "error",
+        message: "Failed to send message. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
-    <section className="relative overflow-hidden bg-midnight-900" id="contact">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-900 via-midnight-800 to-midnight-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-20" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/50 to-transparent" />
-      </div>
+    <BackgroundPattern variant="dark" className="py-24">
+      <div className="container relative mx-auto px-4 z-10" id="contact">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Get in Touch
+            </h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-cshine-blue-500 to-cyan-500 mx-auto rounded-full mb-6" />
+            <p className="text-lg text-gray-400">
+              Ready to start your project? We&apos;d love to hear from you
+            </p>
+          </div>
 
-      {/* Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 opacity-20"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, #04C4D4 1px, transparent 1px)`,
-          backgroundSize: "30px 30px",
-        }}
-      />
-
-      <div className="relative z-10">
-        <div className="py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Get in Touch
-                </h2>
-                <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                  Have a project in mind? Let&apos;s discuss how we can help
-                  bring your ideas to life.
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Contact Info */}
+            <div className="space-y-8 md:pr-8">
+              <div>
+                <h3 className="text-xl font-semibold text-white mb-4">
+                  Contact Information
+                </h3>
+                <p className="text-gray-400">
+                  Fill out the form or contact us directly using the information
+                  below
                 </p>
               </div>
-              <div className="grid md:grid-cols-2 gap-12">
-                <div className="space-y-8">
-                  <div className="space-y-6">
-                    <a
-                      href="mailto:info@cshinedigital.com"
-                      className="flex items-center gap-4 text-gray-400 hover:text-cshine-blue-500 transition-colors"
-                    >
-                      <FaEnvelope className="h-5 w-5 text-cshine-blue-500" />
-                      <span>info@cshinedigital.com</span>
-                    </a>
-                    <div className="flex items-center gap-4 text-gray-400">
-                      <FaMapMarkerAlt className="h-5 w-5 text-cshine-blue-500" />
-                      <span>Zutendaal, Belgium</span>
-                    </div>
-                    <div className="flex items-center gap-4 text-gray-400">
-                      <FaClock className="h-5 w-5 text-cshine-blue-500" />
-                      <span>Mon - Fri: 9:00 - 17:00</span>
+
+              <div className="space-y-6">
+                <a
+                  href="tel:+32468100506"
+                  className="flex items-center gap-4 text-gray-400 hover:text-cshine-blue-400 transition-colors duration-300"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cshine-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+                      <PhoneIcon className="w-6 h-6 text-cshine-blue-500" />
                     </div>
                   </div>
-                  <div className="h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
                   <div>
-                    <h3 className="text-white font-semibold mb-4">
-                      Connect With Us
-                    </h3>
-                    <div className="flex gap-4">
-                      <a
-                        href="https://www.linkedin.com/company/c-shine-digital"
-                        target="_blank"
-                        className="p-3 rounded-xl bg-midnight-800 border border-white/10 hover:border-cshine-blue-500/50 transition-colors"
-                      >
-                        <FaLinkedin className="h-5 w-5 text-cshine-blue-500" />
-                      </a>
-                      <a
-                        href="https://www.instagram.com/cshine.digital/"
-                        target="_blank"
-                        className="p-3 rounded-xl bg-midnight-800 border border-white/10 hover:border-cshine-blue-500/50 transition-colors"
-                      >
-                        <FaInstagram className="h-5 w-5 text-cshine-blue-500" />
-                      </a>
+                    <div className="font-medium text-white">Phone</div>
+                    <div>+32 468 10 05 06</div>
+                  </div>
+                </a>
+
+                <a
+                  href="mailto:info@cshinedigital.com"
+                  className="flex items-center gap-4 text-gray-400 hover:text-cshine-blue-400 transition-colors duration-300"
+                >
+                  <div className="flex-shrink-0">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cshine-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+                      <MailIcon className="w-6 h-6 text-cshine-blue-500" />
                     </div>
+                  </div>
+                  <div>
+                    <div className="font-medium text-white">Email</div>
+                    <div>info@cshinedigital.com</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="md:col-span-2">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full rounded-lg bg-white/5 border-white/10 text-white focus:ring-cshine-blue-500 focus:border-cshine-blue-500"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full rounded-lg bg-white/5 border-white/10 text-white focus:ring-cshine-blue-500 focus:border-cshine-blue-500"
+                    />
                   </div>
                 </div>
 
-                <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-b from-midnight-800/50 to-transparent z-10" />
-                  <iframe
-                    title="Location Map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25098.218899999995!2d5.5803111!3d50.9249079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0b19360d2261b%3A0x9ab6cfd4f174ef0d!2sZutendaal%2C%20Belgium!5e0!3m2!1sen!2sus!4v1629956157417!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen={true}
-                    loading="lazy"
-                    className="grayscale absolute inset-0"
+                <div>
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-lg bg-white/5 border-white/10 text-white focus:ring-cshine-blue-500 focus:border-cshine-blue-500"
                   />
                 </div>
-              </div>
+
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-300 mb-2"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={6}
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                    className="w-full rounded-lg bg-white/5 border-white/10 text-white focus:ring-cshine-blue-500 focus:border-cshine-blue-500"
+                  ></textarea>
+                </div>
+
+                {status.message && (
+                  <div
+                    className={`p-4 rounded-lg ${
+                      status.type === "success"
+                        ? "bg-green-500/10 text-green-400"
+                        : "bg-red-500/10 text-red-400"
+                    }`}
+                  >
+                    {status.message}
+                  </div>
+                )}
+
+                <div>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full sm:w-auto px-8 py-3 rounded-lg bg-gradient-to-r 
+                      from-cshine-blue-500 to-cyan-500 text-white font-semibold
+                      transition-all duration-300 hover:shadow-glow hover:scale-105
+                      disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  >
+                    {isSubmitting ? "Sending..." : "Send Message"}
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-        <Footer />
       </div>
-    </section>
+    </BackgroundPattern>
   );
 };
 

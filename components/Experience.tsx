@@ -8,6 +8,7 @@ import {
   SupportIcon,
   ChartBarIcon,
 } from "@heroicons/react/outline";
+import BackgroundPattern from "./layout/BackgroundPattern";
 
 const ProcessStep = ({
   number,
@@ -63,14 +64,14 @@ const Experience = () => {
       number: "3",
       title: "Proposal & Agreement",
       description:
-        "We present our proposal and action plan, reviewing and refining details together to create a finalized proposal that satisfies both parties.",
+        "We present our solution proposal and establish clear agreements on deliverables and timelines.",
       Icon: ClipboardListIcon,
     },
     {
       number: "4",
-      title: "Develop & Implement",
+      title: "Development",
       description:
-        "We bring your vision to life while actively seeking your feedback throughout the development phase, ensuring agility to adapt and refine promptly.",
+        "Our expert team develops your solution using the latest technologies and best practices.",
       Icon: CodeIcon,
     },
     {
@@ -90,23 +91,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="relative py-24 overflow-hidden bg-midnight-900">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-900 via-midnight-800 to-midnight-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-20" />
-      </div>
-
-      {/* Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 opacity-20"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, #04C4D4 1px, transparent 1px)`,
-          backgroundSize: "30px 30px",
-        }}
-      />
-
+    <BackgroundPattern variant="dark" className="py-24">
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
@@ -133,7 +118,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundPattern>
   );
 };
 

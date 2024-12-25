@@ -6,29 +6,15 @@ import {
   UserIcon,
   StarIcon,
 } from "@heroicons/react/solid";
+import BackgroundPattern from "./layout/BackgroundPattern";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen lg:min-h-fit pt-24 lg:pt-20 lg:pb-16 overflow-hidden bg-midnight-900">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-900 via-midnight-800 to-midnight-900" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-20" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/50 to-transparent" />
-      </div>
-
-      {/* Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 opacity-20"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, #04C4D4 1px, transparent 1px)`,
-          backgroundSize: "30px 30px",
-        }}
-      />
-
-      {/* Main Content */}
-      <div className="container relative mx-auto px-4 z-10 flex min-h-[calc(100vh-6rem)] lg:min-h-0 flex-col justify-center">
+    <BackgroundPattern
+      variant="dark"
+      className="min-h-screen lg:min-h-fit pt-24 lg:pt-20 lg:pb-16"
+    >
+      <div className="container mx-auto px-4 z-10 flex min-h-[calc(100vh-6rem)] lg:min-h-0 flex-col justify-center">
         {/* Logo Section */}
         <div className="relative w-full h-[160px] sm:h-[200px] lg:h-[300px] mb-8">
           <div className="relative w-full h-full">
@@ -118,7 +104,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundPattern>
   );
 };
 

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
+import BackgroundPattern from "./layout/BackgroundPattern";
 
 const FAQ = () => {
   const faqs = [
@@ -39,24 +40,7 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-10" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
-      </div>
-
-      {/* Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 opacity-[0.2]"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, #1e293b 0.8px, transparent 0.8px)`,
-          backgroundSize: "24px 24px",
-        }}
-      />
-
+    <BackgroundPattern variant="light" className="py-24">
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
@@ -69,35 +53,36 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="relative overflow-hidden rounded-xl border border-white/10 
-                  bg-midnight-900/90 backdrop-blur-sm hover:border-cshine-blue-500/30 transition-colors duration-300"
-              >
-                <button
-                  className="w-full p-6 text-left flex items-center justify-between gap-4"
-                  onClick={() =>
-                    setActiveIndex(activeIndex === index ? null : index)
-                  }
-                >
-                  <span className="font-semibold text-white">
-                    {faq.question}
-                  </span>
-                  <ChevronDownIcon
-                    className={`w-5 h-5 text-cshine-blue-500 transition-transform duration-300
-                      ${activeIndex === index ? "rotate-180" : ""}`}
-                  />
-                </button>
+          <div className="min-h-[700px]">
+            <div className="space-y-4">
+              {faqs.map((faq, index) => (
                 <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out
-                    ${activeIndex === index ? "max-h-96" : "max-h-0"}`}
+                  key={index}
+                  className="relative rounded-xl border border-white/10 
+                    bg-midnight-900/90 backdrop-blur-sm hover:border-cshine-blue-500/30 transition-colors duration-300"
                 >
-                  <div className="p-6 pt-0 text-gray-300">{faq.answer}</div>
+                  <button
+                    className="w-full p-6 text-left flex items-center justify-between gap-4"
+                    onClick={() =>
+                      setActiveIndex(activeIndex === index ? null : index)
+                    }
+                  >
+                    <span className="font-semibold text-white">
+                      {faq.question}
+                    </span>
+                    <ChevronDownIcon
+                      className={`w-5 h-5 text-cshine-blue-500 transition-transform duration-300
+                        ${activeIndex === index ? "rotate-180" : ""}`}
+                    />
+                  </button>
+                  {activeIndex === index && (
+                    <div className="p-6 pt-0 text-gray-300 animate-fadeIn">
+                      {faq.answer}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="text-center mt-12">
@@ -109,12 +94,12 @@ const FAQ = () => {
                 text-white font-semibold transition-all duration-300 
                 hover:shadow-glow hover:scale-105"
             >
-              Let's Talk
+              Let&apos;s Talk
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </BackgroundPattern>
   );
 };
 

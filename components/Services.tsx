@@ -3,6 +3,7 @@ import { Display } from "@styled-icons/bootstrap";
 import { Mobile, ShoppingCart } from "@styled-icons/entypo";
 import { DesignServices } from "@styled-icons/material/DesignServices";
 import { People } from "@styled-icons/material-rounded";
+import BackgroundPattern from "./layout/BackgroundPattern";
 
 const ServiceSection = ({ service }: { service: any }) => (
   <div className="relative p-8 lg:p-10 rounded-2xl border border-white/10 bg-midnight-900">
@@ -30,114 +31,81 @@ const ServiceSection = ({ service }: { service: any }) => (
 
     {/* Features List */}
     <div className="relative mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-      {service.features?.map((feature: string, idx: number) => (
+      {service.features.map((feature: string, index: number) => (
         <div
-          key={idx}
-          className="flex items-center gap-3 p-3 rounded-xl border border-cshine-blue-500"
+          key={index}
+          className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-300"
         >
-          <div className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cshine-blue-500 to-cyan-500" />
-          <span className="text-gray-300 text-sm">{feature}</span>
+          <div className="h-1.5 w-1.5 rounded-full bg-cshine-blue-500" />
+          <span>{feature}</span>
         </div>
       ))}
     </div>
   </div>
 );
 
-const Services = ({ showTitle = true }: { showTitle?: boolean }) => {
+const Services = ({ showTitle = true }) => {
   const services = [
     {
       title: "Web Development",
       description:
-        "We develop web applications tailored to your brand with our expert web development team.",
+        "Custom web solutions tailored to your business needs, from simple websites to complex web applications.",
       icon: Display,
       features: [
-        "Responsive web applications",
-        "Modern frontend frameworks",
-        "Scalable backend solutions",
-        "Performance optimization",
+        "Responsive Design",
+        "Performance Optimization",
+        "SEO Integration",
+        "Custom Functionality",
+        "Content Management",
+        "API Integration",
       ],
     },
     {
       title: "Mobile Development",
       description:
-        "Develop cutting-edge mobile applications for iOS, Android, or cross-platform environments, prioritizing seamless performance and user satisfaction.",
+        "Native and cross-platform mobile applications that deliver exceptional user experiences.",
       icon: Mobile,
       features: [
-        "Native iOS and Android apps",
-        "Cross-platform solutions",
-        "User-centric design",
-        "Seamless integration",
-      ],
-    },
-    {
-      title: "IT Consultancy",
-      description:
-        "Access tailored solutions and strategic guidance from our IT consultancy team, empowering your business with innovative technologies and robust IT strategies.",
-      icon: People,
-      features: [
-        "Technology strategy",
-        "Digital transformation",
-        "System architecture",
-        "Process optimization",
+        "iOS Development",
+        "Android Development",
+        "Cross-Platform Solutions",
+        "UI/UX Design",
+        "App Store Optimization",
+        "Maintenance & Updates",
       ],
     },
     {
       title: "E-commerce Solutions",
       description:
-        "Efficient e-commerce platforms with secure payment gateways for a seamless shopping experience.",
+        "End-to-end e-commerce development to help you reach customers and grow your online business.",
       icon: ShoppingCart,
       features: [
-        "Secure payment integration",
-        "Inventory management",
-        "User-friendly interface",
-        "Mobile commerce ready",
+        "Custom E-commerce",
+        "Payment Integration",
+        "Inventory Management",
+        "Order Processing",
+        "Security Features",
+        "Analytics Integration",
       ],
     },
     {
-      title: "Digital Marketing",
+      title: "IT Consulting",
       description:
-        "Boost your online presence and engage your audience with our strategic digital marketing services.",
-      icon: Display,
+        "Strategic technology consulting to help you make informed decisions and optimize your digital presence.",
+      icon: People,
       features: [
-        "SEO optimization",
-        "Social media strategy",
-        "Content marketing",
-        "Analytics & reporting",
-      ],
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Enhance user satisfaction and conversion rates with intuitive and visually appealing interfaces.",
-      icon: DesignServices,
-      features: [
-        "User research",
-        "Interface design",
-        "Prototyping",
-        "Usability testing",
+        "Technology Assessment",
+        "Digital Strategy",
+        "Process Optimization",
+        "Security Consulting",
+        "Performance Analysis",
+        "Growth Planning",
       ],
     },
   ];
 
   return (
-    <section className="relative py-20 overflow-hidden bg-gradient-to-b from-gray-50 via-white to-gray-50">
-      {/* Background Elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-10" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
-      </div>
-
-      {/* Grid Pattern */}
-      <div
-        className="absolute inset-0 z-0 opacity-[0.2]"
-        style={{
-          backgroundImage: `radial-gradient(circle at center, #1e293b 0.8px, transparent 0.8px)`,
-          backgroundSize: "24px 24px",
-        }}
-      />
-
+    <BackgroundPattern variant="light" className="py-24">
       <div className="container relative mx-auto px-4 z-10">
         {showTitle && (
           <div className="text-center mb-16">
@@ -156,7 +124,7 @@ const Services = ({ showTitle = true }: { showTitle?: boolean }) => {
           ))}
         </div>
       </div>
-    </section>
+    </BackgroundPattern>
   );
 };
 
