@@ -1,7 +1,5 @@
-"use client";
 import Breadcrumb from "@/components/BreadCrumb";
-import Divider from "@/components/Divider";
-import Partners from "@/components/Partners";
+
 import {
   UserIcon,
   ClipboardListIcon,
@@ -41,7 +39,6 @@ const HowWeWorkPage = () => {
       description:
         "We are all set to embark on bringing your vision to life! As we dive into development, your input remains key. We actively seek your feedback throughout this phase, ensuring agility to adapt and refine promptly.",
       image: "/images/develop.jpg",
-      URL,
     },
     {
       title: "Deliver & Quality Assurance",
@@ -62,7 +59,7 @@ const HowWeWorkPage = () => {
   return (
     <>
       <div className="bg-white text-dark">
-        <section className="mt-24 ">
+        <section className="mt-20 ">
           <div className="container mx-auto">
             <Breadcrumb current="How we work" />
           </div>
@@ -84,36 +81,51 @@ const HowWeWorkPage = () => {
           </div>
         </section>
 
-        <div className="container mx-auto py-8 px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-cshine-blue-500 shadow-sm hover:shadow-md hover:shadow-cshine-blue-500 overflow-hidden relative"
-              >
-                <Image
-                  src={service.image}
-                  width={100}
-                  height={100}
-                  alt={service.title}
-                  className="w-full h-48 object-cover object-center"
-                />
-                <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-cshine-blue-500 p-2">
-                  <service.icon className="h-10 w-10 text-white " />
+        <div className="relative">
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-10" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-10" />
+            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
+          </div>
+
+          <div
+            className="absolute inset-0 z-0 opacity-[0.2]"
+            style={{
+              backgroundImage: `radial-gradient(circle at center, #1e293b 0.8px, transparent 0.8px)`,
+              backgroundSize: "24px 24px",
+            }}
+          />
+
+          <div className="container mx-auto py-20 px-4 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-lg shadow-cshine-blue-500 shadow-sm hover:shadow-md hover:shadow-cshine-blue-500 overflow-hidden relative"
+                >
+                  <Image
+                    src={service.image}
+                    width={100}
+                    height={100}
+                    alt={service.title}
+                    className="w-full h-48 object-cover object-center"
+                  />
+                  <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-cshine-blue-500 p-2">
+                    <service.icon className="h-10 w-10 text-white " />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-semibold my-4 text-center">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600">{service.description}</p>
+                  </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold my-4 text-center">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600">{service.description}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
-      <Divider />
-      <Partners />
     </>
   );
 };
