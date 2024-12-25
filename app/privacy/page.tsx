@@ -8,10 +8,9 @@ const Privacy = () => {
               Privacy Policy
             </h1>
             <div className="h-1 w-20 bg-gradient-to-r from-cshine-blue-500 to-cyan-500 mx-auto rounded-full" />
-            <p className="text-gray-600 mt-4">Last Updated: March 2024</p>
+            <p className="text-gray-600 mt-4">Last Updated: December 2024</p>
           </div>
 
-          {/* Table of Contents */}
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
             <h2 className="text-xl font-semibold text-midnight-900 mb-4">
               Contents
@@ -43,9 +42,9 @@ const Privacy = () => {
               <p className="mt-4">
                 We reserve the right to make changes to this Privacy Policy at
                 any time and for any reason. We will alert you about any changes
-                by updating the "Last Updated" date of this Privacy Policy. You
-                are encouraged to periodically review this Privacy Policy to
-                stay informed of updates.
+                by updating the &quot;Last Updated&quot; date of this Privacy
+                Policy. You are encouraged to periodically review this Privacy
+                Policy to stay informed of updates.
               </p>
             </Section>
 
@@ -144,7 +143,7 @@ const Privacy = () => {
               </ul>
               <p className="mt-4">
                 To exercise these rights, contact us at info@cshinedigital.com.
-                We'll respond to your request within 30 days.
+                We will respond to your request within 30 days.
               </p>
             </Section>
 

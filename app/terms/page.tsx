@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 const Terms = () => {
   return (
     <div className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50">
@@ -12,7 +11,6 @@ const Terms = () => {
             <p className="text-gray-600 mt-4">Last Updated: March 2024</p>
           </div>
 
-          {/* Table of Contents */}
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
             <h2 className="text-xl font-semibold text-midnight-900 mb-4">
               Contents
@@ -150,12 +148,12 @@ const Terms = () => {
 
             <Section title="7. Payment">
               <p>
-                The customer must pay C-Shine Digital's invoices within 30 days
+                The customer must pay C-Shine Digital&apos;s invoices within 30 days
                 of the invoice date, unless otherwise agreed in writing. If the
                 customer does not pay on time, they are automatically in default
                 and liable for statutory interest. All judicial and
                 extrajudicial costs incurred by C-Shine Digital as a result of
-                the customer's non-compliance are fully borne by the customer.
+                the customer&apos;s non-compliance are fully borne by the customer.
               </p>
             </Section>
 
