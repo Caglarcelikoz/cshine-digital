@@ -1,179 +1,137 @@
 "use client";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
 import Link from "next/link";
 import Image from "next/image";
+
+const NAV_ITEMS = [
+  { href: "/", label: "Home" },
+  { href: "/how-we-work", label: "How we work" },
+  { href: "/services", label: "Services" },
+  { href: "#contact", label: "Contact" },
+] as const;
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentRoute = usePathname();
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
   const [scroll, setScroll] = useState(false);
+
   useEffect(() => {
-    document.addEventListener("scroll", () => {
-      const scrollCheck = window.scrollY > 100;
-      if (scrollCheck !== scroll) {
-        setScroll(scrollCheck);
-      }
-    });
-  });
+    const handleScroll = () => {
+      setScroll(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <nav
-      className={`fixed top-0 w-full py-2  bg-[radial-gradient(ellipse_80%_60%_at_top,#04C4D4_1%,#000001_50%)]  transition duration-300 z-20 ${
-        scroll && "shadow-lg"
-      }`}
+      className={`fixed top-0 w-full h-20 z-50 transition-colors duration-300
+        bg-midnight-900 border-b border-cshine-blue-500/10
+        ${scroll ? "shadow-glow" : ""}
+      `}
     >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between">
-          <div>
-            <Link href="/">
-              <Image
-                src="/images/logo_img_transparent.png"
-                alt="C-Shine Digital Logo"
-                width={100}
-                height={50}
-              />
-            </Link>
-          </div>
-          <div className="md:hidden">
-            <button
-              className="text-cshine-blue-500 focus:outline-none"
-              onClick={toggleMenu}
-            >
-              <svg
-                className="h-6 w-6 fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+      <div className="container mx-auto h-full px-4">
+        <div className="flex items-center justify-between h-full">
+          <Link href="/" className="relative group py-4">
+            <div
+              className="absolute -inset-2 rounded-lg bg-gradient-to-r from-cshine-blue-500/20 to-transparent 
+              opacity-0 group-hover:opacity-100 blur-md transition-all duration-500"
+            />
+            <Image
+              src="/images/logo_img_transparent.png"
+              alt="C-Shine Digital Logo"
+              width={100}
+              height={42}
+              priority
+              className="relative transition-transform duration-300 group-hover:scale-105"
+            />
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center h-full gap-1">
+            {NAV_ITEMS.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className={`relative h-full px-6 flex items-center font-medium transition-all duration-300 group
+                  hover:bg-cshine-blue-500/5 cursor-pointer
+                  ${
+                    currentRoute === href
+                      ? "text-cshine-blue-400"
+                      : "text-white/90 hover:text-white"
+                  }
+                `}
               >
-                {isMenuOpen ? (
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M19.293 5.293a1 1 0 0 0-1.414 0L12 10.586 6.707 5.293a1 1 0 0 0-1.414 1.414L10.586 12l-5.293 5.293a1 1 0 1 0 1.414 1.414L12 13.414l5.293 5.293a1 1 0 0 0 1.414-1.414L13.414 12l5.293-5.293a1 1 0 0 0 0-1.414z"
-                  />
-                ) : (
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M4 6C4 5.44772 4.44772 5 5 5H19C19.5523 5 20 5.44772 20 6C20 6.55228 19.5523 7 19 7H5C4.44772 7 4 6.55228 4 6ZM4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12ZM5 17C4.44772 17 4 17.4477 4 18C4 18.5523 4.44772 19 5 19H11C11.5523 19 12 18.5523 12 18C12 17.4477 11.5523 17 11 17H5Z"
-                  />
+                <span className="relative z-10">{label}</span>
+                {currentRoute === href && (
+                  <span className="absolute inset-0 bg-cshine-blue-500/10" />
                 )}
-              </svg>
-            </button>
+                <span
+                  className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-cshine-blue-400 to-cshine-blue-500
+                  transition-all duration-300 scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-100"
+                />
+              </Link>
+            ))}
           </div>
-          <ul className="hidden md:flex md:space-x-4">
-            <li>
-              <Link
-                href="/"
-                className={` ${
-                  currentRoute === "/"
-                    ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-white"
-                } hover:text-cshine-blue-500 font-semibold`}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/how-we-work"
-                className={` ${
-                  currentRoute === "/how-we-work"
-                    ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-white"
-                } hover:text-cshine-blue-500 font-semibold`}
-              >
-                How we work
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/services"
-                className={` ${
-                  currentRoute === "/services"
-                    ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-white"
-                } hover:text-cshine-blue-500 font-semibold`}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#contact"
-                className={` ${
-                  currentRoute === "/contact"
-                    ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                    : "text-white"
-                } hover:text-cshine-blue-500 font-semibold`}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden relative w-10 h-10 rounded-lg bg-white/5 
+              hover:bg-white/10 hover:shadow-inner-glow
+              transition-all duration-200 flex items-center justify-center"
+            aria-label="Toggle menu"
+          >
+            <div className="w-5 h-5 flex flex-col justify-center space-y-1.5">
+              <span
+                className={`block h-0.5 bg-cshine-blue-400 transform transition-all duration-300 ease-in-out
+                  ${isMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+              />
+              <span
+                className={`block h-0.5 bg-cshine-blue-400 transition-all duration-300 ease-in-out
+                  ${isMenuOpen ? "opacity-0" : ""}`}
+              />
+              <span
+                className={`block h-0.5 bg-cshine-blue-400 transform transition-all duration-300 ease-in-out
+                  ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+              />
+            </div>
+          </button>
         </div>
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 w-4/5" style={{ width: "70%" }}>
-            <ul className="flex flex-col space-y-4">
-              <li>
+
+        {/* Mobile Navigation */}
+        <div
+          className={`md:hidden absolute left-0 right-0 top-20 bg-midnight-900 border-b border-cshine-blue-500/10
+            transition-all duration-300 ease-in-out
+            ${
+              isMenuOpen
+                ? "max-h-64 opacity-100"
+                : "max-h-0 opacity-0 border-none"
+            }
+          `}
+        >
+          <div className="container mx-auto px-4">
+            <div className="py-3 space-y-1">
+              {NAV_ITEMS.map(({ href, label }) => (
                 <Link
-                  href="/"
-                  onClick={toggleMenu}
-                  className={` ${
-                    currentRoute === "/"
-                      ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-white"
-                  } hover:text-cshine-blue-500`}
+                  key={href}
+                  href={href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`block px-4 py-2 rounded-lg transition-all duration-200
+                    hover:bg-cshine-blue-500/5 cursor-pointer
+                    ${
+                      currentRoute === href
+                        ? "text-cshine-blue-400 bg-cshine-blue-500/10"
+                        : "text-white/90 hover:text-white"
+                    }
+                  `}
                 >
-                  Home
+                  {label}
                 </Link>
-              </li>
-              <li>
-                <Link
-                  href="/how-we-work"
-                  onClick={toggleMenu}
-                  className={` ${
-                    currentRoute === "/how-we-work"
-                      ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-white"
-                  } hover:text-cshine-blue-500`}
-                >
-                  How we work
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  onClick={toggleMenu}
-                  className={` ${
-                    currentRoute === "/services"
-                      ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-white"
-                  } hover:text-cshine-blue-500`}
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  onClick={toggleMenu}
-                  className={` ${
-                    currentRoute === "/contact"
-                      ? "text-cshine-blue-500 underline underline-offset-8 decoration-cshine-blue-500"
-                      : "text-white"
-                  } hover:text-cshine-blue-500`}
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              ))}
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </nav>
   );
