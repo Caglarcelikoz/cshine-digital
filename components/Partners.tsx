@@ -18,6 +18,20 @@ const Partners = () => {
       height: 150,
     },
     {
+      name: "Pauwels Consulting",
+      logo: "/images/logo-pauwels.png",
+      url: "#",
+      width: 350,
+      height: 150,
+    },
+    {
+      name: "Decem Energy",
+      logo: "/images/decem-energy-logo.png",
+      url: "#",
+      width: 350,
+      height: 150,
+    },
+    {
       name: "Telenet",
       logo: "/images/telenet.png",
       url: "https://www2.telenet.be/residential/nl",
@@ -41,15 +55,15 @@ const Partners = () => {
         </div>
 
         {/* Partners Grid */}
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-8">
             {partners.map((partner) => (
               <a
                 key={partner.name}
                 href={partner.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group"
+                className="group w-full md:w-80"
               >
                 <div className="relative">
                   <div
