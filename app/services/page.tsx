@@ -1,5 +1,41 @@
 import Breadcrumb from "@/components/BreadCrumb";
 import Services from "@/components/Services";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Our Services - C-Shine Digital | Software Development & IT Consultancy",
+  description:
+    "Discover our comprehensive IT services including web development, mobile apps, software solutions, and IT consultancy. Expert development team in Belgium.",
+  keywords: [
+    "software development services",
+    "web development",
+    "mobile app development",
+    "IT consultancy",
+    "Belgium software company",
+    "custom software solutions",
+    "enterprise software",
+    "digital transformation",
+  ],
+  openGraph: {
+    title: "Our Services - C-Shine Digital",
+    description:
+      "Comprehensive IT services including web development, mobile apps, and software solutions. Expert development team in Belgium.",
+    type: "website",
+    url: "https://www.cshinedigital.com/services",
+    siteName: "C-Shine Digital",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Services - C-Shine Digital",
+    description:
+      "Comprehensive IT services including web development, mobile apps, and software solutions.",
+  },
+  alternates: {
+    canonical: "https://www.cshinedigital.com/services",
+  },
+};
+
 const ServicesPage = () => {
   return (
     <>
