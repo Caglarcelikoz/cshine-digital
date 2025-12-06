@@ -1,3 +1,39 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Terms and Conditions - C-Shine Digital | Legal Terms & Service Agreement",
+  description:
+    "Read our terms and conditions for software development services. Clear legal framework covering project execution, payment terms, intellectual property, and liability.",
+  keywords: [
+    "terms and conditions",
+    "software development terms",
+    "service agreement",
+    "legal terms",
+    "project terms",
+    "intellectual property",
+    "payment terms",
+    "Belgium software company terms",
+  ],
+  openGraph: {
+    title: "Terms and Conditions - C-Shine Digital",
+    description:
+      "Clear legal framework covering project execution, payment terms, intellectual property, and liability for our software development services.",
+    type: "website",
+    url: "https://www.cshinedigital.com/terms",
+    siteName: "C-Shine Digital",
+  },
+  twitter: {
+    card: "summary",
+    title: "Terms and Conditions - C-Shine Digital",
+    description:
+      "Legal terms and service agreement for our software development services.",
+  },
+  alternates: {
+    canonical: "https://www.cshinedigital.com/terms",
+  },
+};
+
 const Terms = () => {
   return (
     <div className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50">
@@ -148,12 +184,13 @@ const Terms = () => {
 
             <Section title="7. Payment">
               <p>
-                The customer must pay C-Shine Digital&apos;s invoices within 30 days
-                of the invoice date, unless otherwise agreed in writing. If the
-                customer does not pay on time, they are automatically in default
-                and liable for statutory interest. All judicial and
+                The customer must pay C-Shine Digital&apos;s invoices within 30
+                days of the invoice date, unless otherwise agreed in writing. If
+                the customer does not pay on time, they are automatically in
+                default and liable for statutory interest. All judicial and
                 extrajudicial costs incurred by C-Shine Digital as a result of
-                the customer&apos;s non-compliance are fully borne by the customer.
+                the customer&apos;s non-compliance are fully borne by the
+                customer.
               </p>
             </Section>
 

@@ -1,3 +1,38 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - C-Shine Digital | Data Protection & GDPR Compliance",
+  description:
+    "Our privacy policy explains how C-Shine Digital collects, uses, and protects your personal data. GDPR compliant data protection practices for our software development services.",
+  keywords: [
+    "privacy policy",
+    "data protection",
+    "GDPR compliance",
+    "personal data",
+    "cookie policy",
+    "data security",
+    "Belgium privacy law",
+    "software company privacy",
+  ],
+  openGraph: {
+    title: "Privacy Policy - C-Shine Digital",
+    description:
+      "Our privacy policy explains how we collect, use, and protect your personal data. GDPR compliant data protection practices.",
+    type: "website",
+    url: "https://www.cshinedigital.com/privacy",
+    siteName: "C-Shine Digital",
+  },
+  twitter: {
+    card: "summary",
+    title: "Privacy Policy - C-Shine Digital",
+    description:
+      "GDPR compliant privacy policy for our software development services.",
+  },
+  alternates: {
+    canonical: "https://www.cshinedigital.com/privacy",
+  },
+};
+
 const Privacy = () => {
   return (
     <div className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50">

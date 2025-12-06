@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ClockIcon,
-  DocumentReportIcon,
+  DocumentIcon,
   UserIcon,
   StarIcon,
-} from "@heroicons/react/solid";
+} from "@heroicons/react/24/solid";
 import BackgroundPattern from "./layout/BackgroundPattern";
 
 const Hero = () => {
@@ -75,9 +75,9 @@ const Hero = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {[
-              { icon: UserIcon, value: "+8", label: "Collaborative Partners" },
+              { icon: UserIcon, value: "+10", label: "Collaborative Partners" },
               {
-                icon: DocumentReportIcon,
+                icon: DocumentIcon,
                 value: "+10",
                 label: "Successful Projects",
               },

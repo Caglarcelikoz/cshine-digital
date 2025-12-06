@@ -2,12 +2,12 @@
 import { motion } from "framer-motion";
 import {
   UserIcon,
-  ClipboardListIcon,
-  CodeIcon,
+  ClipboardDocumentListIcon,
+  CodeBracketIcon,
   CubeTransparentIcon,
-  SupportIcon,
-  ChartBarIcon,
-} from "@heroicons/react/outline";
+  LifebuoyIcon,
+  LightBulbIcon,
+} from "@heroicons/react/24/outline";
 import BackgroundPattern from "./layout/BackgroundPattern";
 
 const ProcessStep = ({
@@ -58,21 +58,21 @@ const Experience = () => {
       title: "Plan & Design",
       description:
         "Based on the analysis, we design and plan the implementation process ensuring alignment with your goals.",
-      Icon: ChartBarIcon,
+      Icon: LightBulbIcon,
     },
     {
       number: "3",
       title: "Proposal & Agreement",
       description:
         "We present our solution proposal and establish clear agreements on deliverables and timelines.",
-      Icon: ClipboardListIcon,
+      Icon: ClipboardDocumentListIcon,
     },
     {
       number: "4",
       title: "Development",
       description:
         "Our expert team develops your solution using the latest technologies and best practices.",
-      Icon: CodeIcon,
+      Icon: CodeBracketIcon,
     },
     {
       number: "5",
@@ -86,7 +86,7 @@ const Experience = () => {
       title: "Ongoing Support",
       description:
         "Our support doesn't end with delivery. We provide ongoing maintenance to ensure smooth operation.",
-      Icon: SupportIcon,
+      Icon: LifebuoyIcon,
     },
   ];
 

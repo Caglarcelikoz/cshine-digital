@@ -1,14 +1,48 @@
 import Breadcrumb from "@/components/BreadCrumb";
+import { Metadata } from "next";
 
 import {
   UserIcon,
-  ClipboardListIcon,
-  CodeIcon,
+  ClipboardDocumentListIcon,
+  CodeBracketIcon,
   CubeTransparentIcon,
-  SupportIcon,
-  ChartBarIcon,
-} from "@heroicons/react/outline";
+  LifebuoyIcon,
+  LightBulbIcon,
+} from "@heroicons/react/24/outline";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "How We Work - C-Shine Digital | Our Development Process",
+  description:
+    "Learn about our proven 6-step development process: Listen & Analyze, Plan & Design, Proposal & Agreement, Develop & Implement, Deliver & QA, Ongoing Support.",
+  keywords: [
+    "software development process",
+    "agile development",
+    "project management",
+    "development methodology",
+    "IT project workflow",
+    "software development lifecycle",
+    "Belgium development process",
+    "custom software development",
+  ],
+  openGraph: {
+    title: "How We Work - C-Shine Digital",
+    description:
+      "Our proven 6-step development process ensures successful project delivery. From analysis to ongoing support, we guide you through every phase.",
+    type: "website",
+    url: "https://www.cshinedigital.com/how-we-work",
+    siteName: "C-Shine Digital",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How We Work - C-Shine Digital",
+    description:
+      "Our proven 6-step development process ensures successful project delivery.",
+  },
+  alternates: {
+    canonical: "https://www.cshinedigital.com/how-we-work",
+  },
+};
 
 const HowWeWorkPage = () => {
   const services = [
@@ -21,21 +55,21 @@ const HowWeWorkPage = () => {
     },
     {
       title: "Plan & Design",
-      icon: ChartBarIcon,
+      icon: LightBulbIcon,
       description:
         "Based on the analysis, we design and plan the implementation process ensuring alignment with your goals.",
       image: "/images/plan.jpg",
     },
     {
       title: "Proposal & Agreement",
-      icon: ClipboardListIcon,
+      icon: ClipboardDocumentListIcon,
       description:
         "We present our proposal and action plan to you. We review it together and refine the details to create a finalized proposal that satisfies both parties. Additionally, we will agree on a deadline for the initial version.",
       image: "/images/offer.jpg",
     },
     {
       title: "Develop & Implement",
-      icon: CodeIcon,
+      icon: CodeBracketIcon,
       description:
         "We are all set to embark on bringing your vision to life! As we dive into development, your input remains key. We actively seek your feedback throughout this phase, ensuring agility to adapt and refine promptly.",
       image: "/images/develop.jpg",
@@ -49,7 +83,7 @@ const HowWeWorkPage = () => {
     },
     {
       title: "Ongoing Support & Maintenance",
-      icon: SupportIcon,
+      icon: LifebuoyIcon,
       description:
         "Our support doesn't end with delivery. We provide ongoing support to ensure smooth operation and maintenance.",
       image: "/images/support.jpg",
