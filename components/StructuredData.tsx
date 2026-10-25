@@ -1,12 +1,17 @@
-const StructuredData = () => {
+import { getTranslations } from "next-intl/server";
+import type { Locale } from "@/i18n/routing";
+import { SITE_URL } from "@/lib/seo";
+
+const StructuredData = async ({ locale }: { locale: Locale }) => {
+  const t = await getTranslations({ locale, namespace: "StructuredData" });
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "C-Shine Digital",
-    url: "https://www.cshinedigital.com",
-    logo: "https://www.cshinedigital.com/images/c-shine-digital-transparent.png",
-    description:
-      "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch. Web, e-commerce, branding, hosting and support.",
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/c-shine-digital-transparent.png`,
+    description: t("organizationDescription"),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Zutendaal",
@@ -17,39 +22,30 @@ const StructuredData = () => {
       "@type": "ContactPoint",
       contactType: "customer service",
       email: "info@cshinedigital.com",
+      availableLanguage: ["English", "Dutch"],
     },
     sameAs: ["https://www.linkedin.com/company/c-shine-digital"],
     foundingDate: "2019",
     numberOfEmployees: "8",
     serviceArea: {
       "@type": "Country",
-      name: "Belgium",
+      name: t("country"),
     },
   };
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Software Development Services",
-    description:
-      "Comprehensive software development services including web development, mobile app development, and IT consultancy.",
+    name: t("serviceName"),
+    description: t("serviceDescription"),
     provider: {
       "@type": "Organization",
       name: "C-Shine Digital",
     },
-    serviceType: [
-      "Web Development",
-      "Mobile App Development",
-      "IT Consultancy",
-      "E-commerce Development",
-      "Logo & Branding",
-      "Web Hosting & IT Support",
-      "Embedded Development & Consultancy",
-      "Custom Software Development",
-    ],
+    serviceType: t.raw("serviceTypes") as string[],
     areaServed: {
       "@type": "Country",
-      name: "Belgium",
+      name: t("country"),
     },
   };
 
@@ -57,16 +53,16 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "C-Shine Digital",
-    url: "https://www.cshinedigital.com",
-    description:
-      "A flexible Belgian digital studio: web, e-commerce, branding, IT and embedded development.",
+    url: SITE_URL,
+    inLanguage: locale,
+    description: t("websiteDescription"),
     publisher: {
       "@type": "Organization",
       name: "C-Shine Digital",
     },
     potentialAction: {
       "@type": "SearchAction",
-      target: "https://www.cshinedigital.com/search?q={search_term_string}",
+      target: `${SITE_URL}/search?q={search_term_string}`,
       "query-input": "required name=search_term_string",
     },
   };

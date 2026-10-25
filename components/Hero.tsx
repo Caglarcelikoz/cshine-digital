@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import {
   CalendarDaysIcon,
   RocketLaunchIcon,
@@ -9,6 +10,7 @@ import {
 import BackgroundPattern from "./layout/BackgroundPattern";
 
 const Hero = () => {
+  const t = useTranslations("Hero");
   return (
     <BackgroundPattern
       variant="dark"
@@ -21,6 +23,7 @@ const Hero = () => {
               src="/images/c-shine-digital-transparent.png"
               alt="C-Shine Digital"
               fill
+              sizes="100vw"
               className="object-contain"
               priority
             />
@@ -29,23 +32,23 @@ const Hero = () => {
 
         <div className="relative max-w-3xl mx-auto text-center text-white space-y-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Transforming Ideas into
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cshine-blue-400 to-cshine-blue-500">
-              Digital Excellence
-            </span>
+            {t.rich("title", {
+              br: () => <br />,
+              highlight: (chunks) => (
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-cshine-blue-400 to-cshine-blue-500">
+                  {chunks}
+                </span>
+              ),
+            })}
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-white/80">
-            A developer inside your team, your whole IT department, or the
-            studio that builds your idea from scratch: web app, brand, hosting
-            and all. One partner for the whole digital side of your business,
-            shaped to the project.
+            {t("subtitle")}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 pt-4">
             <Link href="/services" className="btn-primary on-dark">
-              Ways to work with us
+              {t("primaryCta")}
               <svg
                 className="w-5 h-5"
                 fill="none"
@@ -63,7 +66,7 @@ const Hero = () => {
             </Link>
 
             <Link href="/how-we-work" className="btn-secondary on-dark">
-              How We Work
+              {t("secondaryCta")}
             </Link>
           </div>
 
@@ -72,10 +75,10 @@ const Hero = () => {
               centred stack pushes the CTAs toward the fold. */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-8">
             {[
-              { icon: UsersIcon, value: "+10", label: "Partners" },
-              { icon: RocketLaunchIcon, value: "+10", label: "Projects" },
-              { icon: StarIcon, value: "100%", label: "Satisfaction" },
-              { icon: CalendarDaysIcon, value: "+6", label: "Years" },
+              { icon: UsersIcon, value: "+10", label: t("stats.partners") },
+              { icon: RocketLaunchIcon, value: "+10", label: t("stats.projects") },
+              { icon: StarIcon, value: "100%", label: t("stats.satisfaction") },
+              { icon: CalendarDaysIcon, value: "+6", label: t("stats.years") },
             ].map((stat) => (
               <div
                 key={stat.label}

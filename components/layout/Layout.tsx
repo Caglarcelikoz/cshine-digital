@@ -1,4 +1,5 @@
 import Contact from "../Contact";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 type LayoutProps = {
@@ -10,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Navbar />
       {children}
-      <Contact />
+      <Contact footer={<Footer />} />
     </>
   );
 };

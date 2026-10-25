@@ -1,8 +1,9 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { FaBolt, FaPuzzlePiece } from "react-icons/fa";
+import { Link } from "@/i18n/navigation";
 import BackgroundPattern from "./layout/BackgroundPattern";
 import Eyebrow from "./Eyebrow";
-import { engagementModes } from "@/lib/engagementModes";
+import { engagementModes, MODE_CTA_HREF } from "@/lib/engagementModes";
 
 type EngagementModesProps = {
   showTitle?: boolean;
@@ -13,6 +14,8 @@ const EngagementModes = ({
   showTitle = true,
   variant = "light",
 }: EngagementModesProps) => {
+  const t = useTranslations("EngagementModes");
+  const tModes = useTranslations("Modes");
   const dark = variant === "dark";
   return (
     <BackgroundPattern variant={variant} className="py-14 md:py-20">
@@ -20,23 +23,21 @@ const EngagementModes = ({
         {showTitle && (
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <Eyebrow tone={dark ? "dark" : "light"} className="mb-6">
-              Three ways to work with us
+              {t("eyebrow")}
             </Eyebrow>
             <h2
               className={`text-3xl md:text-4xl font-bold text-balance mb-6 ${
                 dark ? "text-white" : "text-midnight-900"
               }`}
             >
-              We shape to the project, not the other way around
+              {t("title")}
             </h2>
             <p
               className={`text-lg leading-relaxed ${
                 dark ? "text-white/70" : "text-neutral-600"
               }`}
             >
-              Most studios do one thing. We flex between three, so you get the
-              exact engagement your project needs, from a single developer to a
-              full digital partner.
+              {t("intro")}
             </p>
           </div>
         )}
@@ -44,7 +45,7 @@ const EngagementModes = ({
         <div className="grid gap-8 lg:grid-cols-3 items-stretch">
           {engagementModes.map((mode) => (
             <div
-              key={mode.title}
+              key={mode.slug}
               className={`group relative flex flex-col rounded-2xl p-8 border
                 hover:-translate-y-1 transition-all duration-300
                 ${
@@ -80,14 +81,14 @@ const EngagementModes = ({
                       dark ? "text-cshine-blue-400" : "text-cshine-blue-700"
                     }`}
                   >
-                    {mode.eyebrow}
+                    {tModes(`${mode.slug}.eyebrow`)}
                   </span>
                   <h3
                     className={`text-xl font-bold ${
                       dark ? "text-white" : "text-midnight-900"
                     }`}
                   >
-                    {mode.title}
+                    {tModes(`${mode.slug}.title`)}
                   </h3>
                 </div>
               </div>
@@ -97,18 +98,18 @@ const EngagementModes = ({
                   dark ? "text-cshine-blue-400" : "text-cshine-blue-600"
                 }`}
               >
-                {mode.forWho}
+                {tModes(`${mode.slug}.forWho`)}
               </p>
               <p
                 className={`relative leading-relaxed mb-6 ${
                   dark ? "text-white/70" : "text-neutral-600"
                 }`}
               >
-                {mode.description}
+                {tModes(`${mode.slug}.description`)}
               </p>
 
               <ul className="relative space-y-2.5 mb-8 flex-grow">
-                {mode.capabilities.map((cap) => (
+                {(tModes.raw(`${mode.slug}.capabilities`) as string[]).map((cap) => (
                   <li
                     key={cap}
                     className={`flex items-center gap-2.5 text-sm ${
@@ -140,7 +141,10 @@ const EngagementModes = ({
                 }`}
               >
                 <Link
-                  href={`/services/${mode.slug}`}
+                  href={{
+                    pathname: "/services/[slug]",
+                    params: { slug: mode.slug },
+                  }}
                   className={`inline-flex items-center gap-2 font-semibold transition-colors duration-300
                     ${
                       dark
@@ -148,7 +152,7 @@ const EngagementModes = ({
                         : "text-cshine-blue-600 group-hover:text-cshine-blue-700"
                     }`}
                 >
-                  Learn more
+                  {t("learnMore")}
                   <svg
                     className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                     fill="none"
@@ -165,14 +169,14 @@ const EngagementModes = ({
                   </svg>
                 </Link>
                 <Link
-                  href={mode.cta.href}
+                  href={MODE_CTA_HREF}
                   className={`inline-flex items-center gap-1.5 text-sm font-medium transition-colors duration-300 ${
                     dark
                       ? "text-white/60 hover:text-white/90"
                       : "text-neutral-500 hover:text-neutral-800"
                   }`}
                 >
-                  {mode.cta.label}
+                  {tModes(`${mode.slug}.cta`)}
                 </Link>
               </div>
             </div>
@@ -200,16 +204,14 @@ const EngagementModes = ({
                 dark ? "text-white" : "text-midnight-900"
               }`}
             >
-              We build AI-accelerated, with the engineering discipline to back it
-              up.
+              {t("aiTitle")}
             </p>
             <p
               className={`text-sm leading-relaxed ${
                 dark ? "text-white/70" : "text-neutral-600"
               }`}
             >
-              And when it fits your product, we build AI into it too, as a
-              capability, in whichever mode you work with us.
+              {t("aiBody")}
             </p>
           </div>
         </div>
@@ -236,18 +238,17 @@ const EngagementModes = ({
                 dark ? "text-white" : "text-midnight-900"
               }`}
             >
-              Just need one thing? That works too.
+              {t("standaloneTitle")}
             </p>
             <p
               className={`text-sm leading-relaxed ${
                 dark ? "text-white/70" : "text-neutral-600"
               }`}
             >
-              You don&rsquo;t need a full engagement for a single job. We&rsquo;re
-              happy to take on a standalone piece as well:
+              {t("standaloneBody")}
             </p>
             <div className="flex flex-wrap gap-2 pt-0.5">
-              {["Branding & logo", "Hosting, domains & email", "Design & content"].map(
+              {(t.raw("standaloneServices") as string[]).map(
                 (svc) => (
                   <span
                     key={svc}

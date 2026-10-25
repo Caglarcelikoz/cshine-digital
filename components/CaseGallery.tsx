@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 export type GallerySlide = {
@@ -15,6 +16,7 @@ export type GallerySlide = {
 const AUTOPLAY_MS = 4200;
 
 const CaseGallery = ({ slides }: { slides: GallerySlide[] }) => {
+  const t = useTranslations("CaseGallery");
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -63,7 +65,7 @@ const CaseGallery = ({ slides }: { slides: GallerySlide[] }) => {
         <span className="font-mono text-[10px] text-neutral-400">
           {current + 1}/{slides.length} · {slides[current].label}
         </span>
-        <div className="flex gap-1.5" role="tablist" aria-label="Screens">
+        <div className="flex gap-1.5" role="tablist" aria-label={t("screens")}>
           {slides.map((s, i) => (
             <button
               key={s.src}
@@ -84,7 +86,7 @@ const CaseGallery = ({ slides }: { slides: GallerySlide[] }) => {
           <button
             type="button"
             onClick={() => go(current - 1)}
-            aria-label="Previous screen"
+            aria-label={t("previous")}
             className="flex h-7 w-7 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-500 transition hover:border-cshine-blue-500 hover:text-cshine-blue-600"
           >
             <ChevronLeftIcon className="h-3.5 w-3.5" aria-hidden="true" />
@@ -92,7 +94,7 @@ const CaseGallery = ({ slides }: { slides: GallerySlide[] }) => {
           <button
             type="button"
             onClick={() => go(current + 1)}
-            aria-label="Next screen"
+            aria-label={t("next")}
             className="flex h-7 w-7 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-500 transition hover:border-cshine-blue-500 hover:text-cshine-blue-600"
           >
             <ChevronRightIcon className="h-3.5 w-3.5" aria-hidden="true" />

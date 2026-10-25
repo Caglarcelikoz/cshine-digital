@@ -1,73 +1,43 @@
 import { FaRocket, FaUsers, FaLightbulb, FaAward } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import BackgroundPattern from "./layout/BackgroundPattern";
 import Eyebrow from "./Eyebrow";
 
-const About = () => {
-  const features = [
-    {
-      title: "Innovative Solutions",
-      description:
-        "We combine cutting-edge technologies with creative thinking to develop solutions that not only solve today's challenges but are built to evolve with your business.",
-      icon: FaRocket,
-    },
-    {
-      title: "Collaborative Approach",
-      description:
-        "Your success is our priority. We work closely with you, ensuring clear communication and alignment throughout the development process to deliver exactly what you need.",
-      icon: FaUsers,
-    },
-    {
-      title: "Quality & Reliability",
-      description:
-        "Every line of code we write, every solution we design is crafted with precision and tested thoroughly to ensure robust, reliable performance.",
-      icon: FaAward,
-    },
-  ];
+const features = [
+  { key: "innovative", icon: FaRocket },
+  { key: "collaborative", icon: FaUsers },
+  { key: "quality", icon: FaAward },
+] as const;
 
-  const values = [
-    {
-      title: "Innovation First",
-      description:
-        "We stay ahead of technology trends to deliver cutting-edge solutions.",
-      icon: FaLightbulb,
-    },
-    {
-      title: "Client Partnership",
-      description:
-        "We build long-term relationships based on trust and mutual success.",
-      icon: FaUsers,
-    },
-    {
-      title: "Excellence in Delivery",
-      description:
-        "We commit to delivering high-quality solutions on time, every time.",
-      icon: FaAward,
-    },
-  ];
+const values = [
+  { key: "innovation", icon: FaLightbulb },
+  { key: "partnership", icon: FaUsers },
+  { key: "excellence", icon: FaAward },
+] as const;
+
+const About = () => {
+  const t = useTranslations("AboutSection");
 
   return (
     <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-12 md:mb-20">
-          <Eyebrow className="mb-6">About C-Shine Digital</Eyebrow>
+          <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
-            One partner, whatever the project needs
+            {t("title")}
           </h2>
           <p className="text-lg text-neutral-700 leading-relaxed">
-            C-Shine Digital is a Belgian digital studio built around
-            flexibility. For one client we&rsquo;re a developer inside their
-            team; for another we run the entire IT function; for a third we take
-            an idea from a blank page to a launched product. Same standards,
-            whatever the shape.
+            {t("intro")}
           </p>
         </div>
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-12 md:mb-20">
-          {features.map((feature, index) => (
-            <div key={index} className="group">
+          {features.map((feature) => (
+            <div key={feature.key} className="group">
               <div
                 className="relative p-6 md:p-8 rounded-xl bg-gradient-to-br from-white to-neutral-50/50 
                 border border-neutral-100 hover:border-cshine-blue-500/20 transition-all duration-300 
@@ -97,10 +67,10 @@ const About = () => {
                   {/* Content */}
                   <div className="text-center space-y-3">
                     <h3 className="text-xl font-bold text-midnight-900">
-                      {feature.title}
+                      {t(`features.${feature.key}.title`)}
                     </h3>
                     <p className="text-neutral-600 leading-relaxed text-sm">
-                      {feature.description}
+                      {t(`features.${feature.key}.description`)}
                     </p>
                   </div>
                 </div>
@@ -115,7 +85,7 @@ const About = () => {
             <div className="relative">
               <Image
                 src="/images/studio-belgium.svg"
-                alt="From code to a launched product — the way C-Shine Digital builds, from Belgium"
+                alt={t("imageAlt")}
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-lg w-full h-auto"
@@ -126,21 +96,17 @@ const About = () => {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-midnight-900 mb-4">
-                  Why Choose C-Shine Digital?
+                  {t("whyTitle")}
                 </h3>
                 <p className="text-neutral-600 leading-relaxed">
-                  You work directly with the people who do the work — no sales
-                  layer, no juniors handed your project. We adapt to how you
-                  already operate, pick the right tools instead of the ones
-                  we&rsquo;re locked into, and stay accountable long after
-                  launch.
+                  {t("whyBody")}
                 </p>
               </div>
 
               {/* Values */}
               <div className="space-y-4">
-                {values.map((value, index) => (
-                  <div key={index} className="flex items-start space-x-4 group">
+                {values.map((value) => (
+                  <div key={value.key} className="flex items-start space-x-4 group">
                     <div className="flex-shrink-0">
                       <div
                         className="flex h-10 w-10 items-center justify-center rounded-lg 
@@ -154,10 +120,10 @@ const About = () => {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-midnight-900 ">
-                        {value.title}
+                        {t(`values.${value.key}.title`)}
                       </h4>
                       <p className="text-neutral-600 mt-1">
-                        {value.description}
+                        {t(`values.${value.key}.description`)}
                       </p>
                     </div>
                   </div>
@@ -166,8 +132,8 @@ const About = () => {
 
               {/* CTA */}
               <div className="pt-4">
-                <a href="/how-we-work" className="btn-primary">
-                  Learn How We Work
+                <Link href="/how-we-work" className="btn-primary">
+                  {t("cta")}
                   <svg
                     className="w-5 h-5"
                     fill="none"
@@ -181,7 +147,7 @@ const About = () => {
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,18 +1,21 @@
 "use client";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/how-we-work", label: "How we work" },
-  { href: "/about", label: "About" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/", key: "home" },
+  { href: "/services", key: "services" },
+  { href: "/how-we-work", key: "howWeWork" },
+  { href: "/about", key: "about" },
+  { href: { pathname: "/", hash: "contact" }, key: "contact" },
 ] as const;
 
 const Navbar = () => {
+  const t = useTranslations("Navigation");
+  const tCommon = useTranslations("Common");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentRoute = usePathname();
   const [scroll, setScroll] = useState(false);
@@ -41,9 +44,11 @@ const Navbar = () => {
             />
             <Image
               src="/images/logo_img_transparent.png"
-              alt="C-Shine Digital Logo"
+              alt={tCommon("logoAlt")}
+              // Source is 1200×867; 100×72 keeps that ratio (100×42 got
+              // stretched back to 72 by Tailwind's `height: auto` anyway).
               width={100}
-              height={42}
+              height={72}
               priority
               className="relative transition-transform duration-300 group-hover:scale-105"
             />
@@ -51,9 +56,9 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center h-full gap-1">
-            {NAV_ITEMS.map(({ href, label }) => (
+            {NAV_ITEMS.map(({ href, key }) => (
               <Link
-                key={href}
+                key={key}
                 href={href}
                 className={`relative h-full px-4 lg:px-5 flex items-center text-sm lg:text-base font-medium transition-all duration-300 group
                   hover:bg-cshine-blue-500/5 cursor-pointer
@@ -64,7 +69,7 @@ const Navbar = () => {
                   }
                 `}
               >
-                <span className="relative z-10">{label}</span>
+                <span className="relative z-10">{t(key)}</span>
                 {currentRoute === href && (
                   <span className="absolute inset-0 bg-cshine-blue-500/10" />
                 )}
@@ -74,6 +79,7 @@ const Navbar = () => {
                 />
               </Link>
             ))}
+            <LocaleSwitcher className="ml-3" />
           </div>
 
           <button
@@ -81,7 +87,7 @@ const Navbar = () => {
             className="md:hidden relative w-10 h-10 rounded-lg bg-white/5 
               hover:bg-white/10 hover:shadow-inner-glow
               transition-all duration-200 flex items-center justify-center"
-            aria-label="Toggle menu"
+            aria-label={t("toggleMenu")}
           >
             <div className="w-5 h-5 flex flex-col justify-center space-y-1.5">
               <span
@@ -113,9 +119,9 @@ const Navbar = () => {
         >
           <div className="container mx-auto px-4">
             <div className="py-3 space-y-1">
-              {NAV_ITEMS.map(({ href, label }) => (
+              {NAV_ITEMS.map(({ href, key }) => (
                 <Link
-                  key={href}
+                  key={key}
                   href={href}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-4 py-2 rounded-lg transition-all duration-200
@@ -127,9 +133,15 @@ const Navbar = () => {
                     }
                   `}
                 >
-                  {label}
+                  {t(key)}
                 </Link>
               ))}
+              <div className="px-4 pt-2 pb-1">
+                <LocaleSwitcher
+                  className="inline-flex"
+                  onNavigate={() => setIsMenuOpen(false)}
+                />
+              </div>
             </div>
           </div>
         </div>

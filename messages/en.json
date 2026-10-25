@@ -1,0 +1,941 @@
+{
+  "Metadata": {
+    "home": {
+      "title": "C-Shine Digital | Flexible Web, IT & Development Studio in Belgium",
+      "description": "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch. Web, e-commerce, branding, hosting and support.",
+      "ogTitle": "C-Shine Digital | Flexible Web, IT & Development Studio",
+      "ogDescription": "Web, IT and software development in Belgium. Whether you need one developer, a full IT department, or a partner to build your product from scratch, we scale to fit.",
+      "keywords": [
+        "software development",
+        "IT consultancy",
+        "Belgium",
+        "C-Shine Digital",
+        "web development",
+        "mobile development",
+        "digital transformation",
+        "custom software",
+        "enterprise software",
+        "Belgium software company",
+        "Limburg IT services",
+        "Zutendaal software development"
+      ]
+    },
+    "services": {
+      "title": "Our Services - C-Shine Digital | Software Development & IT Consultancy",
+      "description": "Discover our comprehensive IT services including web development, mobile apps, software solutions, and IT consultancy. Expert development team in Belgium.",
+      "ogTitle": "Our Services - C-Shine Digital",
+      "ogDescription": "Comprehensive IT services including web development, mobile apps, and software solutions. Expert development team in Belgium.",
+      "keywords": [
+        "software development services",
+        "web development",
+        "mobile app development",
+        "IT consultancy",
+        "Belgium software company",
+        "custom software solutions",
+        "enterprise software",
+        "digital transformation"
+      ]
+    },
+    "howWeWork": {
+      "title": "How We Work - C-Shine Digital | Our Development Process",
+      "description": "How we work: every project starts the same way — listen, scope, agree — then follows the track that fits, whether that's a product build, a full IT partnership or an embedded developer.",
+      "ogTitle": "How We Work - C-Shine Digital",
+      "ogDescription": "The same start, a different path: three shared steps, then the track that fits how we work together.",
+      "keywords": [
+        "software development process",
+        "agile development",
+        "project management",
+        "development methodology",
+        "IT project workflow",
+        "software development lifecycle",
+        "Belgium development process",
+        "custom software development"
+      ]
+    },
+    "about": {
+      "title": "About - C-Shine Digital | A Flexible Belgian Digital Studio",
+      "description": "C-Shine Digital is a Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch.",
+      "ogTitle": "About - C-Shine Digital",
+      "ogDescription": "A Belgian digital studio built around flexibility. You work directly with the people who do the work.",
+      "keywords": [
+        "about C-Shine Digital",
+        "Belgian digital studio",
+        "software development Belgium",
+        "IT partner Limburg",
+        "Zutendaal software company"
+      ]
+    },
+    "work": {
+      "title": "Our Work - C-Shine Digital | Case Studies & Client Projects",
+      "description": "See how C-Shine Digital adapts to each project: from an enterprise digital platform to full IT partnerships and a travel brand's site built end to end.",
+      "ogTitle": "Our Work - C-Shine Digital",
+      "ogDescription": "Case studies showing the range of C-Shine Digital: enterprise platform engineering and full IT partnership.",
+      "keywords": [
+        "web development case studies",
+        "software development portfolio",
+        "multi-tenant platform",
+        "IT services Belgium",
+        "digital platform",
+        "C-Shine Digital projects"
+      ]
+    },
+    "estimate": {
+      "title": "Estimate Your Project - C-Shine Digital | Indicative Price Range",
+      "description": "Answer a few quick questions about your website, webshop or web app to see an indicative price range: a starting point for a real conversation, not a fixed quote.",
+      "ogTitle": "Estimate Your Project - C-Shine Digital",
+      "ogDescription": "Free, no-obligation project cost estimator. Get a ballpark in minutes, then talk to us for a real quote.",
+      "keywords": [
+        "project cost estimator",
+        "web development cost",
+        "app development pricing",
+        "software project quote",
+        "Belgium development cost",
+        "free project estimate"
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy - C-Shine Digital | Data Protection & GDPR Compliance",
+      "description": "Our privacy policy explains how C-Shine Digital collects, uses, and protects your personal data. GDPR compliant data protection practices for our software development services.",
+      "ogTitle": "Privacy Policy - C-Shine Digital",
+      "ogDescription": "Our privacy policy explains how we collect, use, and protect your personal data. GDPR compliant data protection practices.",
+      "keywords": [
+        "privacy policy",
+        "data protection",
+        "GDPR compliance",
+        "personal data",
+        "cookie policy",
+        "data security",
+        "Belgium privacy law",
+        "software company privacy"
+      ]
+    },
+    "terms": {
+      "title": "Terms and Conditions - C-Shine Digital | Legal Terms & Service Agreement",
+      "description": "Read our terms and conditions for software development services. Clear legal framework covering project execution, payment terms, intellectual property, and liability.",
+      "ogTitle": "Terms and Conditions - C-Shine Digital",
+      "ogDescription": "Clear legal framework covering project execution, payment terms, intellectual property, and liability for our software development services.",
+      "keywords": [
+        "terms and conditions",
+        "software development terms",
+        "service agreement",
+        "legal terms",
+        "project terms",
+        "intellectual property",
+        "payment terms",
+        "Belgium software company terms"
+      ]
+    }
+  },
+  "StructuredData": {
+    "organizationDescription": "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch. Web, e-commerce, branding, hosting and support.",
+    "serviceName": "Software Development Services",
+    "serviceDescription": "Comprehensive software development services including web development, mobile app development, and IT consultancy.",
+    "serviceTypes": [
+      "Web Development",
+      "Mobile App Development",
+      "IT Consultancy",
+      "E-commerce Development",
+      "Logo & Branding",
+      "Web Hosting & IT Support",
+      "Embedded Development & Consultancy",
+      "Custom Software Development"
+    ],
+    "websiteDescription": "A flexible Belgian digital studio: web, e-commerce, branding, IT and embedded development.",
+    "country": "Belgium"
+  },
+  "Common": {
+    "location": "Zutendaal, Belgium",
+    "logoAlt": "C-Shine Digital Logo",
+    "breadcrumbHome": "Home",
+    "breadcrumbLabel": "Breadcrumb",
+    "sending": "Sending…",
+    "errors": {
+      "generic": "Something went wrong. Please try again.",
+      "invalid": "Please fill in all fields with a valid email address.",
+      "rateLimit": "Too many requests. Please try again later."
+    }
+  },
+  "NotFound": {
+    "metaTitle": "Page not found | C-Shine Digital",
+    "eyebrow": "Error 404",
+    "title": "This page doesn’t exist",
+    "description": "The link may be outdated, or the address has a typo. Here are a few places to pick up from.",
+    "home": "Back to home",
+    "contact": "Contact us",
+    "suggestionsTitle": "Popular pages"
+  },
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "howWeWork": "How we work",
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact",
+    "toggleMenu": "Toggle menu",
+    "language": "Language",
+    "switchTo": "Bekijk deze pagina in het Nederlands"
+  },
+  "Footer": {
+    "tagline": "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "rights": "© {year} C-Shine Digital. All rights reserved.",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "Hero": {
+    "title": "Transforming Ideas into<br></br><highlight>Digital Excellence</highlight>",
+    "subtitle": "A developer inside your team, your whole IT department, or the studio that builds your idea from scratch: web app, brand, hosting and all. One partner for the whole digital side of your business, shaped to the project.",
+    "primaryCta": "Ways to work with us",
+    "secondaryCta": "How We Work",
+    "stats": {
+      "partners": "Partners",
+      "projects": "Projects",
+      "satisfaction": "Satisfaction",
+      "years": "Years"
+    }
+  },
+  "AboutSection": {
+    "eyebrow": "About C-Shine Digital",
+    "title": "One partner, whatever the project needs",
+    "intro": "C-Shine Digital is a Belgian digital studio built around flexibility. For one client we’re a developer inside their team; for another we run the entire IT function; for a third we take an idea from a blank page to a launched product. Same standards, whatever the shape.",
+    "features": {
+      "innovative": {
+        "title": "Innovative Solutions",
+        "description": "We combine cutting-edge technologies with creative thinking to develop solutions that not only solve today's challenges but are built to evolve with your business."
+      },
+      "collaborative": {
+        "title": "Collaborative Approach",
+        "description": "Your success is our priority. We work closely with you, ensuring clear communication and alignment throughout the development process to deliver exactly what you need."
+      },
+      "quality": {
+        "title": "Quality & Reliability",
+        "description": "Every line of code we write, every solution we design is crafted with precision and tested thoroughly to ensure robust, reliable performance."
+      }
+    },
+    "imageAlt": "From code to a launched product — the way C-Shine Digital builds, from Belgium",
+    "whyTitle": "Why Choose C-Shine Digital?",
+    "whyBody": "You work directly with the people who do the work — no sales layer, no juniors handed your project. We adapt to how you already operate, pick the right tools instead of the ones we’re locked into, and stay accountable long after launch.",
+    "values": {
+      "innovation": {
+        "title": "Innovation First",
+        "description": "We stay ahead of technology trends to deliver cutting-edge solutions."
+      },
+      "partnership": {
+        "title": "Client Partnership",
+        "description": "We build long-term relationships based on trust and mutual success."
+      },
+      "excellence": {
+        "title": "Excellence in Delivery",
+        "description": "We commit to delivering high-quality solutions on time, every time."
+      }
+    },
+    "cta": "Learn How We Work"
+  },
+  "Modes": {
+    "product-build": {
+      "eyebrow": "Mode 01",
+      "title": "Product build",
+      "forWho": "For businesses with an idea and no team to build it",
+      "description": "We take your idea from a blank page to a live product (web apps, e-commerce, custom sites) and stay on for the updates after launch.",
+      "capabilities": [
+        "Web & app development",
+        "E-commerce platforms",
+        "CMS integration",
+        "Deployment & maintenance"
+      ],
+      "cta": "Plan your build",
+      "intro": "You bring the idea. We own the build, end to end, from a blank page to a live product, plus the updates after launch.",
+      "whatItIs": "Product build is our full-delivery mode: you hand us the idea and we take ownership of turning it into a working product. Web apps, e-commerce, custom sites; we handle the design, the engineering, the deployment, and the maintenance that keeps it running. You don't need an in-house team or a technical co-founder; that's our job.",
+      "howItWorks": [
+        "We start by understanding the idea, the users, and what success looks like, then scope a realistic first version.",
+        "You get a clear proposal and timeline before we write code, so there are no surprises on budget or deadline.",
+        "We build in short cycles and show you working software early, adapting as your input comes in.",
+        "After launch we stay on for updates, fixes and improvements. The product keeps evolving, and so do we."
+      ],
+      "metaTitle": "Product Build - C-Shine Digital | From Idea to Live Product",
+      "metaDescription": "Have an idea but no team to build it? We own the whole build (web apps, e-commerce and custom sites) from a blank page to a live product, plus updates after launch."
+    },
+    "it-partner": {
+      "eyebrow": "Mode 02",
+      "title": "Full IT partner",
+      "forWho": "For companies that want one partner for everything digital",
+      "description": "Website, brand identity, hosting, domains, email and day-to-day support: your complete digital and IT function, handled by one team.",
+      "capabilities": [
+        "Website & branding",
+        "Logo & brand guidelines",
+        "Hosting, domains & email",
+        "Ongoing IT support"
+      ],
+      "cta": "Talk to us",
+      "intro": "One partner for everything digital: website, brand, hosting, email and day-to-day support, so you can focus on your business.",
+      "whatItIs": "Full IT partner is our all-in mode: we become your complete digital and IT function. Website and brand identity, hosting, domains and email, and the ongoing support that keeps it all working, handled by one team you can actually reach. Instead of juggling a web agency, a hosting provider and an IT helpdesk, you have a single point of contact for everything digital.",
+      "howItWorks": [
+        "We take stock of what you already have (website, domains, email, tools) and map what needs building, fixing or replacing.",
+        "We set up and run the essentials: brand, site, hosting, domains and email, all under one roof.",
+        "Day-to-day support means you have someone to call when something breaks or needs to change, with no ticket queue to a stranger.",
+        "As your business grows, we adapt the setup (new pages, new tools, new needs) without you having to re-hire."
+      ],
+      "metaTitle": "Full IT Partner - C-Shine Digital | Your Complete Digital & IT Function",
+      "metaDescription": "Want one partner for everything digital? Website, brand, hosting, domains, email and day-to-day support: your complete IT function, handled by one Belgian team."
+    },
+    "embedded": {
+      "eyebrow": "Mode 03",
+      "title": "Embedded developer",
+      "forWho": "For in-house teams that need extra engineering firepower",
+      "description": "We embed with your developers (frontend, backend, DevOps) and ship alongside you. Senior hands, no long onboarding, flexible on stack.",
+      "capabilities": [
+        "Frontend & backend",
+        "DevOps & cloud",
+        "Stack-agnostic",
+        "Contract or per-project"
+      ],
+      "cta": "Discuss a role",
+      "intro": "Extra engineering firepower that plugs straight into your team: senior hands, no long onboarding, flexible on stack.",
+      "whatItIs": "Embedded developer is our team-augmentation mode: instead of owning a project, we join yours. We embed with your existing developers (frontend, backend, DevOps) and ship alongside them, following your processes and your stack. It's for in-house teams that need capacity or a specific skill for a while, without the cost and lead time of a permanent hire.",
+      "howItWorks": [
+        "We match senior people to the gap you actually have, not whoever happens to be free.",
+        "We work inside your workflow: your tools, your repos, your standup. We adapt to you, not the other way around.",
+        "No long onboarding. The aim is to be productive in your codebase within days, not weeks.",
+        "Engage per project or on a rolling contract, and scale the involvement up or down as your roadmap shifts."
+      ],
+      "metaTitle": "Embedded Developer - C-Shine Digital | Extra Engineering Firepower",
+      "metaDescription": "Need extra engineering capacity? We embed senior developers with your team (frontend, backend, DevOps): no long onboarding, flexible on stack, contract or per-project."
+    }
+  },
+  "EngagementModes": {
+    "eyebrow": "Three ways to work with us",
+    "title": "We shape to the project, not the other way around",
+    "intro": "Most studios do one thing. We flex between three, so you get the exact engagement your project needs, from a single developer to a full digital partner.",
+    "learnMore": "Learn more",
+    "aiTitle": "We build AI-accelerated, with the engineering discipline to back it up.",
+    "aiBody": "And when it fits your product, we build AI into it too, as a capability, in whichever mode you work with us.",
+    "standaloneTitle": "Just need one thing? That works too.",
+    "standaloneBody": "You don’t need a full engagement for a single job. We’re happy to take on a standalone piece as well:",
+    "standaloneServices": [
+      "Branding & logo",
+      "Hosting, domains & email",
+      "Design & content"
+    ]
+  },
+  "Partners": {
+    "eyebrow": "Trusted collaborations",
+    "title": "Our Partners",
+    "intro": "The businesses and organisations we build with, deliver for, and grow alongside.",
+    "cta": "See what we’ve built together"
+  },
+  "SharedSteps": {
+    "listen": {
+      "title": "Listen & Understand",
+      "description": "We map out what you need, what you already have running, and where it hurts today.",
+      "descriptionLong": "We map out what you need, what you already have running, and where it hurts today — before proposing anything.",
+      "imageAlt": "Working through requirements on a laptop"
+    },
+    "scope": {
+      "title": "Scope & Approach",
+      "description": "Together we decide which way of working fits, and what the first concrete step looks like.",
+      "imageAlt": "Sketched wireframes laid out while planning"
+    },
+    "agree": {
+      "title": "Clear Agreement",
+      "description": "No surprises later: you know what you get, when, and at what budget before we start.",
+      "imageAlt": "Signing off on a written agreement"
+    },
+    "fork": "Then, depending on the mode"
+  },
+  "Experience": {
+    "eyebrow": "How we work",
+    "title": "The same start, a different path",
+    "intro": "Every project begins the same way. Where it goes next depends on the way of working that fits you.",
+    "tracks": {
+      "product-build": {
+        "title": "Build & launch",
+        "description": "Short cycles, working software early, and updates that keep running after launch."
+      },
+      "it-partner": {
+        "title": "Set up & keep running",
+        "description": "We set up brand, site, hosting and email, then stay on as your single point of contact."
+      },
+      "embedded": {
+        "title": "Work inside your team",
+        "description": "Your tools, your repos, your standup. Productive in your codebase within days, not weeks."
+      }
+    },
+    "detailLink": "See how each step works in detail"
+  },
+  "FAQ": {
+    "eyebrow": "Good to know",
+    "title": "Frequently Asked Questions",
+    "intro": "Common questions about working with C-Shine Digital",
+    "items": [
+      {
+        "question": "What services does C-Shine Digital offer?",
+        "answer": "C-Shine Digital specializes in custom web development, mobile app development, and IT consulting services. From business websites and e-commerce platforms to complex web applications, we deliver scalable digital solutions tailored to each client's needs."
+      },
+      {
+        "question": "What types of projects do you take on?",
+        "answer": "We handle projects of various scales - from small business websites to complex enterprise applications. This includes custom web applications, mobile apps, e-commerce solutions, and technical consulting for larger organizations. Each project is approached with the same commitment to quality and attention to detail."
+      },
+      {
+        "question": "How is project pricing determined?",
+        "answer": "Project costs are determined based on several factors including scope, complexity, timeline, and specific requirements. We offer flexible pricing models including fixed-price quotes for defined projects and time-based rates for consulting services. Each quote is customized to ensure the best value for your specific needs."
+      },
+      {
+        "question": "What is your development approach?",
+        "answer": "We follow an agile development methodology with clear communication and regular updates. The process begins with thorough requirement gathering, followed by iterative development phases with regular client feedback. This ensures the final product aligns perfectly with the client's vision while maintaining high quality standards."
+      },
+      {
+        "question": "Which technologies do you work with?",
+        "answer": "C-Shine Digital is technology-agnostic, choosing the best tools for each specific project. We have extensive experience with modern web technologies including React, Next.js, Node.js, and various database solutions. For mobile development, we utilize cross-platform technologies to ensure cost-effective and efficient delivery."
+      },
+      {
+        "question": "Do you provide post-launch support?",
+        "answer": "Yes, we offer comprehensive post-launch support including maintenance, updates, and technical assistance. Our support packages can include hosting management, regular updates, performance monitoring, and ongoing optimizations to ensure your digital solution continues to perform optimally."
+      }
+    ],
+    "ctaIntro": "Have a specific question?",
+    "cta": "Let's Talk"
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "intro": "Have a project in mind? Tell us what you need and we’ll get back to you, usually within a day.",
+    "successTitle": "Message sent",
+    "successBody": "Thanks for reaching out. We’ll be in touch shortly.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "subject": "Subject",
+    "subjectPlaceholder": "What can we help with?",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project, timeline and budget.",
+    "submit": "Send message",
+    "hours": "Mon - Fri: 9:00 - 17:00",
+    "connect": "Connect With Us",
+    "linkedin": "C-Shine Digital on LinkedIn",
+    "instagram": "C-Shine Digital on Instagram",
+    "mapTitle": "C-Shine Digital location, Zutendaal, Belgium"
+  },
+  "ServicesPage": {
+    "breadcrumb": "Services",
+    "eyebrow": "What We Do",
+    "title": "Three ways to work with us",
+    "subtitle": "However you need us: building your idea end to end, running your whole IT, or embedding in your team. Below: the ways we engage, and the capabilities behind them."
+  },
+  "Capabilities": {
+    "eyebrow": "The capabilities behind them",
+    "title": "What we actually build",
+    "intro": "Whichever way you work with us, this is the toolkit behind it: the things we design, build and run.",
+    "items": {
+      "web": {
+        "title": "Web & app development",
+        "description": "Fast, accessible web apps and sites built on a modern stack, from marketing pages to full products."
+      },
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "Online stores that are easy to run and easy to buy from, wired up to the payment and shipping tools you need."
+      },
+      "cms": {
+        "title": "CMS integration",
+        "description": "Content you can edit yourself, with no developer required for every copy change or new page."
+      },
+      "hosting": {
+        "title": "Hosting, domains & email",
+        "description": "The infrastructure behind the scenes (hosting, domains and business email) set up and kept running."
+      },
+      "branding": {
+        "title": "Branding & identity",
+        "description": "Logo, colours and brand guidelines so everything you ship looks like it belongs to you."
+      },
+      "ai": {
+        "title": "AI integration",
+        "description": "We build AI into your product where it earns its place (assistants, automation, smart search) and into our own delivery. Practical AI with real engineering discipline, not hype."
+      }
+    }
+  },
+  "BuildQuality": {
+    "eyebrow": "Under the hood",
+    "title": "The quality behind every build",
+    "intro": "What you don’t see, but do feel: speed, reliability and room to grow. The standard we hold whatever we build.",
+    "items": [
+      {
+        "title": "Future-proof foundation",
+        "description": "Built on a modern, well-supported stack so it stays fast and easy to extend for years, not months."
+      },
+      {
+        "title": "Fewer bugs, fewer surprises",
+        "description": "Type-safe, tested code catches errors before your users ever see them, so fewer outages and lower upkeep."
+      },
+      {
+        "title": "Flawless on every screen",
+        "description": "Responsive layouts that look and work right on phones, tablets and desktops."
+      },
+      {
+        "title": "Speed that keeps visitors",
+        "description": "Performance-tuned pages that load fast, because every extra second costs you conversions."
+      },
+      {
+        "title": "Found by people and AI",
+        "description": "SEO structure and structured data so search engines and AI assistants (ChatGPT, Perplexity, AI Overviews) can understand and cite your content."
+      },
+      {
+        "title": "Secure by default",
+        "description": "Security best practices built in from day one, protecting your data and your customers' trust."
+      },
+      {
+        "title": "Built to grow with you",
+        "description": "Clean, maintainable architecture means adding features later is quick and affordable, not a costly rebuild."
+      },
+      {
+        "title": "Data from launch",
+        "description": "Analytics-ready on day one, so you can see what visitors do and make decisions backed by real numbers."
+      }
+    ]
+  },
+  "ModeDetail": {
+    "breadcrumbParent": "Services",
+    "whatItIs": "What it is",
+    "howWeWork": "How we work together",
+    "covered": "What’s covered",
+    "backToAll": "See all the ways to work with us"
+  },
+  "HowWeWorkPage": {
+    "breadcrumb": "How we work",
+    "eyebrow": "Our Process",
+    "title": "How We Work",
+    "subtitle": "At C-Shine Digital, we are not just a team; we are your technology partners. We blend innovation, creativity, and expertise to drive your success.",
+    "sectionEyebrow": "Our process",
+    "sectionTitle": "The same start, a different path",
+    "sectionIntro": "Every engagement begins the same way. What happens after the agreement depends on how we work together.",
+    "cta": "Start Your Project"
+  },
+  "ProcessTracks": {
+    "tablistLabel": "Ways of working",
+    "steps": {
+      "product-build": [
+        {
+          "title": "Build in cycles",
+          "description": "Short sprints with working software early, so you can steer while we build instead of waiting for a reveal.",
+          "alt": "Diagram: four sprints, each shipping a larger increment, with feedback looping back between them"
+        },
+        {
+          "title": "Deliver & QA",
+          "description": "Every release is checked against the quality standards and timelines we agreed up front.",
+          "alt": "Diagram: a test run with passing checks resolving into a green build"
+        },
+        {
+          "title": "Go live",
+          "description": "Launch, monitoring and a handover that makes the product genuinely yours, not a black box.",
+          "alt": "Diagram: the launched product broadcasting outward to reach its users"
+        },
+        {
+          "title": "Updates after launch",
+          "description": "Fixes, improvements and new features as the product keeps evolving. Delivery is not the finish line.",
+          "alt": "Diagram: releases continuing along a timeline after the go-live marker"
+        }
+      ],
+      "it-partner": [
+        {
+          "title": "Take stock",
+          "description": "We map what you already have — site, domains, email, tools — and what needs building, fixing or replacing.",
+          "alt": "Diagram: a magnifier sweeping a scattered estate, cataloguing what it covers"
+        },
+        {
+          "title": "Set up the essentials",
+          "description": "Brand, site, hosting, domains and email, all set up and running under one roof.",
+          "alt": "Diagram: website, brand, email and domains gathered under one roof"
+        },
+        {
+          "title": "Day-to-day support",
+          "description": "Someone you can actually call when something breaks or needs to change. No ticket queue to a stranger.",
+          "alt": "Diagram: a direct line between client and studio, with the request answered"
+        },
+        {
+          "title": "Grow with you",
+          "description": "New pages, new tools, new needs — we adapt the setup as your business grows, without you re-hiring.",
+          "alt": "Diagram: the same setup growing larger across four periods"
+        }
+      ],
+      "embedded": [
+        {
+          "title": "Match the gap",
+          "description": "We match senior people to the gap you actually have, not to whoever happens to be free.",
+          "alt": "Diagram: a gap in the team, filled by a matched senior developer"
+        },
+        {
+          "title": "Step in",
+          "description": "Your tools, your repos, your standup. We work inside your workflow rather than imposing ours.",
+          "alt": "Diagram: stepping into the client's own board and workflow"
+        },
+        {
+          "title": "Ship alongside you",
+          "description": "The aim is to be productive in your codebase within days, not weeks, and to ship like the rest of your team.",
+          "alt": "Diagram: branches carrying commits and merging back into the client's main branch"
+        },
+        {
+          "title": "Scale up or down",
+          "description": "Per project or on a rolling contract — we scale involvement up or down as your roadmap shifts.",
+          "alt": "Diagram: a slider setting involvement between light and full"
+        }
+      ]
+    }
+  },
+  "AboutPage": {
+    "breadcrumb": "About",
+    "eyebrow": "Who We Are",
+    "title": "A Belgian studio built around flexibility",
+    "subtitle": "C-Shine Digital exists to be whatever a project needs, and to be the same reliable, senior partner in every one of those shapes.",
+    "storyEyebrow": "Who we are",
+    "storyTitle": "One partner, many shapes",
+    "story": [
+      "Most digital companies do one thing and try to make every client fit it. We built C-Shine the other way around. For one client we’re a developer embedded in their team; for another we’re the entire IT function (website, brand, hosting and support); for a third we take an idea from a blank page all the way to a launched product.",
+      "What stays constant is the standard: senior work, direct communication, and the right technology for the job. We’re small on purpose, and it’s why you always work with the people actually doing the work, and why we can move quickly without layers in between."
+    ],
+    "principles": {
+      "adapt": {
+        "title": "We adapt to you",
+        "body": "One client needs a developer in their team, another needs their whole IT run. We shape the engagement to the project, not the reverse."
+      },
+      "makers": {
+        "title": "You talk to the makers",
+        "body": "No sales layer, no juniors handed your project. You work directly with the people writing the code and doing the work."
+      },
+      "tools": {
+        "title": "Right tools, not locked-in tools",
+        "body": "We're deliberately technology-agnostic. We choose the stack that fits your project, not the one we happen to prefer."
+      },
+      "accountable": {
+        "title": "Accountable after launch",
+        "body": "Delivery isn't the finish line. We stay on for maintenance, support and the improvements that come after go-live."
+      }
+    },
+    "facts": {
+      "company": { "label": "Company", "value": "C-Shine Digital" },
+      "basedIn": { "label": "Based in", "value": "Zutendaal, Belgium" },
+      "since": { "label": "Working since", "value": "5+ years" },
+      "engagements": { "label": "Engagements", "value": "Build · Full IT · Embedded" }
+    },
+    "cta": "Let’s talk about your project"
+  },
+  "WorkPage": {
+    "breadcrumb": "Work",
+    "eyebrow": "Case Studies",
+    "title": "The same standards, whatever the shape",
+    "subtitle": "From an enterprise digital platform to a travel brand built end to end. Four projects, four ways of working, one senior standard.",
+    "visitLive": "Visit the live site",
+    "illustrative": "illustrative · not the actual UI",
+    "cta": "Start a project with us",
+    "cases": {
+      "ravago": {
+        "role": "Embedded developer",
+        "headline": "A digital platform for a whole product group",
+        "body": "As part of the platform team, we contributed to Digital Platform: a multi-tenant system where each Ravago business channel is onboarded with its own branding and domain, sharing one engine underneath.",
+        "tags": ["Multi-tenant", "Frontend & backend", "Contentful", "System integrations"],
+        "noLinkNote": "No live link: the platform sits behind each channel's login.",
+        "modules": {
+          "portfolio": {
+            "title": "Product portfolio & ordering",
+            "description": "Browse products, request quotes, place and track orders and call-offs."
+          },
+          "deliveries": {
+            "title": "Deliveries & shipments",
+            "description": "Delivery requests, shipment tracking and invoices in one place."
+          },
+          "pageBuilder": {
+            "title": "Custom page builder",
+            "description": "Content editors build landing pages and blogs in Contentful themselves."
+          },
+          "translations": {
+            "title": "AI translations",
+            "description": "A dashboard to plan and manage translations before content goes live."
+          },
+          "admin": {
+            "title": "Admin & user management",
+            "description": "Admins and sales reps manage customers, users and leads per channel."
+          },
+          "email": {
+            "title": "Transactional email",
+            "description": "Automated communication for quote and order requests and updates."
+          }
+        }
+      },
+      "mkmSolutions": {
+        "role": "Full IT partner",
+        "headline": "The complete digital & IT department",
+        "body": "Groundworks and infrastructure across Belgium. We designed and built the site, the brand, and set up the hosting, domains and email. One accountable partner for everything digital.",
+        "tags": ["Web development", "Branding", "Hosting & email", "Ongoing support"],
+        "shotAlt": "The services section of the MKM Solutions website we built"
+      },
+      "mkmCarrosserie": {
+        "role": "Full IT partner",
+        "headline": "Website plus the IT that keeps them running",
+        "body": "An auto-body specialist with 25+ years of craft. We built and maintain their site, rich service pages and all, and handle the day-to-day IT around it.",
+        "tags": ["Web development", "Hosting", "Ongoing IT support"],
+        "shotAlt": "A service detail page of the MKM Carrosserie website we built"
+      },
+      "xplore": {
+        "role": "Design & development",
+        "headline": "The digital gateway to authentic Türkiye",
+        "body": "A Belgian travel specialist crafting tailor-made journeys through Türkiye. We designed and built their site end to end: five travel styles, seven regions, a filterable trip catalogue and rich itineraries — all leading to a direct line with their travel designers.",
+        "tags": ["Web design & development", "Trip catalogue", "Content & SEO", "Hosting & domains"],
+        "slides": [
+          { "alt": "The Xplore Türkiye homepage hero we built", "label": "homepage hero" },
+          { "alt": "The five travel styles section of the Xplore Türkiye homepage", "label": "five travel styles" },
+          { "alt": "The interactive map of Türkiye's seven regions", "label": "interactive region map" },
+          { "alt": "The filterable trip catalogue of the Xplore Türkiye website", "label": "filterable trip catalogue" },
+          { "alt": "The day-by-day itinerary of a Cappadocia round trip", "label": "day-by-day itinerary" }
+        ]
+      }
+    }
+  },
+  "CaseGallery": {
+    "screens": "Screens",
+    "previous": "Previous screen",
+    "next": "Next screen"
+  },
+  "Estimate": {
+    "breadcrumb": "Estimate",
+    "eyebrow": "Free · No obligation",
+    "title": "Estimate your project",
+    "intro": "Answer a few quick questions to get a feel for the size of your project. It’s a starting point for a real conversation, not a fixed quote.",
+    "progress": "Step {current} of {total}",
+    "typeQuestion": "What kind of project is it?",
+    "typeHint": "Pick the closest match. We’ll refine it together later.",
+    "types": {
+      "brochure": {
+        "name": "Brochure, business or landing page",
+        "tagline": "A few pages to present your business: info, services, contact."
+      },
+      "ecommerce": {
+        "name": "E-commerce / webshop",
+        "tagline": "An online store: products, cart, checkout and payments."
+      },
+      "webapp": {
+        "name": "Web app / platform",
+        "tagline": "A custom application: accounts, dashboards, business logic."
+      },
+      "revamp": {
+        "name": "Rebuild or revamp an existing site",
+        "tagline": "Redesign, migration or a speed-up of something you already have."
+      },
+      "unsure": {
+        "name": "Not sure yet / something else",
+        "tagline": "Tell us the idea and we'll figure out the shape together."
+      }
+    },
+    "qualifiers": {
+      "size": {
+        "question": "Roughly how many pages or screens?",
+        "options": { "few": "Just a few", "around-ten": "Around ten", "many": "Many / extensive" }
+      },
+      "payments": {
+        "question": "Do you need to take payments online?",
+        "options": { "no": "No", "unsure": "Not sure yet", "yes": "Yes" }
+      },
+      "accounts": {
+        "question": "Do users need accounts or a login?",
+        "options": { "no": "No", "unsure": "Not sure yet", "yes": "Yes" }
+      },
+      "content": {
+        "question": "Who makes the text and images?",
+        "options": { "client": "I'll supply it", "partly": "Partly", "cshine": "You make it" }
+      },
+      "timeline": {
+        "question": "When do you need it?",
+        "options": { "relaxed": "No rush", "months": "Within a few months", "asap": "As soon as possible" }
+      }
+    },
+    "bands": {
+      "lower": "A smaller project",
+      "middle": "A mid-sized project",
+      "upper": "A larger project"
+    },
+    "yourProject": "Your project · {type}",
+    "scaleSmall": "small",
+    "scaleLarge": "large",
+    "bandNote": "Based on your answers. What it becomes depends on the details — let’s make it concrete together. A fast turnaround can affect the price.",
+    "costQuestion": "What would this cost, roughly?",
+    "bespoke": "Bespoke — let’s discuss",
+    "costNote": "A broad starting point, excl. VAT — not a quote.",
+    "conversationTitle": "Let’s figure this out together",
+    "conversationBody": "This one is best scoped in a quick conversation. Tell us a little about it and we’ll take it from there.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholderPriced": "Anything you’d like to add about your project? (optional)",
+    "messagePlaceholderConversation": "Tell us a little about what you’re looking for",
+    "submitPriced": "Send this & get a real quote",
+    "submitConversation": "Send this & let’s talk",
+    "sentTitle": "Thanks, we’ve got it.",
+    "sentBody": "We’ll review your project and come back with a real proposal soon.",
+    "back": "Back",
+    "next": "Next",
+    "seeEstimate": "See my estimate",
+    "continue": "Continue"
+  },
+  "Legal": {
+    "lastUpdated": "Last Updated: {date}",
+    "contents": "Contents",
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "December 2024",
+      "contact": "For questions about our privacy practices, contact us at <email>info@cshinedigital.com</email>",
+      "sections": [
+        {
+          "title": "1. Introduction and Overview",
+          "blocks": [
+            { "p": "Welcome to the website of C-Shine Digital, located in Zutendaal, Limburg (BE), with company registration number BE0802.504.061. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with our services. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site." },
+            { "p": "We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the \"Last Updated\" date of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates." }
+          ]
+        },
+        {
+          "title": "2. Information Collection",
+          "blocks": [
+            { "p": "We collect information in the following ways:" },
+            { "h3": "Information You Provide:" },
+            { "ul": ["Contact information (name, email, phone number)", "Business details for project collaboration", "Project requirements and specifications", "Communication preferences"] },
+            { "h3": "Automatically Collected Information:" },
+            { "ul": ["Device information (browser type, operating system)", "IP address and location data", "Website usage data", "Cookies and similar technologies"] }
+          ]
+        },
+        {
+          "title": "3. Use of Cookies and Analytics",
+          "blocks": [
+            { "p": "We use Google Analytics to understand how visitors interact with our website. This service may collect:" },
+            { "ul": ["Pages visited and time spent", "Traffic sources and navigation paths", "Device and browser information", "Geographic location (country/city level)"] },
+            { "p": "You can opt-out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on or by managing your cookie preferences through our cookie consent banner." }
+          ]
+        },
+        {
+          "title": "4. How We Use Your Information",
+          "blocks": [
+            { "p": "We use collected information for:" },
+            { "ul": ["Providing and improving our services", "Communicating about projects and services", "Website optimization and security", "Legal compliance and business operations"] },
+            { "p": "All processing is based on legitimate interests, contractual necessity, legal obligations, or your explicit consent." }
+          ]
+        },
+        {
+          "title": "5. Third-Party Service Providers",
+          "blocks": [
+            { "p": "We work with trusted service providers for:" },
+            { "ul": ["Website hosting and maintenance", "Analytics services", "Project management tools", "Communication platforms"] },
+            { "p": "All service providers are carefully selected and required to maintain appropriate security measures. We only share information necessary for service provision." }
+          ]
+        },
+        {
+          "title": "6. Data Protection and Security",
+          "blocks": [
+            { "p": "We implement appropriate technical and organizational measures to protect your personal data, including:" },
+            { "ul": ["Secure data transmission (SSL/TLS encryption)", "Access controls and authentication", "Regular security assessments", "Data backup and recovery procedures"] }
+          ]
+        },
+        {
+          "title": "7. Your Privacy Rights",
+          "blocks": [
+            { "p": "Under GDPR, you have the right to:" },
+            { "ul": ["Access your personal data", "Correct inaccurate data", "Request data deletion", "Restrict processing", "Data portability", "Object to processing"] },
+            { "p": "To exercise these rights, contact us at info@cshinedigital.com. We will respond to your request within 30 days." }
+          ]
+        },
+        {
+          "title": "8. Contact Forms and Communications",
+          "blocks": [
+            { "p": "When you use our contact forms, we collect necessary information to respond to your inquiry. This data is stored securely and used only for communication purposes." },
+            { "p": "If you opt-in to marketing communications, you can unsubscribe at any time using the link in our emails or by contacting us directly." }
+          ]
+        },
+        {
+          "title": "9. Updates to This Policy",
+          "blocks": [
+            { "p": "This privacy policy may be updated periodically. Significant changes will be communicated through our website or direct communication." }
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "lastUpdated": "March 2024",
+      "contact": "For questions about our terms and conditions, contact us at <email>info@cshinedigital.com</email>",
+      "sections": [
+        {
+          "title": "1. Definitions",
+          "blocks": [
+            {
+              "dl": [
+                { "term": "C-Shine Digital", "text": "Located in Zutendaal, Belgium, with VAT number BE0802.504.061." },
+                { "term": "Customer", "text": "The person or entity with whom C-Shine Digital has entered into an agreement." },
+                { "term": "Parties", "text": "C-Shine Digital and the customer collectively." },
+                { "term": "Consumer", "text": "A customer who is also an individual and who acts as a private person." },
+                { "term": "Quote", "text": "All offers from C-Shine Digital to (legal) persons with the intention of entering into an agreement." },
+                { "term": "Agreement", "text": "The agreement between C-Shine Digital and the customer." },
+                { "term": "Assignment", "text": "The service or product to be provided by C-Shine Digital." },
+                { "term": "Cancellation", "text": "Termination or dissolution of the agreement." },
+                { "term": "Written", "text": "Electronic communication such as email, provided the identity of the sender and the authenticity of the communication is sufficiently established. The burden of proof regarding the receipt of electronic communication lies with the customer." },
+                { "term": "Use", "text": "Reproduction and/or publication within the meaning of the applicable laws." }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "2. Applicability",
+          "blocks": [
+            { "p": "These terms and conditions apply to all quotations, offers, activities, orders, agreements, and deliveries of services or products by or on behalf of C-Shine Digital. Deviations from these conditions are only valid if expressly agreed in writing. Additional and/or deviating terms and conditions of the customer or third parties are expressly excluded." }
+          ]
+        },
+        {
+          "title": "3. Offers and Quotations",
+          "blocks": [
+            { "p": "Offers and quotations from C-Shine Digital are without obligation unless expressly stated otherwise. An offer or quotation is valid for 14 days from the date of issue, unless otherwise stated in the offer or quotation. If the customer does not accept an offer or quotation within the applicable period, the offer or quotation expires unless otherwise agreed in writing." }
+          ]
+        },
+        {
+          "title": "4. Acceptance",
+          "blocks": [
+            { "p": "The customer must explicitly and in writing accept the offer. If the customer fails to do so but still agrees or gives the impression that C-Shine Digital is carrying out work as part of the agreement, the offer is considered accepted. C-Shine Digital reserves the right to refuse an assignment if new information becomes available after acceptance that makes execution by C-Shine Digital unacceptable. After acceptance, the agreement can only be changed with mutual consent. In this case, C-Shine Digital is entitled to adjust the price for the agreement." }
+          ]
+        },
+        {
+          "title": "5. Execution of an Assignment",
+          "blocks": [
+            { "p": "C-Shine Digital will execute the assignment to the best of its knowledge and ability and in accordance with the requirements of good craftsmanship, in the style in which C-Shine Digital typically works. C-Shine Digital will make every effort and act to the best of its ability in the given circumstances during the execution of the assignment. The execution of the assignment is done in consultation and upon written agreement and payment of any agreed-upon advance by the customer. The customer is obliged to do and refrain from all that is reasonably necessary and desirable to enable timely and correct execution of the assignment. If the customer has not ensured that C-Shine Digital can start the execution of the agreement in a timely manner, any additional costs and/or additional hours resulting from this are at the expense of the customer." }
+          ]
+        },
+        {
+          "title": "6. Intellectual Property",
+          "blocks": [
+            { "p": "C-Shine Digital reserves all intellectual property rights with regard to products of the mind that it uses or has used and/or develops or has developed in the context of the execution of the agreement and with respect to which it has or can claim copyright or other intellectual property rights." }
+          ]
+        },
+        {
+          "title": "7. Payment",
+          "blocks": [
+            { "p": "The customer must pay C-Shine Digital's invoices within 30 days of the invoice date, unless otherwise agreed in writing. If the customer does not pay on time, they are automatically in default and liable for statutory interest. All judicial and extrajudicial costs incurred by C-Shine Digital as a result of the customer's non-compliance are fully borne by the customer." }
+          ]
+        },
+        {
+          "title": "8. Cancellation and Termination",
+          "blocks": [
+            { "p": "C-Shine Digital reserves the right to cancel or suspend the agreement with immediate effect in the event of bankruptcy, suspension of payments, debt restructuring, attachment, or other circumstances that deprive the customer of free disposal of their assets. Cancellation or termination does not release the customer from their payment obligations. In the event of cancellation by the customer, the customer is obligated to reimburse C-Shine Digital for all reasonably incurred costs related to the execution of the agreement." }
+          ]
+        },
+        {
+          "title": "9. Liability",
+          "blocks": [
+            { "p": "C-Shine Digital is only liable for direct damage suffered by the customer as a result of an attributable shortcoming of C-Shine Digital in the performance of the agreement. C-Shine Digital is never liable for indirect damages, such as consequential damages, loss of profit, savings, or damage to third parties." }
+          ]
+        },
+        {
+          "title": "10. Complaints",
+          "blocks": [
+            { "p": "Complaints about the work performed or the invoice must be reported in writing within 3 days after discovering the defect, but no later than 14 days after completion of the relevant work, to C-Shine Digital. The customer must provide C-Shine Digital the opportunity to investigate a complaint." }
+          ]
+        },
+        {
+          "title": "11. Applicable Law and Disputes",
+          "blocks": [
+            { "p": "All agreements between C-Shine Digital and the customer are subject to the laws of Belgium. Disputes arising from an agreement between C-Shine Digital and the customer that cannot be resolved by mutual agreement will be submitted to the competent court in the district of Limburg, Belgium." }
+          ]
+        }
+      ]
+    }
+  }
+}

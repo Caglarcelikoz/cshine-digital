@@ -1,4 +1,5 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
+import { useTranslations } from "next-intl";
 import BackgroundPattern from "./layout/BackgroundPattern";
 import Eyebrow from "./Eyebrow";
 
@@ -10,61 +11,20 @@ type Quality = {
 // The qualities behind every build — "how well it's made", to sit under
 // Capabilities ("what we build") on /services. Deliberately framework-agnostic:
 // we pick the right tools per project, so no specific stack is named here.
-const qualities: Quality[] = [
-  {
-    title: "Future-proof foundation",
-    description:
-      "Built on a modern, well-supported stack so it stays fast and easy to extend for years, not months.",
-  },
-  {
-    title: "Fewer bugs, fewer surprises",
-    description:
-      "Type-safe, tested code catches errors before your users ever see them, so fewer outages and lower upkeep.",
-  },
-  {
-    title: "Flawless on every screen",
-    description:
-      "Responsive layouts that look and work right on phones, tablets and desktops.",
-  },
-  {
-    title: "Speed that keeps visitors",
-    description:
-      "Performance-tuned pages that load fast, because every extra second costs you conversions.",
-  },
-  {
-    title: "Found by people and AI",
-    description:
-      "SEO structure and structured data so search engines and AI assistants (ChatGPT, Perplexity, AI Overviews) can understand and cite your content.",
-  },
-  {
-    title: "Secure by default",
-    description:
-      "Security best practices built in from day one, protecting your data and your customers' trust.",
-  },
-  {
-    title: "Built to grow with you",
-    description:
-      "Clean, maintainable architecture means adding features later is quick and affordable, not a costly rebuild.",
-  },
-  {
-    title: "Data from launch",
-    description:
-      "Analytics-ready on day one, so you can see what visitors do and make decisions backed by real numbers.",
-  },
-];
-
+// Copy lives in messages under BuildQuality.items.
 const BuildQuality = () => {
+  const t = useTranslations("BuildQuality");
+  const qualities = t.raw("items") as Quality[];
   return (
     <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-          <Eyebrow className="mb-6">Under the hood</Eyebrow>
+          <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
-            The quality behind every build
+            {t("title")}
           </h2>
           <p className="text-lg leading-relaxed text-neutral-600">
-            What you don&rsquo;t see, but do feel: speed, reliability and room to
-            grow. The standard we hold whatever we build.
+            {t("intro")}
           </p>
         </div>
 

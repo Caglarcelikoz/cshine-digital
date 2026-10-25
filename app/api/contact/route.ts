@@ -47,7 +47,7 @@ export async function POST(req: Request) {
       );
     }
 
-    const { name, email, subject, message } = await req.json();
+    const { name, email, subject, message, locale } = await req.json();
 
     // Validate the input
     if (!name || !email || !subject || !message) {
@@ -78,6 +78,7 @@ export async function POST(req: Request) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Language:</strong> ${locale === "nl" ? "Dutch" : "English"}</p>
         <p><strong>Message:</strong></p>
         <p>${message.replace(/\n/g, "<br>")}</p>
       `,

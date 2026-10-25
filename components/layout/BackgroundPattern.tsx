@@ -1,5 +1,3 @@
-"use client";
-
 type BackgroundPatternProps = {
   variant?: "dark" | "light";
   children: React.ReactNode;

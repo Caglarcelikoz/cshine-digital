@@ -1,14 +1,15 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import { getLocale, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/layout/PageHero";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
+import { Link } from "@/i18n/navigation";
 import {
   engagementModes,
   getEngagementMode,
+  MODE_CTA_HREF,
 } from "@/lib/engagementModes";
-
-type Params = { params: Promise<{ slug: string }> };
+import { pageMetadata } from "@/lib/seo";
 
 export function generateStaticParams() {
   return engagementModes.map((mode) => ({ slug: mode.slug }));
@@ -16,46 +17,40 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params,
-}: Params): Promise<Metadata> {
+}: PageProps<"/[locale]/services/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const mode = getEngagementMode(slug);
   if (!mode) return {};
 
-  const url = `https://www.cshinedigital.com/services/${mode.slug}`;
-  return {
-    title: mode.detail.metaTitle,
-    description: mode.detail.metaDescription,
-    openGraph: {
-      title: mode.detail.metaTitle,
-      description: mode.detail.metaDescription,
-      type: "website",
-      url,
-      siteName: "C-Shine Digital",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: mode.detail.metaTitle,
-      description: mode.detail.metaDescription,
-    },
-    alternates: { canonical: url },
-  };
+  const locale = await getLocale();
+  const t = await getTranslations("Modes");
+  return pageMetadata({
+    locale,
+    href: { pathname: "/services/[slug]", params: { slug: mode.slug } },
+    title: t(`${mode.slug}.metaTitle`),
+    description: t(`${mode.slug}.metaDescription`),
+  });
 }
 
-const ModeDetailPage = async ({ params }: Params) => {
+const ModeDetailPage = async ({
+  params,
+}: PageProps<"/[locale]/services/[slug]">) => {
   const { slug } = await params;
   const mode = getEngagementMode(slug);
   if (!mode) notFound();
 
+  const t = await getTranslations("ModeDetail");
+  const tMode = await getTranslations(`Modes.${mode.slug}`);
   const Icon = mode.icon;
 
   return (
     <div className="bg-white text-dark">
       <PageHero
-        breadcrumb={mode.title}
-        breadcrumbParent={{ label: "Services", href: "/services" }}
-        eyebrow={mode.eyebrow}
-        title={mode.title}
-        subtitle={mode.detail.intro}
+        breadcrumb={tMode("title")}
+        breadcrumbParent={{ label: t("breadcrumbParent"), href: "/services" }}
+        eyebrow={tMode("eyebrow")}
+        title={tMode("title")}
+        subtitle={tMode("intro")}
         image={mode.heroImage}
       />
 
@@ -75,24 +70,24 @@ const ModeDetailPage = async ({ params }: Params) => {
                   </div>
                   <div>
                     <h2 className="text-2xl font-bold text-midnight-900">
-                      What it is
+                      {t("whatItIs")}
                     </h2>
                     <p className="text-sm font-medium text-cshine-blue-700">
-                      {mode.forWho}
+                      {tMode("forWho")}
                     </p>
                   </div>
                 </div>
                 <p className="text-lg leading-relaxed text-neutral-700">
-                  {mode.detail.whatItIs}
+                  {tMode("whatItIs")}
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-midnight-900 mb-6">
-                  How we work together
+                  {t("howWeWork")}
                 </h2>
                 <ul className="space-y-5">
-                  {mode.detail.howItWorks.map((step, index) => (
+                  {(tMode.raw("howItWorks") as string[]).map((step, index) => (
                     <li key={index} className="flex gap-4">
                       <span
                         className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full
@@ -113,10 +108,10 @@ const ModeDetailPage = async ({ params }: Params) => {
             <aside className="lg:col-span-1">
               <div className="lg:sticky lg:top-28 rounded-2xl border border-neutral-200 bg-white p-8 shadow-sm">
                 <h2 className="text-lg font-bold text-midnight-900 mb-5">
-                  What&rsquo;s covered
+                  {t("covered")}
                 </h2>
                 <ul className="space-y-3.5">
-                  {mode.capabilities.map((cap) => (
+                  {(tMode.raw("capabilities") as string[]).map((cap) => (
                     <li
                       key={cap}
                       className="flex items-center gap-3 text-sm text-neutral-700"
@@ -141,10 +136,10 @@ const ModeDetailPage = async ({ params }: Params) => {
                 </ul>
 
                 <Link
-                  href={mode.cta.href}
+                  href={MODE_CTA_HREF}
                   className="btn-primary mt-8 w-full"
                 >
-                  {mode.cta.label}
+                  {tMode("cta")}
                 </Link>
               </div>
             </aside>
@@ -170,7 +165,7 @@ const ModeDetailPage = async ({ params }: Params) => {
                   d="M7 16l-4-4m0 0l4-4m-4 4h18"
                 />
               </svg>
-              See all the ways to work with us
+              {t("backToAll")}
             </Link>
           </div>
         </div>

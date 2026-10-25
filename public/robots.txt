@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://www.cshinedigital.com
-
-# Sitemaps
-Sitemap: https://www.cshinedigital.com/sitemap.xml

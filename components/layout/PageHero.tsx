@@ -1,11 +1,11 @@
-import Breadcrumb from "@/components/BreadCrumb";
+import Breadcrumb, { type BreadcrumbParent } from "@/components/BreadCrumb";
 import Eyebrow from "@/components/Eyebrow";
 
 type PageHeroProps = {
   /** Breadcrumb "current" label; omit to hide the breadcrumb */
   breadcrumb?: string;
   /** Optional intermediate breadcrumb link between Home and the current page */
-  breadcrumbParent?: { label: string; href: string };
+  breadcrumbParent?: BreadcrumbParent;
   /** Small pill label above the title */
   eyebrow?: string;
   title: React.ReactNode;

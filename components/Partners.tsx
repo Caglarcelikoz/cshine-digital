@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import BackgroundPattern from "./layout/BackgroundPattern";
 import Eyebrow from "./Eyebrow";
 
@@ -26,19 +27,19 @@ const partners: Partner[] = [
 ];
 
 const Partners = () => {
+  const t = useTranslations("Partners");
   return (
     <BackgroundPattern variant="dark" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
         <div className="text-center mb-10 md:mb-14">
           <Eyebrow tone="dark" className="mb-6">
-            Trusted collaborations
+            {t("eyebrow")}
           </Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-white mb-4">
-            Our Partners
+            {t("title")}
           </h2>
           <p className="text-lg text-white/70 max-w-2xl mx-auto">
-            The businesses and organisations we build with, deliver for, and
-            grow alongside.
+            {t("intro")}
           </p>
         </div>
 
@@ -76,7 +77,7 @@ const Partners = () => {
 
         <div className="text-center mt-10 md:mt-14">
           <Link href="/work" className="btn-primary on-dark">
-            See what we&rsquo;ve built together
+            {t("cta")}
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

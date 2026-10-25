@@ -1,5 +1,5 @@
-import { Metadata } from "next";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import {
   UserIcon,
   ClipboardDocumentListIcon,
@@ -9,92 +9,65 @@ import PageHero from "@/components/layout/PageHero";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import Eyebrow from "@/components/Eyebrow";
 import ProcessTracks from "@/components/ProcessTracks";
+import { Link } from "@/i18n/navigation";
+import { translatedPageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "How We Work - C-Shine Digital | Our Development Process",
-  description:
-    "How we work: every project starts the same way — listen, scope, agree — then follows the track that fits, whether that's a product build, a full IT partnership or an embedded developer.",
-  keywords: [
-    "software development process",
-    "agile development",
-    "project management",
-    "development methodology",
-    "IT project workflow",
-    "software development lifecycle",
-    "Belgium development process",
-    "custom software development",
-  ],
-  openGraph: {
-    title: "How We Work - C-Shine Digital",
-    description:
-      "The same start, a different path: three shared steps, then the track that fits how we work together.",
-    type: "website",
-    url: "https://www.cshinedigital.com/how-we-work",
-    siteName: "C-Shine Digital",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "How We Work - C-Shine Digital",
-    description:
-      "The same start, a different path: three shared steps, then the track that fits.",
-  },
-  alternates: {
-    canonical: "https://www.cshinedigital.com/how-we-work",
-  },
-};
+export function generateMetadata() {
+  return translatedPageMetadata("howWeWork", "/how-we-work");
+}
 
-const HowWeWorkPage = () => {
+const HowWeWorkPage = async () => {
+  const t = await getTranslations("HowWeWorkPage");
+  const tSteps = await getTranslations("SharedSteps");
+
   /**
-   * The three steps every engagement shares, whichever mode follows. Kept in
-   * sync with components/Experience.tsx on the homepage — see CONTEXT.md.
+   * The three steps every engagement shares, whichever mode follows. Copy is
+   * shared with components/Experience.tsx on the homepage (SharedSteps in
+   * messages) — see CONTEXT.md.
    */
   const sharedSteps = [
     {
-      title: "Listen & Understand",
+      title: tSteps("listen.title"),
       icon: UserIcon,
-      description:
-        "We map out what you need, what you already have running, and where it hurts today — before proposing anything.",
+      description: tSteps("listen.descriptionLong"),
       image: "/images/process/shared-1.webp",
-      alt: "Working through requirements on a laptop",
+      alt: tSteps("listen.imageAlt"),
     },
     {
-      title: "Scope & Approach",
+      title: tSteps("scope.title"),
       icon: LightBulbIcon,
-      description:
-        "Together we decide which way of working fits, and what the first concrete step looks like.",
+      description: tSteps("scope.description"),
       image: "/images/process/shared-2.webp",
-      alt: "Sketched wireframes laid out while planning",
+      alt: tSteps("scope.imageAlt"),
     },
     {
-      title: "Clear Agreement",
+      title: tSteps("agree.title"),
       icon: ClipboardDocumentListIcon,
-      description:
-        "No surprises later: you know what you get, when, and at what budget before we start.",
+      description: tSteps("agree.description"),
       image: "/images/process/shared-3.webp",
-      alt: "Signing off on a written agreement",
+      alt: tSteps("agree.imageAlt"),
     },
   ];
 
   return (
     <div className="bg-white text-dark">
       <PageHero
-        breadcrumb="How we work"
-        eyebrow="Our Process"
+        breadcrumb={t("breadcrumb")}
+        eyebrow={t("eyebrow")}
         image="/images/page-how-we-work.svg"
-        title="How We Work"
-        subtitle="At C-Shine Digital, we are not just a team; we are your technology partners. We blend innovation, creativity, and expertise to drive your success."
+        title={t("title")}
+        subtitle={t("subtitle")}
       />
 
       <BackgroundPattern variant="light" className="py-14 md:py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-            <Eyebrow className="mb-6">Our process</Eyebrow>
+            <Eyebrow className="mb-6">{t("sectionEyebrow")}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
-              The same start, a different path
+              {t("sectionTitle")}
             </h2>
             <p className="text-lg text-neutral-600 leading-relaxed">
-              Every engagement begins the same way. What happens after the
-              agreement depends on how we work together.
+              {t("sectionIntro")}
             </p>
           </div>
 
@@ -157,7 +130,7 @@ const HowWeWorkPage = () => {
           <div className="mt-12 md:mt-20 mb-10 flex items-center gap-4" aria-hidden="true">
             <div className="h-px flex-1 bg-neutral-300" />
             <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
-              Then, depending on the mode
+              {tSteps("fork")}
             </span>
             <div className="h-px flex-1 bg-neutral-300" />
           </div>
@@ -166,9 +139,12 @@ const HowWeWorkPage = () => {
 
           {/* CTA */}
           <div className="text-center mt-10 md:mt-16">
-            <a href="/#contact" className="btn-primary">
-              Start Your Project
-            </a>
+            <Link
+              href={{ pathname: "/", hash: "contact" }}
+              className="btn-primary"
+            >
+              {t("cta")}
+            </Link>
           </div>
         </div>
       </BackgroundPattern>
