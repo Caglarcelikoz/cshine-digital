@@ -212,10 +212,8 @@ const ProcessTracks = () => {
             {track.steps.map((step, stepIndex) => (
               <div
                 key={step.title}
-                className="group relative flex flex-col overflow-hidden rounded-2xl bg-white
-                  border border-neutral-200 shadow-sm
-                  hover:border-cshine-blue-500/30 hover:shadow-xl hover:-translate-y-1
-                  transition-all duration-300"
+                className="relative flex flex-col overflow-hidden rounded-2xl bg-white
+                  border border-neutral-200 shadow-sm"
               >
                 {/* Illustrations are drawn to the 8:5 card ratio, so they sit
                     flush with object-contain — no cropping, no zoom-on-hover
@@ -242,8 +240,7 @@ const ProcessTracks = () => {
 
                 <div className="flex flex-col flex-grow p-5">
                   <h3
-                    className="text-lg font-semibold text-midnight-900 mb-2
-                      group-hover:text-cshine-blue-700 transition-colors duration-300"
+                    className="text-lg font-semibold text-midnight-900 mb-2"
                   >
                     {step.title}
                   </h3>

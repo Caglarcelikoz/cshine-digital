@@ -102,10 +102,8 @@ const HowWeWorkPage = () => {
             {sharedSteps.map((step, index) => (
               <div
                 key={step.title}
-                className="group relative flex flex-col overflow-hidden rounded-2xl bg-white
-                  border border-neutral-200 shadow-sm
-                  hover:border-cshine-blue-500/30 hover:shadow-xl hover:-translate-y-1
-                  transition-all duration-300"
+                className="relative flex flex-col overflow-hidden rounded-2xl bg-white
+                  border border-neutral-200 shadow-sm"
               >
                 {/* Image */}
                 <div className="relative h-48 w-full overflow-hidden">
@@ -115,7 +113,7 @@ const HowWeWorkPage = () => {
                     fill
                     priority={index === 0}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                    className="object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight-900/40 to-transparent" />
 
@@ -134,7 +132,7 @@ const HowWeWorkPage = () => {
                   <div
                     className="absolute -top-6 right-6 z-10 flex h-12 w-12 items-center justify-center
                     rounded-xl bg-gradient-to-br from-cshine-blue-500 to-cyan-500 shadow-lg
-                    shadow-cshine-blue-500/30 group-hover:scale-110 transition-transform duration-300"
+                    shadow-cshine-blue-500/30"
                   >
                     <step.icon className="h-6 w-6 text-white" />
                   </div>
@@ -143,8 +141,7 @@ const HowWeWorkPage = () => {
                 {/* Content */}
                 <div className="flex flex-col flex-grow p-6 pt-8">
                   <h3
-                    className="text-xl font-semibold text-midnight-900 mb-3
-                    group-hover:text-cshine-blue-600 transition-colors duration-300"
+                    className="text-xl font-semibold text-midnight-900 mb-3"
                   >
                     {step.title}
                   </h3>
