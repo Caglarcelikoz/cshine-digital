@@ -41,10 +41,10 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <BackgroundPattern variant="light" className="py-20">
+    <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <Eyebrow className="mb-6">Good to know</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
               Frequently Asked Questions
@@ -106,7 +106,7 @@ const FAQ = () => {
             })}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 md:mt-12">
             <p className="text-neutral-600 mb-4">Have a specific question?</p>
             <a href="/#contact" className="btn-primary">
               Let&apos;s Talk

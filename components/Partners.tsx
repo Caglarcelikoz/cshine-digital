@@ -27,9 +27,9 @@ const partners: Partner[] = [
 
 const Partners = () => {
   return (
-    <BackgroundPattern variant="dark" className="py-20">
+    <BackgroundPattern variant="dark" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10 md:mb-14">
           <Eyebrow tone="dark" className="mb-6">
             Trusted collaborations
           </Eyebrow>
@@ -74,7 +74,7 @@ const Partners = () => {
           ))}
         </div>
 
-        <div className="text-center mt-14">
+        <div className="text-center mt-10 md:mt-14">
           <Link href="/work" className="btn-primary on-dark">
             See what we&rsquo;ve built together
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -32,7 +32,7 @@ const PageHero = ({
         </section>
       )}
 
-      <section className="relative text-white py-24 overflow-hidden">
+      <section className="relative text-white py-16 md:py-24 overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 w-full bg-cover bg-center"

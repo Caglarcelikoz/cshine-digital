@@ -86,10 +86,10 @@ const AboutPage = () => {
         subtitle="C-Shine Digital exists to be whatever a project needs, and to be the same reliable, senior partner in every one of those shapes."
       />
 
-      <BackgroundPattern variant="light" className="py-20">
+      <BackgroundPattern variant="light" className="py-14 md:py-20">
         <div className="container mx-auto px-4">
           {/* Story */}
-          <div className="max-w-3xl mx-auto text-center mb-20">
+          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
             <Eyebrow className="mb-6">Who we are</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
               One partner, many shapes
@@ -115,7 +115,7 @@ const AboutPage = () => {
 
           {/* Principles — same card vocabulary as EngagementModes/Capabilities:
               gradient icon tile, dot-grid corner, lift on hover. */}
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 mb-20">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 mb-12 md:mb-20">
             {principles.map((p) => (
               <div
                 key={p.title}
@@ -157,7 +157,7 @@ const AboutPage = () => {
           </div>
 
           {/* Legitimacy / facts strip */}
-          <div className="max-w-5xl mx-auto rounded-2xl bg-midnight-900 p-8 md:p-10 mb-16">
+          <div className="max-w-5xl mx-auto rounded-2xl bg-midnight-900 p-8 md:p-10 mb-10 md:mb-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {facts.map((f) => (
                 <div key={f.label} className="text-center md:text-left">

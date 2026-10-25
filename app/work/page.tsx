@@ -329,7 +329,7 @@ const WorkPage = () => {
         subtitle="From an enterprise digital platform to a travel brand built end to end. Four projects, four ways of working, one senior standard."
       />
 
-      <BackgroundPattern variant="light" className="py-20">
+      <BackgroundPattern variant="light" className="py-14 md:py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-5xl space-y-8">
             {cases.map((c) => (
@@ -356,7 +356,7 @@ const WorkPage = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-16 text-center">
+          <div className="mt-10 md:mt-16 text-center">
             <Link href="/#contact" className="btn-primary">
               Start a project with us
               <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />

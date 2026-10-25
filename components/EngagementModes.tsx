@@ -15,10 +15,10 @@ const EngagementModes = ({
 }: EngagementModesProps) => {
   const dark = variant === "dark";
   return (
-    <BackgroundPattern variant={variant} className="py-20">
+    <BackgroundPattern variant={variant} className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
         {showTitle && (
-          <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
             <Eyebrow tone={dark ? "dark" : "light"} className="mb-6">
               Three ways to work with us
             </Eyebrow>

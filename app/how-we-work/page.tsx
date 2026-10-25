@@ -85,9 +85,9 @@ const HowWeWorkPage = () => {
         subtitle="At C-Shine Digital, we are not just a team; we are your technology partners. We blend innovation, creativity, and expertise to drive your success."
       />
 
-      <BackgroundPattern variant="light" className="py-20">
+      <BackgroundPattern variant="light" className="py-14 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
             <Eyebrow className="mb-6">Our process</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
               The same start, a different path
@@ -157,7 +157,7 @@ const HowWeWorkPage = () => {
           </div>
 
           {/* Fork: the shared start ends here and the three modes diverge. */}
-          <div className="mt-20 mb-10 flex items-center gap-4" aria-hidden="true">
+          <div className="mt-12 md:mt-20 mb-10 flex items-center gap-4" aria-hidden="true">
             <div className="h-px flex-1 bg-neutral-300" />
             <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
               Then, depending on the mode
@@ -168,7 +168,7 @@ const HowWeWorkPage = () => {
           <ProcessTracks />
 
           {/* CTA */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-10 md:mt-16">
             <a href="/#contact" className="btn-primary">
               Start Your Project
             </a>

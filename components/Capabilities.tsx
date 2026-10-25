@@ -60,9 +60,9 @@ const capabilities: Capability[] = [
 
 const Capabilities = () => {
   return (
-    <BackgroundPattern variant="light" className="py-20">
+    <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
           <Eyebrow className="mb-6">The capabilities behind them</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-midnight-900 mb-6">
             What we actually build

@@ -55,9 +55,9 @@ const qualities: Quality[] = [
 
 const BuildQuality = () => {
   return (
-    <BackgroundPattern variant="light" className="py-20">
+    <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <Eyebrow className="mb-6">Under the hood</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
             The quality behind every build

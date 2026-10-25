@@ -59,11 +59,11 @@ const ModeDetailPage = async ({ params }: Params) => {
         image={mode.heroImage}
       />
 
-      <BackgroundPattern variant="light" className="py-20">
+      <BackgroundPattern variant="light" className="py-14 md:py-20">
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-3 lg:gap-16">
             {/* What it is + how it works */}
-            <div className="lg:col-span-2 space-y-12">
+            <div className="lg:col-span-2 space-y-8 md:space-y-12">
               <section>
                 <div className="flex items-center gap-4 mb-5">
                   <div
@@ -151,7 +151,7 @@ const ModeDetailPage = async ({ params }: Params) => {
           </div>
 
           {/* Back to all modes */}
-          <div className="mt-16 text-center">
+          <div className="mt-10 md:mt-16 text-center">
             <Link
               href="/services"
               className="inline-flex items-center gap-2 text-cshine-blue-600 font-semibold hover:text-cshine-blue-700 transition-colors"

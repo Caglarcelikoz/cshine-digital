@@ -47,10 +47,10 @@ const About = () => {
   ];
 
   return (
-    <BackgroundPattern variant="light" className="py-20">
+    <BackgroundPattern variant="light" className="py-14 md:py-20">
       <div className="container relative mx-auto px-4">
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
+        <div className="max-w-4xl mx-auto text-center mb-12 md:mb-20">
           <Eyebrow className="mb-6">About C-Shine Digital</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
             One partner, whatever the project needs
@@ -65,11 +65,11 @@ const About = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-12 md:mb-20">
           {features.map((feature, index) => (
             <div key={index} className="group">
               <div
-                className="relative p-8 rounded-xl bg-gradient-to-br from-white to-neutral-50/50 
+                className="relative p-6 md:p-8 rounded-xl bg-gradient-to-br from-white to-neutral-50/50 
                 border border-neutral-100 hover:border-cshine-blue-500/20 transition-all duration-300 
                 hover:shadow-xl hover:-translate-y-1"
               >
@@ -111,7 +111,7 @@ const About = () => {
 
         {/* Bottom Section */}
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative">
               <Image
                 src="/images/studio-belgium.svg"

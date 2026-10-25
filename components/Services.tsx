@@ -232,7 +232,7 @@ const Services = ({ showTitle = true }) => {
   ];
 
   return (
-    <div className="relative py-24 bg-gradient-to-b from-neutral-50 via-white to-neutral-50">
+    <div className="relative py-16 md:py-24 bg-gradient-to-b from-neutral-50 via-white to-neutral-50">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cshine-blue-500/5 rounded-full blur-3xl" />
@@ -241,7 +241,7 @@ const Services = ({ showTitle = true }) => {
 
       <div className="container relative mx-auto px-4 z-10">
         {showTitle && (
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 md:mb-20">
             <Eyebrow className="mb-6">Capabilities</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
               What we can do for you
