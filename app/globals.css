@@ -41,9 +41,13 @@
                font-semibold tracking-tight transition-all duration-300
                focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cshine-blue-400 focus-visible:ring-offset-2
      }
-     .btn-primary {
-        @apply btn relative bg-cshine-blue-500 text-midnight-900
+     /* The one primary fill — used by .btn-primary and selected toggles/tabs */
+     .surface-primary {
+        @apply bg-cshine-blue-500 text-midnight-900
                bg-gradient-to-b from-transparent to-midnight-900/[0.15]
+     }
+     .btn-primary {
+        @apply btn surface-primary relative
                hover:to-midnight-900/[0.28] hover:shadow-glow hover:scale-[1.03]
                focus-visible:ring-offset-white
      }

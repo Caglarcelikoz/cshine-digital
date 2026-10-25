@@ -102,12 +102,12 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden absolute left-0 right-0 top-20 bg-midnight-900 border-b border-cshine-blue-500/10
+          className={`md:hidden absolute left-0 right-0 top-20 overflow-hidden bg-midnight-900 border-b border-cshine-blue-500/10
             transition-all duration-300 ease-in-out
             ${
               isMenuOpen
-                ? "max-h-[28rem] opacity-100"
-                : "max-h-0 opacity-0 border-none"
+                ? "max-h-[28rem] opacity-100 visible"
+                : "max-h-0 opacity-0 border-none invisible"
             }
           `}
         >

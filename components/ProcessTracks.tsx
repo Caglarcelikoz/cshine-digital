@@ -185,7 +185,7 @@ const ProcessTracks = () => {
                 focus-visible:outline-cshine-blue-600
                 ${
                   selected
-                    ? "bg-gradient-to-br from-cshine-blue-500 to-cyan-500 text-white shadow-md shadow-cshine-blue-500/20"
+                    ? "surface-primary shadow-md shadow-cshine-blue-500/20"
                     : "bg-white border border-neutral-200 text-neutral-600 hover:border-cshine-blue-500/40 hover:text-midnight-900"
                 }`}
             >
