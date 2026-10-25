@@ -12,8 +12,8 @@ const GRADIENTS = {
     direction: "bg-gradient-to-b",
   },
   light: {
-    main: "from-white via-gray-50/95 to-gray-100/90",
-    direction: "bg-gradient-to-br",
+    main: "from-white via-neutral-50/90 to-white",
+    direction: "bg-gradient-to-b",
   },
 };
 
@@ -62,14 +62,16 @@ const BackgroundPattern = ({
                 )`,
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-white/100 via-transparent to-white/30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white via-transparent to-white" />
           </>
         )}
 
         {/* Common elements */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_45%)] opacity-[0.1]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_45%)] opacity-[0.1]" />
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
+        {isDark && (
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
+        )}
       </div>
 
       {/* Dark theme grid pattern */}

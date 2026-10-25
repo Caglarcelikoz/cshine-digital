@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-label="">
+<defs>
+<linearGradient id="bgemb2a" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#080917"/><stop offset=".55" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/></linearGradient>
+<radialGradient id="glemb2a" cx="0" cy="0" r="1" gradientTransform="translate(50 0) scale(1)" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#04c4d4" stop-opacity="0.2"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient>
+<pattern id="dtemb2a" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#04c4d4"/></pattern>
+<filter id="gremb2a" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="67"/>
+<feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+<feComposite operator="over" in2="SourceGraphic"/></filter>
+</defs>
+<rect width="800" height="500" fill="url(#bgemb2a)"/>
+<rect width="800" height="500" fill="url(#dtemb2a)" opacity=".08"/><defs><radialGradient id="rgemb2a" cx="0" cy="0" r="1" gradientTransform="translate(400 250) scale(350)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#04c4d4" stop-opacity="0.22"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient></defs><rect width="800" height="500" fill="url(#rgemb2a)"/>
+<!-- their environment, our person stepping inside its boundary -->
+<g transform="translate(150 92)">
+  <rect width="560" height="316" rx="18" fill="#0a0f19" stroke="#04c4d4" stroke-opacity=".28" stroke-width="2.5"/>
+  <line x1="0" y1="40" x2="560" y2="40" stroke="#1e2838" stroke-width="2"/>
+  <circle cx="22" cy="20" r="5" fill="#33475c"/><circle cx="40" cy="20" r="5" fill="#33475c"/><circle cx="58" cy="20" r="5" fill="#33475c"/>
+  <rect x="430" y="15" width="50" height="10" rx="5.0" fill="#33475c"/><rect x="490" y="15" width="50" height="10" rx="5.0" fill="#33475c"/>
+  <!-- their board -->
+  <g transform="translate(30 68)">
+    <rect width="150" height="220" rx="11" fill="#101a2b"/><rect x="16" y="16" width="74" height="8" rx="4.0" fill="#33475c"/>
+    <rect x="16" y="38" width="118" height="44" rx="8" fill="#0a0f19"/><rect x="28" y="54" width="64" height="7" rx="3.5" fill="#1b2733"/>
+    <rect x="16" y="92" width="118" height="44" rx="8" fill="#0a0f19"/><rect x="28" y="108" width="84" height="7" rx="3.5" fill="#1b2733"/>
+    <rect x="16" y="146" width="118" height="44" rx="8" fill="#0a0f19"/><rect x="28" y="162" width="52" height="7" rx="3.5" fill="#1b2733"/>
+    <rect x="190" width="150" height="220" rx="11" fill="#101a2b"/><rect x="206" y="16" width="60" height="8" rx="4.0" fill="#33475c"/>
+    <rect x="206" y="38" width="118" height="44" rx="8" fill="#0e2630" stroke="#04c4d4" stroke-opacity=".45" stroke-width="1.5"/><rect x="218" y="54" width="70" height="7" rx="3.5" fill="#33dfef"/>
+    <rect x="206" y="92" width="118" height="44" rx="8" fill="#0a0f19"/><rect x="218" y="108" width="58" height="7" rx="3.5" fill="#1b2733"/>
+    <rect x="380" width="150" height="220" rx="11" fill="#101a2b"/><rect x="396" y="16" width="68" height="8" rx="4.0" fill="#33475c"/>
+    <rect x="396" y="38" width="118" height="44" rx="8" fill="#0a0f19"/><rect x="408" y="54" width="76" height="7" rx="3.5" fill="#1b2733"/>
+    <rect x="396" y="92" width="118" height="44" rx="8" fill="#0e2630" stroke="#04c4d4" stroke-opacity=".45" stroke-width="1.5"/><rect x="408" y="108" width="62" height="7" rx="3.5" fill="#33dfef"/>
+  </g>
+</g>
+<!-- stepping across the boundary -->
+<g transform="translate(96 250) scale(1.35)"><circle cx="0" cy="0" r="46" fill="none" stroke="#04c4d4" stroke-opacity=".18" stroke-width="2"/><circle cx="0" cy="0" r="32" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/><circle cx="0" cy="-8" r="11" fill="#33dfef"/><path d="M-18 16 a18 18 0 0 1 36 0" fill="#33dfef"/></g>
+<g stroke="#33dfef" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M150 250 L 196 250"/><path d="M184 238 L198 250 L184 262"/>
+</g>
+<rect width="800" height="500" filter="url(#gremb2a)" opacity=".5" fill="none"/><rect x="0" y="0" width="800" height="2" fill="#04c4d4" opacity=".16"/></svg>

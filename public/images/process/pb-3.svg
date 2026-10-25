@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-label="">
+<defs>
+<linearGradient id="bgpb3b" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#080917"/><stop offset=".55" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/></linearGradient>
+<radialGradient id="glpb3b" cx="0" cy="0" r="1" gradientTransform="translate(50 0) scale(1)" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#04c4d4" stop-opacity="0.2"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient>
+<pattern id="dtpb3b" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#04c4d4"/></pattern>
+<filter id="grpb3b" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="68"/>
+<feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+<feComposite operator="over" in2="SourceGraphic"/></filter>
+</defs>
+<rect width="800" height="500" fill="url(#bgpb3b)"/>
+<rect width="800" height="500" fill="url(#dtpb3b)" opacity=".08"/><defs><radialGradient id="rgpb3b" cx="0" cy="0" r="1" gradientTransform="translate(400 120) scale(400)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#04c4d4" stop-opacity="0.26"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient></defs><rect width="800" height="500" fill="url(#rgpb3b)"/>
+<!-- signal going out: the product broadcasting once it is live -->
+<g transform="translate(400 300)">
+  <circle cx="0" cy="0" r="230" fill="none" stroke="#04c4d4" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="0" cy="0" r="176" fill="none" stroke="#04c4d4" stroke-opacity=".13" stroke-width="2"/>
+  <circle cx="0" cy="0" r="122" fill="none" stroke="#04c4d4" stroke-opacity=".20" stroke-width="2"/>
+</g>
+<g transform="translate(290 176)">
+  <rect width="220" height="180" rx="15" fill="#0c111c" stroke="#04c4d4" stroke-opacity=".55" stroke-width="2.5"/>
+  <line x1="0" y1="34" x2="220" y2="34" stroke="#1e2838" stroke-width="2"/>
+  <circle cx="18" cy="17" r="4.5" fill="#33475c"/><circle cx="33" cy="17" r="4.5" fill="#33475c"/>
+  <circle cx="48" cy="17" r="4.5" fill="#33475c"/>
+  <rect x="22" y="56" width="116" height="12" rx="6.0" fill="#eaf1f2"/><rect x="22" y="80" width="170" height="8" rx="4.0" fill="#33475c"/><rect x="22" y="96" width="132" height="8" rx="4.0" fill="#2a3644"/>
+  <rect x="22" y="122" width="88" height="32" rx="9" fill="#04c4d4"/><rect x="42" y="136" width="48" height="8" rx="4.0" fill="#04121a"/>
+  <rect x="120" y="122" width="72" height="32" rx="9" fill="none" stroke="#33dfef" stroke-opacity=".5" stroke-width="2"/>
+</g>
+<!-- reached endpoints -->
+<g>
+  <g transform="translate(112 128)"><rect width="86" height="60" rx="11" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/><rect x="16" y="18" width="44" height="8" rx="4.0" fill="#33475c"/><rect x="16" y="34" width="54" height="6" rx="3.0" fill="#1b2733"/></g>
+  <g transform="translate(602 128)"><rect width="86" height="60" rx="11" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/><rect x="16" y="18" width="50" height="8" rx="4.0" fill="#33475c"/><rect x="16" y="34" width="40" height="6" rx="3.0" fill="#1b2733"/></g>
+  <g transform="translate(96 372)"><rect width="86" height="60" rx="11" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/><rect x="16" y="18" width="38" height="8" rx="4.0" fill="#33475c"/><rect x="16" y="34" width="56" height="6" rx="3.0" fill="#1b2733"/></g>
+  <g transform="translate(618 372)"><rect width="86" height="60" rx="11" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/><rect x="16" y="18" width="46" height="8" rx="4.0" fill="#33475c"/><rect x="16" y="34" width="48" height="6" rx="3.0" fill="#1b2733"/></g>
+</g>
+<g fill="#33dfef">
+  <circle cx="228" cy="212" r="6" opacity=".8"/><circle cx="572" cy="212" r="6" opacity=".8"/>
+  <circle cx="220" cy="358" r="6" opacity=".6"/><circle cx="580" cy="358" r="6" opacity=".6"/>
+</g>
+<g transform="translate(356 400)">
+  <rect width="88" height="34" rx="17" fill="#10241b" stroke="#3ddc97" stroke-opacity=".55" stroke-width="2"/>
+  <circle cx="22" cy="17" r="7" fill="#3ddc97"/><rect x="40" y="12" width="34" height="10" rx="5.0" fill="#3ddc97"/>
+</g>
+<rect width="800" height="500" filter="url(#grpb3b)" opacity=".5" fill="none"/><rect x="0" y="0" width="800" height="2" fill="#04c4d4" opacity=".16"/></svg>

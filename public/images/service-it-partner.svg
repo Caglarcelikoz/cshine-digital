@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" fill="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="ip2Bg" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080917"/><stop offset="0.5" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/>
+    </linearGradient>
+    <radialGradient id="ip2GlowL" cx="0" cy="0" r="1" gradientTransform="translate(300 180) scale(480)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.22"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ip2GlowR" cx="0" cy="0" r="1" gradientTransform="translate(1340 460) scale(500)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.24"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ip2Dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.6" cy="1.6" r="1.6" fill="#04c4d4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#ip2Bg)"/>
+  <rect width="1600" height="600" fill="url(#ip2Dots)" opacity="0.09"/>
+  <rect width="1600" height="600" fill="url(#ip2GlowL)"/>
+  <rect width="1600" height="600" fill="url(#ip2GlowR)"/>
+
+  <!-- LEFT: the scattered "before" — separate suppliers, each its own island,
+       dimmed and disconnected. -->
+  <g opacity="0.5">
+    <g transform="translate(120 110)">
+      <rect x="0" y="0" width="128" height="86" rx="12" fill="#0a0f19" stroke="#2a3644" stroke-width="2" stroke-dasharray="8 7"/>
+      <rect x="18" y="20" width="72" height="9" rx="4.5" fill="#33475c"/>
+      <rect x="18" y="38" width="52" height="7" rx="3.5" fill="#22303f"/>
+      <rect x="18" y="56" width="62" height="7" rx="3.5" fill="#1b2733"/>
+    </g>
+    <g transform="translate(290 226)">
+      <rect x="0" y="0" width="128" height="86" rx="12" fill="#0a0f19" stroke="#2a3644" stroke-width="2" stroke-dasharray="8 7"/>
+      <rect x="18" y="20" width="86" height="9" rx="4.5" fill="#33475c"/>
+      <rect x="18" y="38" width="58" height="7" rx="3.5" fill="#22303f"/>
+      <rect x="18" y="56" width="44" height="7" rx="3.5" fill="#1b2733"/>
+    </g>
+    <g transform="translate(96 340)">
+      <rect x="0" y="0" width="128" height="86" rx="12" fill="#0a0f19" stroke="#2a3644" stroke-width="2" stroke-dasharray="8 7"/>
+      <rect x="18" y="20" width="66" height="9" rx="4.5" fill="#33475c"/>
+      <rect x="18" y="38" width="80" height="7" rx="3.5" fill="#22303f"/>
+      <rect x="18" y="56" width="50" height="7" rx="3.5" fill="#1b2733"/>
+    </g>
+    <g transform="translate(270 448)">
+      <rect x="0" y="0" width="128" height="86" rx="12" fill="#0a0f19" stroke="#2a3644" stroke-width="2" stroke-dasharray="8 7"/>
+      <rect x="18" y="20" width="78" height="9" rx="4.5" fill="#33475c"/>
+      <rect x="18" y="38" width="50" height="7" rx="3.5" fill="#22303f"/>
+      <rect x="18" y="56" width="66" height="7" rx="3.5" fill="#1b2733"/>
+    </g>
+  </g>
+
+  <!-- converging strands: many scattered things becoming one -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M256 152 C 480 165, 620 250, 700 292" stroke="#04c4d4" stroke-opacity="0.26" stroke-width="2.5"/>
+    <path d="M426 268 C 560 276, 640 288, 700 297" stroke="#04c4d4" stroke-opacity="0.26" stroke-width="2.5"/>
+    <path d="M232 382 C 440 380, 610 322, 700 304" stroke="#04c4d4" stroke-opacity="0.26" stroke-width="2.5"/>
+    <path d="M406 490 C 560 458, 640 350, 700 310" stroke="#04c4d4" stroke-opacity="0.26" stroke-width="2.5"/>
+  </g>
+
+  <!-- the junction where it all comes together (left of centre, clear of the title) -->
+  <g transform="translate(700 300)">
+    <circle cx="0" cy="0" r="46" fill="none" stroke="#04c4d4" stroke-opacity="0.18" stroke-width="2"/>
+    <circle cx="0" cy="0" r="26" fill="#0c1a20" stroke="#04c4d4" stroke-opacity="0.6" stroke-width="3"/>
+    <circle cx="0" cy="0" r="8" fill="#33dfef"/>
+  </g>
+
+  <!-- single trunk running right: one relationship, always on -->
+  <path d="M726 300 L 1130 300" stroke="#33dfef" stroke-opacity="0.55" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#66e7f3">
+    <circle cx="820" cy="300" r="5" opacity="0.8"/>
+    <circle cx="940" cy="300" r="5" opacity="0.6"/>
+    <circle cx="1060" cy="300" r="5" opacity="0.45"/>
+  </g>
+
+  <!-- RIGHT: the consolidated "after" — one stack, all green, all yours -->
+  <g transform="translate(1150 150)">
+    <rect x="0" y="0" width="320" height="300" rx="18" fill="#0c111c" stroke="#04c4d4" stroke-opacity="0.42" stroke-width="2.5"/>
+
+    <g transform="translate(24 30)">
+      <rect x="0" y="0" width="272" height="52" rx="11" fill="#101a2b"/>
+      <circle cx="26" cy="26" r="11" fill="#33dfef" opacity="0.85"/>
+      <rect x="50" y="16" width="104" height="9" rx="4.5" fill="#3a4a5a"/>
+      <rect x="50" y="31" width="72" height="7" rx="3.5" fill="#22303f"/>
+      <circle cx="248" cy="26" r="6" fill="#3ddc97"/>
+    </g>
+    <g transform="translate(24 92)">
+      <rect x="0" y="0" width="272" height="52" rx="11" fill="#101a2b"/>
+      <circle cx="26" cy="26" r="11" fill="#33dfef" opacity="0.65"/>
+      <rect x="50" y="16" width="126" height="9" rx="4.5" fill="#3a4a5a"/>
+      <rect x="50" y="31" width="60" height="7" rx="3.5" fill="#22303f"/>
+      <circle cx="248" cy="26" r="6" fill="#3ddc97"/>
+    </g>
+    <g transform="translate(24 154)">
+      <rect x="0" y="0" width="272" height="52" rx="11" fill="#101a2b"/>
+      <circle cx="26" cy="26" r="11" fill="#33dfef" opacity="0.5"/>
+      <rect x="50" y="16" width="92" height="9" rx="4.5" fill="#3a4a5a"/>
+      <rect x="50" y="31" width="82" height="7" rx="3.5" fill="#22303f"/>
+      <circle cx="248" cy="26" r="6" fill="#3ddc97"/>
+    </g>
+    <g transform="translate(24 216)">
+      <rect x="0" y="0" width="272" height="52" rx="11" fill="#0e2630"/>
+      <circle cx="26" cy="26" r="11" fill="#04c4d4"/>
+      <rect x="50" y="16" width="112" height="9" rx="4.5" fill="#eaf1f2" opacity="0.7"/>
+      <rect x="50" y="31" width="68" height="7" rx="3.5" fill="#33475c"/>
+      <circle cx="248" cy="26" r="6" fill="#3ddc97"/>
+    </g>
+  </g>
+
+  <!-- always-on marker -->
+  <g transform="translate(1412 116)">
+    <rect x="0" y="0" width="58" height="24" rx="12" fill="#10241b" stroke="#2f9e6f" stroke-opacity="0.55" stroke-width="1.5"/>
+    <circle cx="15" cy="12" r="4.5" fill="#3ddc97"/>
+    <rect x="26" y="8" width="22" height="8" rx="4" fill="#3ddc97" opacity="0.55"/>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="2" fill="#04c4d4" opacity="0.18"/>
+</svg>

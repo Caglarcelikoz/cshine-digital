@@ -1,20 +1,19 @@
-import Breadcrumb from "@/components/BreadCrumb";
 import { Metadata } from "next";
-
+import Image from "next/image";
 import {
   UserIcon,
   ClipboardDocumentListIcon,
-  CodeBracketIcon,
-  CubeTransparentIcon,
-  LifebuoyIcon,
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
-import Image from "next/image";
+import PageHero from "@/components/layout/PageHero";
+import BackgroundPattern from "@/components/layout/BackgroundPattern";
+import Eyebrow from "@/components/Eyebrow";
+import ProcessTracks from "@/components/ProcessTracks";
 
 export const metadata: Metadata = {
   title: "How We Work - C-Shine Digital | Our Development Process",
   description:
-    "Learn about our proven 6-step development process: Listen & Analyze, Plan & Design, Proposal & Agreement, Develop & Implement, Deliver & QA, Ongoing Support.",
+    "How we work: every project starts the same way — listen, scope, agree — then follows the track that fits, whether that's a product build, a full IT partnership or an embedded developer.",
   keywords: [
     "software development process",
     "agile development",
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "How We Work - C-Shine Digital",
     description:
-      "Our proven 6-step development process ensures successful project delivery. From analysis to ongoing support, we guide you through every phase.",
+      "The same start, a different path: three shared steps, then the track that fits how we work together.",
     type: "website",
     url: "https://www.cshinedigital.com/how-we-work",
     siteName: "C-Shine Digital",
@@ -37,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "How We Work - C-Shine Digital",
     description:
-      "Our proven 6-step development process ensures successful project delivery.",
+      "The same start, a different path: three shared steps, then the track that fits.",
   },
   alternates: {
     canonical: "https://www.cshinedigital.com/how-we-work",
@@ -45,122 +44,138 @@ export const metadata: Metadata = {
 };
 
 const HowWeWorkPage = () => {
-  const services = [
+  /**
+   * The three steps every engagement shares, whichever mode follows. Kept in
+   * sync with components/Experience.tsx on the homepage — see CONTEXT.md.
+   */
+  const sharedSteps = [
     {
-      title: "Listen & Analyze",
+      title: "Listen & Understand",
       icon: UserIcon,
       description:
-        "We listen to your needs and analyze your requirements thoroughly to understand your business goals.",
-      image: "/images/analysis.jpg",
+        "We map out what you need, what you already have running, and where it hurts today — before proposing anything.",
+      image: "/images/process/shared-1.webp",
+      alt: "Working through requirements on a laptop",
     },
     {
-      title: "Plan & Design",
+      title: "Scope & Approach",
       icon: LightBulbIcon,
       description:
-        "Based on the analysis, we design and plan the implementation process ensuring alignment with your goals.",
-      image: "/images/plan.jpg",
+        "Together we decide which way of working fits, and what the first concrete step looks like.",
+      image: "/images/process/shared-2.webp",
+      alt: "Sketched wireframes laid out while planning",
     },
     {
-      title: "Proposal & Agreement",
+      title: "Clear Agreement",
       icon: ClipboardDocumentListIcon,
       description:
-        "We present our proposal and action plan to you. We review it together and refine the details to create a finalized proposal that satisfies both parties. Additionally, we will agree on a deadline for the initial version.",
-      image: "/images/offer.jpg",
-    },
-    {
-      title: "Develop & Implement",
-      icon: CodeBracketIcon,
-      description:
-        "We are all set to embark on bringing your vision to life! As we dive into development, your input remains key. We actively seek your feedback throughout this phase, ensuring agility to adapt and refine promptly.",
-      image: "/images/develop.jpg",
-    },
-    {
-      title: "Deliver & Quality Assurance",
-      icon: CubeTransparentIcon,
-      description:
-        "We ensure seamless delivery of the developed solutions, adhering to quality standards and timelines.",
-      image: "/images/deliver.jpg",
-    },
-    {
-      title: "Ongoing Support & Maintenance",
-      icon: LifebuoyIcon,
-      description:
-        "Our support doesn't end with delivery. We provide ongoing support to ensure smooth operation and maintenance.",
-      image: "/images/support.jpg",
+        "No surprises later: you know what you get, when, and at what budget before we start.",
+      image: "/images/process/shared-3.webp",
+      alt: "Signing off on a written agreement",
     },
   ];
 
   return (
-    <>
-      <div className="bg-white text-dark">
-        <section className="mt-20 ">
-          <div className="container mx-auto">
-            <Breadcrumb current="How we work" />
-          </div>
-        </section>
-        <section className="relative text-white py-16">
-          <div
-            className="absolute inset-0 w-full bg-cover bg-center brightness-50"
-            style={{
-              backgroundImage: "url('/images/our-services.jpg')",
-            }}
-          ></div>
-          <div className="container mx-auto relative z-10 text-center">
-            <h1 className="heading-1">How We Work</h1>
-            <p className="text-lg md:text-xl px-4">
-              At C-Shine Digital, we are not just a team; we are your technology
-              partners. We blend innovation, creativity, and expertise to drive
-              your success.
+    <div className="bg-white text-dark">
+      <PageHero
+        breadcrumb="How we work"
+        eyebrow="Our Process"
+        image="/images/page-how-we-work.svg"
+        title="How We Work"
+        subtitle="At C-Shine Digital, we are not just a team; we are your technology partners. We blend innovation, creativity, and expertise to drive your success."
+      />
+
+      <BackgroundPattern variant="light" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <Eyebrow className="mb-6">Our process</Eyebrow>
+            <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
+              The same start, a different path
+            </h2>
+            <p className="text-lg text-neutral-600 leading-relaxed">
+              Every engagement begins the same way. What happens after the
+              agreement depends on how we work together.
             </p>
           </div>
-        </section>
 
-        <div className="relative">
-          <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#04C4D4_0%,transparent_35%)] opacity-10" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#04C4D4_0%,transparent_35%)] opacity-10" />
-            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/30 to-transparent" />
-          </div>
-
-          <div
-            className="absolute inset-0 z-0 opacity-[0.2]"
-            style={{
-              backgroundImage: `radial-gradient(circle at center, #1e293b 0.8px, transparent 0.8px)`,
-              backgroundSize: "24px 24px",
-            }}
-          />
-
-          <div className="container mx-auto py-20 px-4 relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-lg shadow-cshine-blue-500 shadow-sm hover:shadow-md hover:shadow-cshine-blue-500 overflow-hidden relative"
-                >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {sharedSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="group relative flex flex-col overflow-hidden rounded-2xl bg-white
+                  border border-neutral-200 shadow-sm
+                  hover:border-cshine-blue-500/30 hover:shadow-xl hover:-translate-y-1
+                  transition-all duration-300"
+              >
+                {/* Image */}
+                <div className="relative h-48 w-full overflow-hidden">
                   <Image
-                    src={service.image}
-                    width={100}
-                    height={100}
-                    alt={service.title}
-                    className="w-full h-48 object-cover object-center"
+                    src={step.image}
+                    alt={step.alt}
+                    fill
+                    priority={index === 0}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute  left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full bg-cshine-blue-500 p-2">
-                    <service.icon className="h-10 w-10 text-white " />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold my-4 text-center">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-600">{service.description}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-midnight-900/40 to-transparent" />
+
+                  {/* Step number badge */}
+                  <div
+                    className="absolute top-4 left-4 flex h-10 w-10 items-center justify-center
+                    rounded-full bg-white text-cshine-blue-600 font-bold text-lg shadow-lg
+                    ring-2 ring-cshine-blue-500/40"
+                  >
+                    {index + 1}
                   </div>
                 </div>
-              ))}
-            </div>
+
+                {/* Icon badge — overhangs the seam between image and content */}
+                <div className="relative">
+                  <div
+                    className="absolute -top-6 right-6 z-10 flex h-12 w-12 items-center justify-center
+                    rounded-xl bg-gradient-to-br from-cshine-blue-500 to-cyan-500 shadow-lg
+                    shadow-cshine-blue-500/30 group-hover:scale-110 transition-transform duration-300"
+                  >
+                    <step.icon className="h-6 w-6 text-white" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-col flex-grow p-6 pt-8">
+                  <h3
+                    className="text-xl font-semibold text-midnight-900 mb-3
+                    group-hover:text-cshine-blue-600 transition-colors duration-300"
+                  >
+                    {step.title}
+                  </h3>
+                  <p className="text-neutral-600 leading-relaxed text-sm">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Fork: the shared start ends here and the three modes diverge. */}
+          <div className="mt-20 mb-10 flex items-center gap-4" aria-hidden="true">
+            <div className="h-px flex-1 bg-neutral-300" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500">
+              Then, depending on the mode
+            </span>
+            <div className="h-px flex-1 bg-neutral-300" />
+          </div>
+
+          <ProcessTracks />
+
+          {/* CTA */}
+          <div className="text-center mt-16">
+            <a href="/#contact" className="btn-primary">
+              Start Your Project
+            </a>
           </div>
         </div>
-      </div>
-    </>
+      </BackgroundPattern>
+    </div>
   );
 };
 

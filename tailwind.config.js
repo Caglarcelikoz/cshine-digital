@@ -4,6 +4,10 @@ module.exports = {
   content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-display)", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
+      },
       colors: {
         "cshine-blue": {
           50: "#e6fbfd",
@@ -40,6 +44,33 @@ module.exports = {
           700: "#996900",
           800: "#664600",
           900: "#332300",
+        },
+        neutral: {
+          50: "#f4f7f8",
+          100: "#e7edee",
+          200: "#d0dadc",
+          300: "#aebdc0",
+          400: "#7f9498",
+          500: "#5c7176",
+          600: "#47595d",
+          700: "#374549",
+          800: "#263134",
+          900: "#141c1e",
+        },
+        success: {
+          light: "#e7f4ee",
+          DEFAULT: "#2f9e6f",
+          dark: "#4cc38a",
+        },
+        warning: {
+          light: "#fbf1e0",
+          DEFAULT: "#e08600",
+          dark: "#ffb454",
+        },
+        danger: {
+          light: "#fdecec",
+          DEFAULT: "#e5484d",
+          dark: "#ff6369",
         },
       },
       backgroundImage: {

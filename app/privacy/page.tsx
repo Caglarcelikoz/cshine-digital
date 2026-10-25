@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 const Privacy = () => {
   return (
-    <div className="relative bg-gradient-to-b from-gray-50 via-white to-gray-50">
+    <div className="relative bg-gradient-to-b from-neutral-50 via-white to-neutral-50">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="max-w-3xl mx-auto">
           <div className="mb-12 text-center">
@@ -43,14 +43,14 @@ const Privacy = () => {
               Privacy Policy
             </h1>
             <div className="h-1 w-20 bg-gradient-to-r from-cshine-blue-500 to-cyan-500 mx-auto rounded-full" />
-            <p className="text-gray-600 mt-4">Last Updated: December 2024</p>
+            <p className="text-neutral-600 mt-4">Last Updated: December 2024</p>
           </div>
 
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
             <h2 className="text-xl font-semibold text-midnight-900 mb-4">
               Contents
             </h2>
-            <ul className="space-y-2 text-gray-600">
+            <ul className="space-y-2 text-neutral-600">
               <li>1. Introduction and Overview</li>
               <li>2. Information Collection</li>
               <li>3. Use of Cookies and Analytics</li>
@@ -201,8 +201,8 @@ const Privacy = () => {
                 changes will be communicated through our website or direct
                 communication.
               </p>
-              <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-100">
-                <p className="text-gray-600">
+              <div className="mt-6 p-4 bg-neutral-50 rounded-lg border border-neutral-100">
+                <p className="text-neutral-600">
                   For questions about our privacy practices, contact us at{" "}
                   <a
                     href="mailto:info@cshinedigital.com"
@@ -229,7 +229,7 @@ const Section = ({
 }) => (
   <div className="bg-white rounded-xl shadow-sm p-8">
     <h2 className="text-xl font-semibold text-midnight-900 mb-4">{title}</h2>
-    <div className="text-gray-600 leading-relaxed">{children}</div>
+    <div className="text-neutral-600 leading-relaxed">{children}</div>
   </div>
 );
 

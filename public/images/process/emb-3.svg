@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-label="">
+<defs>
+<linearGradient id="bgemb3a" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#080917"/><stop offset=".55" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/></linearGradient>
+<radialGradient id="glemb3a" cx="0" cy="0" r="1" gradientTransform="translate(50 0) scale(1)" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#04c4d4" stop-opacity="0.2"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient>
+<pattern id="dtemb3a" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#04c4d4"/></pattern>
+<filter id="gremb3a" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="68"/>
+<feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+<feComposite operator="over" in2="SourceGraphic"/></filter>
+</defs>
+<rect width="800" height="500" fill="url(#bgemb3a)"/>
+<rect width="800" height="500" fill="url(#dtemb3a)" opacity=".08"/><defs><radialGradient id="rgemb3a" cx="0" cy="0" r="1" gradientTransform="translate(400 250) scale(360)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#04c4d4" stop-opacity="0.22"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient></defs><rect width="800" height="500" fill="url(#rgemb3a)"/>
+<!-- branch graph: our commits merging into their main -->
+<path d="M60 250 L 740 250" stroke="#33475c" stroke-width="4" stroke-linecap="round"/>
+<path d="M210 250 C 250 250, 258 146, 300 146 L 480 146 C 522 146, 530 250, 570 250"
+  fill="none" stroke="#04c4d4" stroke-opacity=".8" stroke-width="4" stroke-linecap="round"/>
+<path d="M300 250 C 332 250, 340 358, 380 358 L 470 358 C 510 358, 518 250, 550 250"
+  fill="none" stroke="#04c4d4" stroke-opacity=".45" stroke-width="3.5" stroke-linecap="round"/>
+<g>
+  <circle cx="110" cy="250" r="14" fill="#101a2b" stroke="#33475c" stroke-width="3.5"/>
+  <circle cx="210" cy="250" r="14" fill="#101a2b" stroke="#33475c" stroke-width="3.5"/>
+  <circle cx="300" cy="250" r="14" fill="#101a2b" stroke="#33475c" stroke-width="3.5"/>
+  <circle cx="690" cy="250" r="14" fill="#101a2b" stroke="#33475c" stroke-width="3.5"/>
+</g>
+<g>
+  <circle cx="340" cy="146" r="13" fill="#04c4d4"/><circle cx="410" cy="146" r="13" fill="#33dfef"/>
+  <circle cx="478" cy="146" r="13" fill="#04c4d4"/>
+  <circle cx="410" cy="358" r="11" fill="#04c4d4" opacity=".75"/><circle cx="466" cy="358" r="11" fill="#33dfef" opacity=".75"/>
+</g>
+<circle cx="570" cy="250" r="19" fill="#0c1a20" stroke="#04c4d4" stroke-width="4"/>
+<circle cx="550" cy="250" r="15" fill="#0c1a20" stroke="#04c4d4" stroke-opacity=".6" stroke-width="3"/>
+<!-- shipped output -->
+<g transform="translate(596 96)">
+  <rect width="150" height="96" rx="12" fill="#0c111c" stroke="#04c4d4" stroke-opacity=".4" stroke-width="2"/>
+  <rect x="18" y="22" width="80" height="10" rx="5.0" fill="#eaf1f2"/><rect x="18" y="44" width="112" height="7" rx="3.5" fill="#33475c"/><rect x="18" y="60" width="66" height="7" rx="3.5" fill="#2a3644"/><rect x="18" y="76" width="48" height="10" rx="5" fill="#04c4d4"/>
+</g>
+<g transform="translate(64 366)">
+  <rect width="150" height="86" rx="12" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/>
+  <rect x="18" y="20" width="58" height="8" rx="4.0" fill="#33475c"/><rect x="18" y="38" width="84" height="6" rx="3.0" fill="#1b2733"/><rect x="18" y="54" width="46" height="6" rx="3.0" fill="#1b2733"/>
+</g>
+<rect width="800" height="500" filter="url(#gremb3a)" opacity=".5" fill="none"/><rect x="0" y="0" width="800" height="2" fill="#04c4d4" opacity=".16"/></svg>

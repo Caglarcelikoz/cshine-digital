@@ -1,14 +1,19 @@
 import Layout from "@/components/layout/Layout";
 import StructuredData from "@/components/StructuredData";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
 
 export const metadata = {
-  title: "C-Shine Digital | Software Development & IT Consultancy Belgium",
+  title: "C-Shine Digital | Flexible Web, IT & Development Studio in Belgium",
   description:
-    "C-Shine Digital is a leading IT consultancy and software development company in Belgium. We specialize in web development, mobile apps, and digital transformation solutions.",
+    "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch. Web, e-commerce, branding, hosting and support.",
   keywords: [
     "software development",
     "IT consultancy",
@@ -24,9 +29,9 @@ export const metadata = {
     "Zutendaal software development",
   ],
   openGraph: {
-    title: "C-Shine Digital | Software Development & IT Consultancy",
+    title: "C-Shine Digital | Flexible Web, IT & Development Studio",
     description:
-      "Leading IT consultancy and software development company in Belgium. Specializing in web development, mobile apps, and digital transformation.",
+      "Web, IT and software development in Belgium. Whether you need one developer, a full IT department, or a partner to build your product from scratch, we scale to fit.",
     type: "website",
     url: "https://www.cshinedigital.com",
     siteName: "C-Shine Digital",
@@ -60,11 +65,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={spaceGrotesk.variable}>
       <head>
         <StructuredData />
       </head>
-      <body className={inter.className}>
+      <body className={spaceGrotesk.className}>
         <Layout>{children}</Layout>
       </body>
     </html>

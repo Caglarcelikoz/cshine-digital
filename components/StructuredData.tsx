@@ -6,7 +6,7 @@ const StructuredData = () => {
     url: "https://www.cshinedigital.com",
     logo: "https://www.cshinedigital.com/images/c-shine-digital-transparent.png",
     description:
-      "Leading IT consultancy and software development company in Belgium. Specializing in web development, mobile apps, and digital transformation solutions.",
+      "A Belgian digital studio built around flexibility: a developer in your team, your whole IT department, or the studio that builds your idea from scratch. Web, e-commerce, branding, hosting and support.",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Zutendaal",
@@ -41,7 +41,10 @@ const StructuredData = () => {
       "Web Development",
       "Mobile App Development",
       "IT Consultancy",
-      "Digital Transformation",
+      "E-commerce Development",
+      "Logo & Branding",
+      "Web Hosting & IT Support",
+      "Embedded Development & Consultancy",
       "Custom Software Development",
     ],
     areaServed: {
@@ -56,7 +59,7 @@ const StructuredData = () => {
     name: "C-Shine Digital",
     url: "https://www.cshinedigital.com",
     description:
-      "Leading IT consultancy and software development company in Belgium",
+      "A flexible Belgian digital studio: web, e-commerce, branding, IT and embedded development.",
     publisher: {
       "@type": "Organization",
       name: "C-Shine Digital",

@@ -1,5 +1,7 @@
-import Breadcrumb from "@/components/BreadCrumb";
-import Services from "@/components/Services";
+import EngagementModes from "@/components/EngagementModes";
+import Capabilities from "@/components/Capabilities";
+import BuildQuality from "@/components/BuildQuality";
+import PageHero from "@/components/layout/PageHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -39,29 +41,16 @@ export const metadata: Metadata = {
 const ServicesPage = () => {
   return (
     <>
-      <section className="mt-20">
-        <div className="container mx-auto">
-          <Breadcrumb current="Services" />
-        </div>
-      </section>
-      <section className="relative text-white py-12">
-        <div
-          className="absolute inset-0 w-full bg-cover bg-center "
-          style={{
-            backgroundImage: "url('/images/services.png')",
-          }}
-        ></div>
-        <div className="container mx-auto relative z-10 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
-          <p className="text-lg md:text-xl px-4">
-            At C-Shine Digital, we are dedicated to providing top-notch IT
-            services. Whether you are a startup or a large enterprise, we have
-            the expertise to help you succeed with high-quality software
-            solutions tailored to your needs.
-          </p>
-        </div>
-      </section>
-      <Services showTitle={false} />
+      <PageHero
+        breadcrumb="Services"
+        eyebrow="What We Do"
+        image="/images/page-services.svg"
+        title="Three ways to work with us"
+        subtitle="However you need us: building your idea end to end, running your whole IT, or embedding in your team. Below: the ways we engage, and the capabilities behind them."
+      />
+      <EngagementModes showTitle={false} />
+      <Capabilities />
+      <BuildQuality />
     </>
   );
 };

@@ -1,12 +1,7 @@
-import {
-  FaMapMarkerAlt,
-  FaRocket,
-  FaUsers,
-  FaLightbulb,
-  FaAward,
-} from "react-icons/fa";
+import { FaRocket, FaUsers, FaLightbulb, FaAward } from "react-icons/fa";
 import Image from "next/image";
 import BackgroundPattern from "./layout/BackgroundPattern";
+import Eyebrow from "./Eyebrow";
 
 const About = () => {
   const features = [
@@ -52,22 +47,20 @@ const About = () => {
   ];
 
   return (
-    <BackgroundPattern variant="light" className="py-24">
+    <BackgroundPattern variant="light" className="py-20">
       <div className="container relative mx-auto px-4">
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-cshine-blue-500/10 to-cyan-500/10 text-cshine-blue-500 text-sm font-medium mb-6">
-            <FaRocket className="mr-2" />
-            About C-Shine Digital
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-midnight-900 mb-6">
-            Building Tomorrow&rsquo;s Digital Solutions Today
+          <Eyebrow className="mb-6">About C-Shine Digital</Eyebrow>
+          <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
+            One partner, whatever the project needs
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
-            At C-Shine Digital, we are more than just developers. We are your
-            strategic partners in digital transformation. Our passion lies in
-            turning complex challenges into elegant, efficient solutions that
-            drive real business value.
+          <p className="text-lg text-neutral-700 leading-relaxed">
+            C-Shine Digital is a Belgian digital studio built around
+            flexibility. For one client we&rsquo;re a developer inside their
+            team; for another we run the entire IT function; for a third we take
+            an idea from a blank page to a launched product. Same standards,
+            whatever the shape.
           </p>
         </div>
 
@@ -76,8 +69,8 @@ const About = () => {
           {features.map((feature, index) => (
             <div key={index} className="group">
               <div
-                className="relative p-8 rounded-xl bg-gradient-to-br from-white to-gray-50/50 
-                border border-gray-100 hover:border-cshine-blue-500/20 transition-all duration-300 
+                className="relative p-8 rounded-xl bg-gradient-to-br from-white to-neutral-50/50 
+                border border-neutral-100 hover:border-cshine-blue-500/20 transition-all duration-300 
                 hover:shadow-xl hover:-translate-y-1"
               >
                 <div className="space-y-6">
@@ -106,7 +99,7 @@ const About = () => {
                     <h3 className="text-xl font-bold text-midnight-900">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <p className="text-neutral-600 leading-relaxed text-sm">
                       {feature.description}
                     </p>
                   </div>
@@ -121,20 +114,13 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <Image
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070"
-                alt="Our Office"
+                src="/images/studio-belgium.svg"
+                alt="From code to a launched product — the way C-Shine Digital builds, from Belgium"
                 width={600}
                 height={400}
-                className="rounded-2xl shadow-lg"
+                className="rounded-2xl shadow-lg w-full h-auto"
+                unoptimized
               />
-              <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-gray-100">
-                <div className="flex items-center space-x-3 text-gray-700">
-                  <FaMapMarkerAlt className="h-5 w-5 text-cshine-blue-500" />
-                  <p className="text-lg font-medium">
-                    Delivering Excellence from Belgium to the World
-                  </p>
-                </div>
-              </div>
             </div>
 
             <div className="space-y-8">
@@ -142,11 +128,12 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-midnight-900 mb-4">
                   Why Choose C-Shine Digital?
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  With years of experience in digital transformation, we
-                  understand that each business has unique challenges and
-                  opportunities. Our team combines technical expertise with
-                  business acumen to deliver solutions that make a real impact.
+                <p className="text-neutral-600 leading-relaxed">
+                  You work directly with the people who do the work — no sales
+                  layer, no juniors handed your project. We adapt to how you
+                  already operate, pick the right tools instead of the ones
+                  we&rsquo;re locked into, and stay accountable long after
+                  launch.
                 </p>
               </div>
 
@@ -158,23 +145,20 @@ const About = () => {
                       <div
                         className="flex h-10 w-10 items-center justify-center rounded-lg 
                         bg-gradient-to-r from-cshine-blue-500/10 to-cyan-500/10 
-                        group-hover:from-cshine-blue-500 group-hover:to-cyan-500 
-                        transition-all duration-300"
+                      
+                      
+                       "
                       >
-                        <value.icon
-                          className="h-5 w-5 text-cshine-blue-500 group-hover:text-white 
-                          transition-colors duration-300"
-                        />
+                        <value.icon className="h-5 w-5 text-cshine-blue-500 " />
                       </div>
                     </div>
                     <div>
-                      <h4
-                        className="text-lg font-semibold text-midnight-900 group-hover:text-cshine-blue-500 
-                        transition-colors duration-300"
-                      >
+                      <h4 className="text-lg font-semibold text-midnight-900 ">
                         {value.title}
                       </h4>
-                      <p className="text-gray-600 mt-1">{value.description}</p>
+                      <p className="text-neutral-600 mt-1">
+                        {value.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -182,16 +166,10 @@ const About = () => {
 
               {/* CTA */}
               <div className="pt-4">
-                <a
-                  href="/how-we-work"
-                  className="inline-flex items-center px-6 py-3 rounded-lg 
-                    bg-gradient-to-r from-cshine-blue-500 to-cyan-500 
-                    text-white font-semibold transition-all duration-300 
-                    hover:shadow-glow hover:scale-105"
-                >
+                <a href="/how-we-work" className="btn-primary">
                   Learn How We Work
                   <svg
-                    className="w-5 h-5 ml-2"
+                    className="w-5 h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

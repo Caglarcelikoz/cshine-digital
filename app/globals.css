@@ -2,19 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-display), system-ui, sans-serif;
+        letter-spacing: -0.02em;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible,
+    [tabindex]:focus-visible {
+        outline: 2px solid #04c4d4;
+        outline-offset: 2px;
+        border-radius: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
+
 @layer components {
     .heading-1 {
-        @apply text-4xl font-extrabold mb-4
+        @apply text-4xl md:text-6xl font-bold mb-4 tracking-tight
     }
 
     .btn {
-        @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight
+        @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg
+               font-semibold tracking-tight transition-all duration-300
+               focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cshine-blue-400 focus-visible:ring-offset-2
      }
      .btn-primary {
-        @apply bg-black text-white;
+        @apply btn relative bg-cshine-blue-500 text-midnight-900
+               bg-gradient-to-b from-transparent to-midnight-900/[0.15]
+               hover:to-midnight-900/[0.28] hover:shadow-glow hover:scale-[1.03]
+               focus-visible:ring-offset-white
      }
-     .btn-text {
-        @apply text-black bg-transparent;
+     .btn-primary.on-dark {
+        @apply focus-visible:ring-offset-midnight-900
+     }
+     .btn-secondary {
+        @apply btn border border-cshine-blue-600/40 text-cshine-blue-700
+               hover:bg-cshine-blue-600/[0.06] focus-visible:ring-offset-white
+     }
+     .btn-secondary.on-dark {
+        @apply border-cshine-blue-500/50 text-white
+               hover:bg-cshine-blue-500/10 focus-visible:ring-offset-midnight-900
+     }
+     .btn-ghost {
+        @apply btn text-neutral-600 hover:text-cshine-blue-700
+               hover:bg-cshine-blue-600/[0.06] focus-visible:ring-offset-white
+     }
+     .btn-ghost.on-dark {
+        @apply text-white/70 hover:text-white
+               hover:bg-white/10 focus-visible:ring-offset-midnight-900
+     }
+     .btn-danger {
+        @apply btn border border-danger/40 text-danger
+               hover:bg-danger/[0.06] focus-visible:ring-danger/50 focus-visible:ring-offset-white
      }
      .logo-ticker-image {
         @apply h-auto w-[100px]

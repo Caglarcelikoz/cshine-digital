@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" fill="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="svbBg" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080917"/><stop offset="0.5" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/>
+    </linearGradient>
+    <radialGradient id="svbGlow" cx="0" cy="0" r="1" gradientTransform="translate(800 40) scale(760 400)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.24"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="svbGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#04c4d4" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="svbPath1" x1="800" y1="120" x2="220" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66e7f3" stop-opacity="0.9"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="svbPath2" x1="800" y1="120" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66e7f3" stop-opacity="0.9"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0.25"/>
+    </linearGradient>
+    <linearGradient id="svbPath3" x1="800" y1="120" x2="1380" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#66e7f3" stop-opacity="0.9"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#svbBg)"/>
+  <rect width="1600" height="600" fill="url(#svbGrid)" opacity="0.055"/>
+  <rect width="1600" height="600" fill="url(#svbGlow)"/>
+
+  <!-- One entry point at the top forking into three routes.
+       The fork happens high so the title sits in the open middle. -->
+
+  <!-- entry node -->
+  <g transform="translate(800 110)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#04c4d4" stroke-opacity="0.16" stroke-width="2"/>
+    <circle cx="0" cy="0" r="24" fill="#0c1a20" stroke="#04c4d4" stroke-opacity="0.6" stroke-width="3"/>
+    <circle cx="0" cy="0" r="8" fill="#33dfef"/>
+  </g>
+
+  <!-- three diverging routes -->
+  <path d="M786 140 C 700 240, 520 300, 300 380" stroke="url(#svbPath1)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M800 152 C 800 260, 800 320, 800 400" stroke="url(#svbPath2)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M814 140 C 900 240, 1080 300, 1300 380" stroke="url(#svbPath3)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+  <!-- LEFT destination: a built product -->
+  <g transform="translate(120 400)">
+    <rect x="0" y="0" width="270" height="150" rx="15" fill="#0a0f19" stroke="#04c4d4" stroke-opacity="0.3" stroke-width="2"/>
+    <line x1="0" y1="38" x2="270" y2="38" stroke="#1e2838" stroke-width="2"/>
+    <circle cx="22" cy="19" r="4.5" fill="#33475c"/>
+    <circle cx="38" cy="19" r="4.5" fill="#33475c"/>
+    <circle cx="54" cy="19" r="4.5" fill="#33475c"/>
+    <rect x="22" y="60" width="130" height="13" rx="6.5" fill="#eaf1f2" opacity="0.88"/>
+    <rect x="22" y="86" width="200" height="8" rx="4" fill="#3a4a5a"/>
+    <rect x="22" y="104" width="150" height="8" rx="4" fill="#2a3644"/>
+    <rect x="22" y="124" width="86" height="14" rx="7" fill="#04c4d4"/>
+  </g>
+
+  <!-- CENTRE destination: a running stack, pushed low -->
+  <g transform="translate(668 424)">
+    <rect x="0" y="0" width="264" height="140" rx="15" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/>
+    <g transform="translate(20 22)">
+      <rect x="0" y="0" width="224" height="28" rx="7" fill="#101a2b"/>
+      <circle cx="18" cy="14" r="7" fill="#33dfef" opacity="0.8"/>
+      <rect x="36" y="10" width="84" height="8" rx="4" fill="#33475c"/>
+      <circle cx="206" cy="14" r="5" fill="#3ddc97"/>
+      <rect x="0" y="34" width="224" height="28" rx="7" fill="#101a2b"/>
+      <circle cx="18" cy="48" r="7" fill="#33dfef" opacity="0.6"/>
+      <rect x="36" y="44" width="104" height="8" rx="4" fill="#33475c"/>
+      <circle cx="206" cy="48" r="5" fill="#3ddc97"/>
+      <rect x="0" y="68" width="224" height="28" rx="7" fill="#0e2630"/>
+      <circle cx="18" cy="82" r="7" fill="#04c4d4"/>
+      <rect x="36" y="78" width="72" height="8" rx="4" fill="#eaf1f2" opacity="0.6"/>
+      <circle cx="206" cy="82" r="5" fill="#3ddc97"/>
+    </g>
+  </g>
+
+  <!-- RIGHT destination: a team with our seats in it -->
+  <g transform="translate(1210 400)">
+    <rect x="0" y="0" width="270" height="150" rx="15" fill="#0a0f19" stroke="#04c4d4" stroke-opacity="0.3" stroke-width="2"/>
+    <rect x="22" y="24" width="110" height="10" rx="5" fill="#33475c"/>
+    <g transform="translate(22 52)">
+      <circle cx="22" cy="22" r="21" fill="#101a2b" stroke="#33475c" stroke-width="2.5"/>
+      <circle cx="22" cy="17" r="7" fill="#33475c"/>
+      <path d="M10 32 a12 12 0 0 1 24 0" fill="#33475c"/>
+      <circle cx="76" cy="22" r="21" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/>
+      <circle cx="76" cy="17" r="7" fill="#33dfef"/>
+      <path d="M64 32 a12 12 0 0 1 24 0" fill="#33dfef"/>
+      <circle cx="130" cy="22" r="21" fill="#101a2b" stroke="#33475c" stroke-width="2.5"/>
+      <circle cx="130" cy="17" r="7" fill="#33475c"/>
+      <path d="M118 32 a12 12 0 0 1 24 0" fill="#33475c"/>
+      <circle cx="184" cy="22" r="21" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/>
+      <circle cx="184" cy="17" r="7" fill="#33dfef"/>
+      <path d="M172 32 a12 12 0 0 1 24 0" fill="#33dfef"/>
+    </g>
+  </g>
+
+  <!-- route markers -->
+  <g fill="#33dfef">
+    <circle cx="560" cy="292" r="6" opacity="0.7"/>
+    <circle cx="800" cy="286" r="6" opacity="0.7"/>
+    <circle cx="1040" cy="292" r="6" opacity="0.7"/>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="2" fill="#04c4d4" opacity="0.18"/>
+</svg>

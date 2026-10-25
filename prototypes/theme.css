@@ -1,0 +1,58 @@
+/* C-Shine Digital — prototype theme
+ * Single source of truth for the mockups in prototypes/. Values mirror the
+ * real app (tailwind.config.js). When the look is locked, these port into the
+ * app's globals.css / @theme.
+ */
+:root {
+  /* Brand */
+  --cshine-400: #33dfef;
+  --cshine-500: #04c4d4;
+  --cshine-600: #039daa;
+  --cshine-700: #02767f;
+  --cyan-500: #06b6d4;
+
+  /* Midnight (dark ground) */
+  --midnight-900: #04050c;
+  --midnight-800: #080917;
+  --midnight-700: #0d0e23;
+  --midnight-500: #15173b;
+
+  /* Accent (used sparingly) */
+  --accent-500: #ffaf00;
+
+  /* Neutrals — slight cyan bias, not flat grey */
+  --ground: #f4f7f8;
+  --surface: #ffffff;
+  --surface-2: #eef3f4;
+  --ink: #0b1416;
+  --ink-soft: #33474c;
+  --ink-faint: #6c8085;
+  --line: #d7e2e4;
+  --line-soft: #e6eded;
+
+  /* Roles */
+  --accent: var(--cshine-600);
+  --accent-bright: var(--cshine-500);
+
+  /* Type */
+  --font-display: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+
+  /* Scale */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --gap: 16px;
+  --shadow-card: 0 18px 40px -20px rgba(0, 0, 0, 0.35);
+
+  /* Component states — case card */
+  --card-bg: var(--surface);
+  --card-border: var(--line);
+  --rail: linear-gradient(180deg, var(--cshine-500), var(--cyan-500));
+  --badge-bg: rgba(4, 196, 212, 0.1);
+  --badge-ink: var(--cshine-700);
+  --tag-bg: #f7fafa;
+  --tag-border: var(--line);
+  --tag-ink: var(--ink-soft);
+}

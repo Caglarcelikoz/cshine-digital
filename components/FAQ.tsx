@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import BackgroundPattern from "./layout/BackgroundPattern";
+import Eyebrow from "./Eyebrow";
 
 const FAQ = () => {
   const faqs = [
@@ -40,60 +41,74 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <BackgroundPattern variant="light" className="py-24">
+    <BackgroundPattern variant="light" className="py-20">
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-midnight-900 mb-4">
+            <Eyebrow className="mb-6">Good to know</Eyebrow>
+            <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-cshine-blue-500 to-cyan-500 mx-auto rounded-full mb-6" />
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-neutral-600">
               Common questions about working with C-Shine Digital
             </p>
           </div>
 
-          <div className="min-h-[650px]">
-            <div className="space-y-4">
-              {faqs.map((faq, index) => (
+          <div className="space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = activeIndex === index;
+              return (
                 <div
                   key={index}
-                  className="relative rounded-xl border border-white/10 
-                    bg-midnight-900/90 backdrop-blur-sm hover:border-cshine-blue-500/30 transition-colors duration-300"
+                  className={`relative rounded-xl border backdrop-blur-sm transition-all duration-300
+                    ${
+                      isOpen
+                        ? "border-cshine-blue-500/50 bg-midnight-900 shadow-lg shadow-cshine-blue-500/5"
+                        : "border-white/10 bg-midnight-900/90 hover:border-cshine-blue-500/30"
+                    }`}
                 >
                   <button
                     className="w-full p-6 text-left flex items-center justify-between gap-4"
-                    onClick={() =>
-                      setActiveIndex(activeIndex === index ? null : index)
-                    }
+                    onClick={() => setActiveIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`faq-answer-${index}`}
                   >
-                    <span className="font-semibold text-white">
+                    <span
+                      className={`font-semibold transition-colors duration-300 ${
+                        isOpen ? "text-cshine-blue-400" : "text-white"
+                      }`}
+                    >
                       {faq.question}
                     </span>
                     <ChevronDownIcon
-                      className={`w-5 h-5 text-cshine-blue-500 transition-transform duration-300
-                        ${activeIndex === index ? "rotate-180" : ""}`}
+                      className={`w-5 h-5 flex-shrink-0 text-cshine-blue-500 transition-transform duration-300
+                        ${isOpen ? "rotate-180" : ""}`}
+                      aria-hidden="true"
                     />
                   </button>
-                  {activeIndex === index && (
-                    <div className="p-6 pt-0 text-gray-300 animate-fadeIn">
-                      {faq.answer}
+                  {/* Smooth height transition via grid-rows */}
+                  <div
+                    id={`faq-answer-${index}`}
+                    className={`grid transition-all duration-300 ease-out ${
+                      isOpen
+                        ? "grid-rows-[1fr] opacity-100"
+                        : "grid-rows-[0fr] opacity-0"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p className="px-6 pb-6 text-neutral-300 leading-relaxed">
+                        {faq.answer}
+                      </p>
                     </div>
-                  )}
+                  </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-4">Have a specific question?</p>
-            <a
-              href="#contact"
-              className="inline-flex items-center px-6 py-3 rounded-lg 
-                bg-gradient-to-r from-cshine-blue-500 to-cyan-500 
-                text-white font-semibold transition-all duration-300 
-                hover:shadow-glow hover:scale-105"
-            >
+            <p className="text-neutral-600 mb-4">Have a specific question?</p>
+            <a href="/#contact" className="btn-primary">
               Let&apos;s Talk
             </a>
           </div>

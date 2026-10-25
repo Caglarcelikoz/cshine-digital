@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" fill="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="pbBg" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080917"/><stop offset="0.5" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/>
+    </linearGradient>
+    <radialGradient id="pbGlowR" cx="0" cy="0" r="1" gradientTransform="translate(1320 120) scale(520)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.30"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="pbGlowL" cx="0" cy="0" r="1" gradientTransform="translate(220 520) scale(460)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.18"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="pbDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.6" cy="1.6" r="1.6" fill="#04c4d4"/>
+    </pattern>
+    <linearGradient id="pbArc" x1="180" y1="480" x2="1420" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.15"/>
+      <stop offset="0.55" stop-color="#33dfef" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#66e7f3" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#pbBg)"/>
+  <rect width="1600" height="600" fill="url(#pbDots)" opacity="0.09"/>
+  <rect width="1600" height="600" fill="url(#pbGlowR)"/>
+  <rect width="1600" height="600" fill="url(#pbGlowL)"/>
+
+  <!-- LEFT: blank page / blueprint being drafted -->
+  <g transform="translate(120 150)" opacity="0.85">
+    <rect x="0" y="0" width="200" height="270" rx="14" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/>
+    <rect x="26" y="34" width="120" height="12" rx="6" fill="#33475c"/>
+    <rect x="26" y="62" width="148" height="8" rx="4" fill="#22303f"/>
+    <rect x="26" y="80" width="120" height="8" rx="4" fill="#22303f"/>
+    <rect x="26" y="112" width="96" height="8" rx="4" fill="#1b2733"/>
+    <rect x="26" y="130" width="130" height="8" rx="4" fill="#1b2733"/>
+    <g stroke="#04c4d4" stroke-opacity="0.4" stroke-width="2" stroke-dasharray="7 7">
+      <rect x="26" y="168" width="148" height="74" rx="9" fill="none"/>
+    </g>
+    <path d="M88 195 L100 207 L112 195" stroke="#04c4d4" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <line x1="100" y1="188" x2="100" y2="216" stroke="#04c4d4" stroke-opacity="0.6" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ARC: idea -> product, the through-line of this mode -->
+  <path d="M340 430 C 620 430, 780 220, 1080 200 S 1330 175, 1400 168"
+        stroke="url(#pbArc)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <g fill="#33dfef">
+    <circle cx="520" cy="392" r="5" opacity="0.5"/>
+    <circle cx="760" cy="280" r="5.5" opacity="0.7"/>
+    <circle cx="1010" cy="208" r="6" opacity="0.9"/>
+  </g>
+
+  <!-- RIGHT: shipped product, browser window with live state -->
+  <g transform="translate(1140 130)">
+    <rect x="0" y="0" width="330" height="330" rx="18" fill="#0c111c" stroke="#04c4d4" stroke-opacity="0.35" stroke-width="2"/>
+    <line x1="0" y1="46" x2="330" y2="46" stroke="#1e2838" stroke-width="2"/>
+    <circle cx="26" cy="23" r="5" fill="#33475c"/>
+    <circle cx="44" cy="23" r="5" fill="#33475c"/>
+    <circle cx="62" cy="23" r="5" fill="#33475c"/>
+    <rect x="220" y="17" width="42" height="12" rx="6" fill="#33475c"/>
+    <rect x="270" y="17" width="42" height="12" rx="6" fill="#33475c"/>
+
+    <rect x="30" y="80" width="190" height="18" rx="9" fill="#eaf1f2" opacity="0.92"/>
+    <rect x="30" y="112" width="262" height="10" rx="5" fill="#3a4a5a"/>
+    <rect x="30" y="132" width="220" height="10" rx="5" fill="#2a3644"/>
+
+    <rect x="30" y="172" width="126" height="42" rx="11" fill="#04c4d4"/>
+    <rect x="60" y="188" width="66" height="9" rx="4.5" fill="#04121a" opacity="0.8"/>
+    <rect x="168" y="172" width="110" height="42" rx="11" fill="none" stroke="#33dfef" stroke-opacity="0.5" stroke-width="2"/>
+    <rect x="194" y="188" width="60" height="9" rx="4.5" fill="#33dfef" opacity="0.7"/>
+
+    <g transform="translate(30 244)">
+      <rect x="0" y="0" width="80" height="62" rx="11" fill="#101a2b"/>
+      <rect x="14" y="16" width="40" height="16" rx="4" fill="#33dfef" opacity="0.85"/>
+      <rect x="14" y="40" width="52" height="7" rx="3.5" fill="#33475c"/>
+      <rect x="91" y="0" width="80" height="62" rx="11" fill="#101a2b"/>
+      <rect x="105" y="16" width="40" height="16" rx="4" fill="#33dfef" opacity="0.6"/>
+      <rect x="105" y="40" width="52" height="7" rx="3.5" fill="#33475c"/>
+      <rect x="182" y="0" width="80" height="62" rx="11" fill="#101a2b"/>
+      <rect x="196" y="16" width="40" height="16" rx="4" fill="#33dfef" opacity="0.6"/>
+      <rect x="196" y="40" width="52" height="7" rx="3.5" fill="#33475c"/>
+    </g>
+  </g>
+
+  <!-- LIVE badge, top-right of the product -->
+  <g transform="translate(1400 96)">
+    <rect x="0" y="0" width="58" height="24" rx="12" fill="#10241b" stroke="#2f9e6f" stroke-opacity="0.55" stroke-width="1.5"/>
+    <circle cx="15" cy="12" r="4.5" fill="#3ddc97"/>
+    <rect x="26" y="8" width="22" height="8" rx="4" fill="#3ddc97" opacity="0.55"/>
+  </g>
+
+  <rect x="0" y="0" width="1600" height="2" fill="#04c4d4" opacity="0.18"/>
+</svg>

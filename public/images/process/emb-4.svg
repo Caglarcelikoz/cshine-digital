@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none" role="img" aria-label="">
+<defs>
+<linearGradient id="bgemb4b" x1="0" y1="0" x2="800" y2="500" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#080917"/><stop offset=".55" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/></linearGradient>
+<radialGradient id="glemb4b" cx="0" cy="0" r="1" gradientTransform="translate(50 0) scale(1)" gradientUnits="objectBoundingBox">
+<stop offset="0" stop-color="#04c4d4" stop-opacity="0.2"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient>
+<pattern id="dtemb4b" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="1.4" r="1.4" fill="#04c4d4"/></pattern>
+<filter id="gremb4b" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" seed="70"/>
+<feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".05"/></feComponentTransfer>
+<feComposite operator="over" in2="SourceGraphic"/></filter>
+</defs>
+<rect width="800" height="500" fill="url(#bgemb4b)"/>
+<rect width="800" height="500" fill="url(#dtemb4b)" opacity=".08"/><defs><radialGradient id="rgemb4b" cx="0" cy="0" r="1" gradientTransform="translate(400 250) scale(350)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#04c4d4" stop-opacity="0.22"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/></radialGradient></defs><rect width="800" height="500" fill="url(#rgemb4b)"/>
+<!-- a slider: involvement dialled between light and full -->
+<g transform="translate(100 208)">
+  <rect width="600" height="26" rx="13" fill="#101a2b" stroke="#1e2838" stroke-width="2"/>
+  <rect width="392" height="26" rx="13" fill="#04c4d4" opacity=".55"/>
+  <g transform="translate(392 13)">
+    <circle r="30" fill="none" stroke="#04c4d4" stroke-opacity=".2" stroke-width="2"/>
+    <circle r="20" fill="#0c1a20" stroke="#66e7f3" stroke-width="4"/>
+    <circle r="6" fill="#66e7f3"/>
+  </g>
+  <g stroke="#2a3644" stroke-width="2">
+    <line x1="0" y1="34" x2="0" y2="48"/><line x1="150" y1="34" x2="150" y2="44"/>
+    <line x1="300" y1="34" x2="300" y2="48"/><line x1="450" y1="34" x2="450" y2="44"/>
+    <line x1="600" y1="34" x2="600" y2="48"/>
+  </g>
+</g>
+<!-- endpoints -->
+<g transform="translate(96 96)">
+  <rect width="180" height="76" rx="12" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/>
+  <rect x="20" y="22" width="72" height="9" rx="4.5" fill="#33475c"/>
+  <g transform="translate(20 44)"><g transform="translate(14 12) scale(0.42)"><circle cx="0" cy="0" r="32" fill="#101a2b" stroke="#33475c" stroke-width="2.5"/><circle cx="0" cy="-8" r="11" fill="#33475c"/><path d="M-18 16 a18 18 0 0 1 36 0" fill="#33475c"/></g></g>
+</g>
+<g transform="translate(524 96)">
+  <rect width="180" height="76" rx="12" fill="#0e2630" stroke="#04c4d4" stroke-opacity=".45" stroke-width="2"/>
+  <rect x="20" y="22" width="64" height="9" rx="4.5" fill="#33dfef"/>
+  <g transform="translate(20 44)"><g transform="translate(14 12) scale(0.42)"><circle cx="0" cy="0" r="32" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/><circle cx="0" cy="-8" r="11" fill="#33dfef"/><path d="M-18 16 a18 18 0 0 1 36 0" fill="#33dfef"/></g><g transform="translate(56 12) scale(0.42)"><circle cx="0" cy="0" r="32" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/><circle cx="0" cy="-8" r="11" fill="#33dfef"/><path d="M-18 16 a18 18 0 0 1 36 0" fill="#33dfef"/></g><g transform="translate(98 12) scale(0.42)"><circle cx="0" cy="0" r="32" fill="#0c1a20" stroke="#04c4d4" stroke-width="3"/><circle cx="0" cy="-8" r="11" fill="#33dfef"/><path d="M-18 16 a18 18 0 0 1 36 0" fill="#33dfef"/></g></g>
+</g>
+<!-- engagement shapes below -->
+<g transform="translate(150 320)">
+  <rect width="230" height="112" rx="13" fill="#0a0f19" stroke="#1e2838" stroke-width="2"/>
+  <rect x="22" y="24" width="96" height="9" rx="4.5" fill="#33475c"/><rect x="22" y="44" width="140" height="7" rx="3.5" fill="#1b2733"/>
+  <g transform="translate(22 66)">
+    <rect width="76" height="30" rx="8" fill="#101a2b"/><rect x="14" y="10" width="48" height="10" rx="5.0" fill="#33475c"/>
+    <rect x="88" width="76" height="30" rx="8" fill="#101a2b"/><rect x="102" y="10" width="48" height="10" rx="5.0" fill="#1b2733"/>
+  </g>
+</g>
+<g transform="translate(420 320)">
+  <rect width="230" height="112" rx="13" fill="#0a0f19" stroke="#04c4d4" stroke-opacity=".4" stroke-width="2"/>
+  <rect x="22" y="24" width="80" height="9" rx="4.5" fill="#33dfef"/><rect x="22" y="44" width="122" height="7" rx="3.5" fill="#33475c"/>
+  <g transform="translate(22 66)">
+    <rect width="76" height="30" rx="8" fill="#04c4d4"/><rect x="36" y="10" width="48" height="10" rx="5.0" fill="#04121a"/>
+    <rect x="88" width="76" height="30" rx="8" fill="#101a2b"/><rect x="102" y="10" width="48" height="10" rx="5.0" fill="#1b2733"/>
+  </g>
+</g>
+<rect width="800" height="500" filter="url(#gremb4b)" opacity=".5" fill="none"/><rect x="0" y="0" width="800" height="2" fill="#04c4d4" opacity=".16"/></svg>

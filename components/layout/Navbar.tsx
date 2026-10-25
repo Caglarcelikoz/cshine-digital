@@ -6,9 +6,10 @@ import Image from "next/image";
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
-  { href: "/how-we-work", label: "How we work" },
   { href: "/services", label: "Services" },
-  { href: "#contact", label: "Contact" },
+  { href: "/how-we-work", label: "How we work" },
+  { href: "/about", label: "About" },
+  { href: "/#contact", label: "Contact" },
 ] as const;
 
 const Navbar = () => {
@@ -54,7 +55,7 @@ const Navbar = () => {
               <Link
                 key={href}
                 href={href}
-                className={`relative h-full px-6 flex items-center font-medium transition-all duration-300 group
+                className={`relative h-full px-4 lg:px-5 flex items-center text-sm lg:text-base font-medium transition-all duration-300 group
                   hover:bg-cshine-blue-500/5 cursor-pointer
                   ${
                     currentRoute === href
@@ -105,7 +106,7 @@ const Navbar = () => {
             transition-all duration-300 ease-in-out
             ${
               isMenuOpen
-                ? "max-h-64 opacity-100"
+                ? "max-h-[28rem] opacity-100"
                 : "max-h-0 opacity-0 border-none"
             }
           `}

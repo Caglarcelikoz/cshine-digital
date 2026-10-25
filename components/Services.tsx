@@ -5,13 +5,14 @@ import { DesignServices } from "@styled-icons/material/DesignServices";
 import { AutoAwesome } from "@styled-icons/material/AutoAwesome";
 import { People } from "@styled-icons/material-rounded";
 import BackgroundPattern from "./layout/BackgroundPattern";
+import Eyebrow from "./Eyebrow";
 
 const ServiceSection = ({ service }: { service: any }) => (
   <div className="group relative h-full flex">
     {/* Main Card */}
     <div
-      className="relative bg-white rounded-3xl p-8 lg:p-10 
-      border border-gray-200 shadow-sm
+      className="relative bg-white rounded-3xl p-8 lg:p-10
+      border border-neutral-200 shadow-sm
       hover:shadow-xl hover:border-cshine-blue-500/30
       transition-all duration-300 ease-out hover:-translate-y-2
       overflow-hidden flex flex-col w-full"
@@ -58,8 +59,8 @@ const ServiceSection = ({ service }: { service: any }) => (
 
         {/* Description */}
         <p
-          className="text-gray-600 text-center leading-relaxed mb-8 flex-shrink-0
-          group-hover:text-gray-700 transition-colors duration-300"
+          className="text-neutral-600 text-center leading-relaxed mb-8 flex-shrink-0
+          group-hover:text-neutral-700 transition-colors duration-300"
         >
           {service.description}
         </p>
@@ -67,11 +68,11 @@ const ServiceSection = ({ service }: { service: any }) => (
         {/* Features Section - Flex grow to push to bottom */}
         <div className="flex-grow flex flex-col">
           <div className="flex items-center justify-center gap-2 mb-6 flex-shrink-0">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-gray-500 px-3">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-neutral-500 px-3">
               Included Services
             </span>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-neutral-300 to-transparent" />
           </div>
 
           <div className="space-y-2.5">
@@ -79,8 +80,8 @@ const ServiceSection = ({ service }: { service: any }) => (
               <div
                 key={index}
                 className="group/feature relative flex items-center gap-3 px-4 py-3 rounded-xl
-                bg-gradient-to-r from-gray-50 to-gray-50/50
-                border border-gray-200/60
+                bg-gradient-to-r from-neutral-50 to-neutral-50/50
+                border border-neutral-200/60
                 hover:border-cshine-blue-300/60
                 hover:bg-gradient-to-r hover:from-cshine-blue-50/40 hover:to-cyan-50/30
                 hover:shadow-sm hover:shadow-cshine-blue-500/10
@@ -120,8 +121,8 @@ const ServiceSection = ({ service }: { service: any }) => (
                 </div>
 
                 <span
-                  className="text-sm text-gray-700 font-medium leading-relaxed
-                  group-hover/feature:text-gray-900 transition-colors duration-300"
+                  className="text-sm text-neutral-700 font-medium leading-relaxed
+                  group-hover/feature:text-neutral-900 transition-colors duration-300"
                 >
                   {feature}
                 </span>
@@ -231,7 +232,7 @@ const Services = ({ showTitle = true }) => {
   ];
 
   return (
-    <div className="relative py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50">
+    <div className="relative py-24 bg-gradient-to-b from-neutral-50 via-white to-neutral-50">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-cshine-blue-500/5 rounded-full blur-3xl" />
@@ -241,14 +242,13 @@ const Services = ({ showTitle = true }) => {
       <div className="container relative mx-auto px-4 z-10">
         {showTitle && (
           <div className="text-center mb-20">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-cshine-blue-500/10 to-cyan-500/10 text-cshine-blue-600 text-sm font-semibold mb-6">
-              Our Expertise
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-midnight-900 mb-6">
-              Our Services
+            <Eyebrow className="mb-6">Capabilities</Eyebrow>
+            <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
+              What we can do for you
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Comprehensive digital solutions tailored to elevate your business
+            <p className="text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed">
+              The building blocks behind every engagement. Mix and match to fit
+              your project.
             </p>
           </div>
         )}
