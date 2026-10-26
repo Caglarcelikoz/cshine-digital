@@ -140,7 +140,7 @@ const HowWeWorkPage = async () => {
           {/* CTA */}
           <div className="text-center mt-10 md:mt-16">
             <Link
-              href={{ pathname: "/", hash: "contact" }}
+              href="/contact"
               className="btn-primary"
             >
               {t("cta")}

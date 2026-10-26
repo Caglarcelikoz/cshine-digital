@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" fill="none" role="img" aria-label="">
+  <defs>
+    <linearGradient id="ctBg" x1="0" y1="0" x2="1600" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#080917"/><stop offset="0.55" stop-color="#0d0e23"/><stop offset="1" stop-color="#04050c"/>
+    </linearGradient>
+    <radialGradient id="ctGlow" cx="0" cy="0" r="1" gradientTransform="translate(1260 300) scale(620 420)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.20"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="ctGlowL" cx="0" cy="0" r="1" gradientTransform="translate(220 360) scale(420 320)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#04c4d4" stop-opacity="0.08"/><stop offset="1" stop-color="#04c4d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="ctGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="23"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.05"/></feComponentTransfer>
+      <feComposite operator="over" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#ctBg)"/>
+  <rect width="1600" height="600" fill="url(#ctGlow)"/>
+  <rect width="1600" height="600" fill="url(#ctGlowL)"/>
+
+  <!-- LEFT: scattered points — loose questions, ideas, half-formed plans.
+       Faint and unordered; a few already lean toward the path. -->
+  <g fill="#66e7f3">
+    <circle cx="96" cy="118" r="3" fill-opacity="0.35"/>
+    <circle cx="188" cy="74" r="2.5" fill-opacity="0.25"/>
+    <circle cx="262" cy="160" r="4" fill-opacity="0.45"/>
+    <circle cx="142" cy="238" r="3" fill-opacity="0.3"/>
+    <circle cx="330" cy="98" r="2.5" fill-opacity="0.22"/>
+    <circle cx="60" cy="330" r="2.5" fill-opacity="0.22"/>
+    <circle cx="214" cy="312" r="3.5" fill-opacity="0.4"/>
+    <circle cx="352" cy="242" r="3" fill-opacity="0.3"/>
+    <circle cx="118" cy="430" r="3" fill-opacity="0.28"/>
+    <circle cx="292" cy="398" r="4" fill-opacity="0.5"/>
+    <circle cx="410" cy="330" r="3" fill-opacity="0.35"/>
+    <circle cx="40" cy="520" r="2.5" fill-opacity="0.2"/>
+    <circle cx="200" cy="520" r="3" fill-opacity="0.3"/>
+  </g>
+  <!-- a couple of tentative links between them -->
+  <g stroke="#04c4d4" stroke-opacity="0.18" stroke-width="1.5">
+    <path d="M262 160 L352 242 L410 330"/>
+    <path d="M214 312 L292 398"/>
+  </g>
+
+  <!-- THE PATH: one message finds its way across the bottom of the field,
+       well clear of the centre where the title sits. -->
+  <path d="M292 398 C 420 470, 560 540, 760 540 S 1080 520, 1170 430"
+        stroke="#66e7f3" stroke-opacity="0.55" stroke-width="3" fill="none"
+        stroke-dasharray="2 14" stroke-linecap="round"/>
+  <!-- the message itself, in transit -->
+  <circle cx="760" cy="540" r="7" fill="#66e7f3"/>
+  <circle cx="760" cy="540" r="20" fill="none" stroke="#66e7f3" stroke-opacity="0.3" stroke-width="2"/>
+
+  <!-- RIGHT: the envelope it lands in — open, received, answered. Large,
+       few lines, confident, with the signal of a reply going out. -->
+  <g stroke="#04c4d4" stroke-width="2.5" fill="none" stroke-linejoin="round">
+    <rect x="1170" y="200" width="300" height="200" rx="10" stroke-opacity="0.5"/>
+    <path d="M1170 214 L1320 316 L1470 214" stroke-opacity="0.5"/>
+    <path d="M1170 400 L1284 304" stroke-opacity="0.22"/>
+    <path d="M1470 400 L1356 304" stroke-opacity="0.22"/>
+  </g>
+  <rect x="1170" y="200" width="300" height="200" rx="10" fill="#04c4d4" fill-opacity="0.08"/>
+
+  <!-- reply: concentric arcs leaving the envelope's corner -->
+  <g stroke="#66e7f3" fill="none" stroke-width="2.5" stroke-linecap="round">
+    <path d="M1492 170 A 40 40 0 0 1 1532 130" stroke-opacity="0.55"/>
+    <path d="M1480 150 A 70 70 0 0 1 1550 80" stroke-opacity="0.35"/>
+    <path d="M1468 130 A 100 100 0 0 1 1568 30" stroke-opacity="0.2"/>
+  </g>
+  <circle cx="1470" cy="200" r="9" fill="#66e7f3"/>
+
+  <!-- a second, smaller card slightly rotated: the conversation continues -->
+  <rect x="0" y="0" width="150" height="96" rx="8" transform="translate(1090 92) rotate(-7)"
+        stroke="#66e7f3" stroke-opacity="0.35" stroke-width="2.5" fill="none"/>
+  <g stroke="#66e7f3" stroke-opacity="0.3" stroke-width="2.5" stroke-linecap="round" transform="translate(1090 92) rotate(-7)">
+    <path d="M22 32 H 120"/>
+    <path d="M22 52 H 96"/>
+  </g>
+
+  <!-- oversized quiet arcs bleeding off both edges — scale, negative space -->
+  <circle cx="1720" cy="320" r="380" fill="none" stroke="#04c4d4" stroke-opacity="0.10" stroke-width="2"/>
+  <circle cx="-140" cy="300" r="300" fill="none" stroke="#04c4d4" stroke-opacity="0.07" stroke-width="2"/>
+
+  <rect width="1600" height="600" filter="url(#ctGrain)" opacity="0.5" fill="none"/>
+  <rect x="0" y="0" width="1600" height="2" fill="#04c4d4" opacity="0.18"/>
+</svg>

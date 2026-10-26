@@ -66,11 +66,12 @@
       ]
     },
     "work": {
-      "title": "Realisaties - C-Shine Digital | Cases & klantprojecten",
+      "title": "Projecten - C-Shine Digital | Cases & klantprojecten",
       "description": "Zie hoe C-Shine Digital zich aanpast aan elk project: van een digitaal enterprise-platform tot volledige IT-partnerschappen en de website van een reismerk, volledig gebouwd van A tot Z.",
-      "ogTitle": "Realisaties - C-Shine Digital",
+      "ogTitle": "Projecten - C-Shine Digital",
       "ogDescription": "Cases die de breedte van C-Shine Digital tonen: platform engineering voor enterprises en volledig IT-partnerschap.",
       "keywords": [
+        "projecten webontwikkeling",
         "realisaties webontwikkeling",
         "portfolio softwareontwikkeling",
         "multi-tenant platform",
@@ -91,6 +92,19 @@
         "offerte web app",
         "kostprijs app ontwikkeling België",
         "gratis prijsindicatie"
+      ]
+    },
+    "contact": {
+      "title": "Contact - C-Shine Digital | Laten we praten over je project",
+      "description": "Vertel ons over je website, web app of IT-noden. Gevestigd in Limburg, actief in heel België en Europa. Meestal antwoord binnen één werkdag.",
+      "ogTitle": "Contact - C-Shine Digital",
+      "ogDescription": "Vertel ons over je project. Meestal antwoord binnen één werkdag.",
+      "keywords": [
+        "contact C-Shine Digital",
+        "offerte website",
+        "IT-partner België",
+        "softwareontwikkeling België",
+        "developer inhuren België"
       ]
     },
     "privacy": {
@@ -123,6 +137,9 @@
       ]
     }
   },
+  "OgImage": {
+    "tagline": "Web, software & IT, op maat van je project"
+  },
   "StructuredData": {
     "organizationDescription": "Een Belgische digitale studio die draait om flexibiliteit: een developer in je team, je volledige IT-afdeling, of de studio die je idee van nul bouwt. Web, e-commerce, branding, hosting en support.",
     "serviceName": "Softwareontwikkeling",
@@ -138,7 +155,8 @@
       "Software op maat"
     ],
     "websiteDescription": "Een flexibele Belgische digitale studio: web, e-commerce, branding, IT en embedded development.",
-    "country": "België"
+    "country": "België",
+    "europe": "Europa"
   },
   "Common": {
     "location": "Zutendaal, België",
@@ -161,12 +179,37 @@
     "contact": "Neem contact op",
     "suggestionsTitle": "Populaire pagina's"
   },
+  "Cookies": {
+    "consentTitle": "Mogen we je bezoek meten?",
+    "consentDescription": "We gebruiken Google Analytics om te zien hoe bezoekers deze site gebruiken, zodat we ze kunnen verbeteren. Dat gebeurt alleen als jij akkoord gaat. Meer in ons <link>privacybeleid</link>.",
+    "acceptAll": "Accepteren",
+    "rejectAll": "Weigeren",
+    "managePreferences": "Voorkeuren beheren",
+    "preferencesTitle": "Cookievoorkeuren",
+    "save": "Mijn keuze bewaren",
+    "close": "Sluiten",
+    "necessaryTitle": "Strikt noodzakelijk",
+    "necessaryDescription": "Eén cookie (cc_cookie) onthoudt je keuze over cookies gedurende 6 maanden. Die kan niet uitgeschakeld worden.",
+    "analyticsTitle": "Analytisch (Google Analytics)",
+    "analyticsDescription": "Anonieme statistieken over de pagina’s die je bezoekt, waar je vandaan komt en welk soort toestel je gebruikt. Cookies: _ga en _ga_*, bewaard tot maximaal 2 jaar. Aangeboden door Google Ireland Ltd.",
+    "moreTitle": "Meer informatie",
+    "moreDescription": "Je kunt je keuze altijd wijzigen via “Cookie-instellingen” onderaan elke pagina. Lees ook ons <link>privacybeleid</link>.",
+    "settings": "Cookie-instellingen"
+  },
+  "Founder": {
+    "name": "Caglar Celiköz",
+    "role": "Oprichter & software engineer",
+    "photoAlt": "Caglar Celiköz, oprichter van C-Shine Digital",
+    "bio": "Caglar is software engineer met meer dan zes jaar ervaring in het bouwen van webplatformen en applicaties, van enterprise-systemen tot websites voor lokale bedrijven. In 2023 richtte hij C-Shine Digital op om rechtstreeks met klanten te werken, zonder tussenlagen.",
+    "linkedin": "Bekijk op LinkedIn",
+    "aboutEyebrow": "Maak kennis met de oprichter"
+  },
   "Navigation": {
     "home": "Home",
     "services": "Diensten",
     "howWeWork": "Werkwijze",
     "about": "Over ons",
-    "work": "Realisaties",
+    "work": "Projecten",
     "contact": "Contact",
     "toggleMenu": "Menu openen of sluiten",
     "language": "Taal",
@@ -177,64 +220,65 @@
     "explore": "Ontdek",
     "contact": "Contact",
     "rights": "© {year} C-Shine Digital. Alle rechten voorbehouden.",
+    "companyNumber": "Ondernemingsnr. 0802.504.061 · Btw BE 0802.504.061",
     "privacy": "Privacy",
     "terms": "Voorwaarden"
   },
   "Hero": {
     "title": "Van idee naar<br></br><highlight>digitale topkwaliteit</highlight>",
-    "subtitle": "Een developer in je team, je volledige IT-afdeling, of de studio die je idee van nul bouwt: web app, merk, hosting en alles daartussen. Eén partner voor de hele digitale kant van je bedrijf, afgestemd op het project.",
+    "subtitle": "Of je nu een developer zoekt om je team te versterken, een volledige IT-afdeling nodig hebt of een digitaal idee van nul wilt realiseren: wij zorgen voor alles, van webapplicaties en branding tot hosting en onderhoud. Eén digitale partner, afgestemd op jouw ambities en de noden van je project.",
     "primaryCta": "Zo werken we samen",
     "secondaryCta": "Onze werkwijze",
     "stats": {
       "partners": "Partners",
       "projects": "Projecten",
       "satisfaction": "Tevredenheid",
-      "years": "Jaar"
+      "years": "Jaar ervaring"
     }
   },
   "AboutSection": {
     "eyebrow": "Over C-Shine Digital",
     "title": "Eén partner, wat het project ook vraagt",
-    "intro": "C-Shine Digital is een Belgische digitale studio die draait om flexibiliteit. Voor de ene klant zijn we een developer in hun team; voor een andere runnen we de volledige IT; voor een derde brengen we een idee van een blanco pagina tot een gelanceerd product. Dezelfde standaard, in welke vorm ook.",
+    "intro": "C-Shine Digital is een Belgische digitale studio die zich aanpast aan jouw behoeften. Van een extra developer in je team tot het volledig beheren van je IT of het ontwikkelen van een digitaal product van idee tot lancering. Welke rol we ook opnemen, kwaliteit blijft onze standaard.",
     "features": {
       "innovative": {
         "title": "Innovatieve oplossingen",
-        "description": "We combineren de nieuwste technologie met creatief denkwerk en bouwen oplossingen die niet alleen de uitdagingen van vandaag oplossen, maar ook meegroeien met je bedrijf."
+        "description": "We combineren moderne technologie met creatief denkwerk om digitale oplossingen te ontwikkelen die echte uitdagingen aanpakken en meegroeien met jouw onderneming."
       },
       "collaborative": {
         "title": "Nauwe samenwerking",
-        "description": "Jouw succes is onze prioriteit. We werken nauw met je samen, met heldere communicatie en afstemming tijdens het hele traject, zodat je krijgt wat je echt nodig hebt."
+        "description": "Sterke digitale oplossingen ontstaan door samen te werken. We luisteren, denken actief mee en communiceren helder tijdens het hele traject, van het eerste gesprek tot de oplevering."
       },
       "quality": {
         "title": "Kwaliteit & betrouwbaarheid",
-        "description": "Elke regel code die we schrijven en elke oplossing die we ontwerpen, bouwen we met precisie en testen we grondig, voor robuuste en betrouwbare prestaties."
+        "description": "Kwaliteit zit in elk detail. We schrijven doordachte code, testen grondig en bouwen betrouwbare digitale oplossingen die vandaag presteren en klaar zijn voor morgen."
       }
     },
     "imageAlt": "Van code tot een gelanceerd product — zo bouwt C-Shine Digital, vanuit België",
-    "whyTitle": "Waarom C-Shine Digital?",
-    "whyBody": "Je werkt rechtstreeks met de mensen die het werk doen — geen verkooplaag, geen juniors die je project overnemen. We passen ons aan aan hoe jij al werkt, kiezen de juiste tools in plaats van die waar we aan vastzitten, en blijven aanspreekbaar lang na de lancering.",
+    "whyTitle": "Waarom kiezen voor C-Shine Digital?",
+    "whyBody": "Je werkt rechtstreeks samen met ervaren professionals die verantwoordelijkheid nemen voor jouw project. Geen onnodige tussenpersonen of standaardaanpak. We sluiten aan op jouw manier van werken, kiezen de technologie die het beste past en blijven ook na de lancering betrokken.",
     "values": {
       "innovation": {
-        "title": "Innovatie voorop",
-        "description": "We blijven technologische trends voor en leveren oplossingen die mee zijn met hun tijd."
+        "title": "Technologie op maat",
+        "description": "We kiezen technologie op basis van wat jouw project echt nodig heeft, zonder vast te houden aan één stack of de nieuwste trends."
       },
       "partnership": {
-        "title": "Partnerschap met klanten",
-        "description": "We bouwen langdurige relaties op basis van vertrouwen en gedeeld succes."
+        "title": "Directe samenwerking",
+        "description": "Geen onnodige tussenpersonen. Je werkt rechtstreeks met de mensen die jouw oplossing bouwen, met korte communicatielijnen en snellere beslissingen."
       },
       "excellence": {
-        "title": "Uitmuntend opleveren",
-        "description": "We leveren kwaliteit op tijd, elke keer opnieuw."
+        "title": "Blijvende betrokkenheid",
+        "description": "Onze betrokkenheid stopt niet bij de lancering. We blijven beschikbaar om jouw digitale oplossingen te ondersteunen, verbeteren en verder te ontwikkelen naarmate je onderneming groeit."
       }
     },
-    "cta": "Ontdek onze werkwijze"
+    "cta": "Onze werkwijze"
   },
   "Modes": {
     "product-build": {
       "eyebrow": "Formule 01",
-      "title": "Product build",
-      "forWho": "Voor bedrijven met een idee, maar zonder team om het te bouwen",
-      "description": "We brengen je idee van een blanco pagina tot een live product (web apps, e-commerce, websites op maat) en blijven betrokken voor de updates na de lancering.",
+      "title": "Product Build",
+      "forWho": "Van een sterk idee naar een volwaardig digitaal product.",
+      "description": "Wij vertalen jouw idee naar een werkend digitaal product. Van het eerste concept en de ontwikkeling tot de lancering en het verdere onderhoud. Of het nu gaat om een webapplicatie, e-commerceplatform of website op maat: wij begeleiden het volledige traject.",
       "capabilities": [
         "Web- & app-ontwikkeling",
         "E-commerceplatformen",
@@ -255,9 +299,9 @@
     },
     "it-partner": {
       "eyebrow": "Formule 02",
-      "title": "Volledige IT-partner",
-      "forWho": "Voor bedrijven die één partner willen voor alles wat digitaal is",
-      "description": "Website, huisstijl, hosting, domeinen, e-mail en dagelijkse support: je volledige digitale en IT-functie, verzorgd door één team.",
+      "title": "Digital Partner",
+      "forWho": "Eén betrouwbare partner voor al jouw digitale behoeften.",
+      "description": "Van je website en huisstijl tot hosting, domeinnamen, e-mail en technische ondersteuning. Wij nemen de digitale kant van je bedrijf uit handen, zodat jij je kunt focussen op wat echt telt: je onderneming.",
       "capabilities": [
         "Website & branding",
         "Logo & huisstijlgids",
@@ -278,14 +322,14 @@
     },
     "embedded": {
       "eyebrow": "Formule 03",
-      "title": "Embedded developer",
-      "forWho": "Voor interne teams die extra developmentkracht nodig hebben",
+      "title": "Embedded Developer",
+      "forWho": "Extra technische expertise, rechtstreeks binnen jouw team.",
       "description": "We schuiven aan bij je developers (frontend, backend, DevOps) en leveren samen met jou op. Senior profielen, geen lange onboarding, flexibel qua stack.",
       "capabilities": [
         "Frontend & backend",
         "DevOps & cloud",
-        "Stack-onafhankelijk",
-        "Per contract of per project"
+        "Flexibel in technologie en werkwijze",
+        "Flexibele samenwerkingsvormen"
       ],
       "cta": "Bespreek een rol",
       "intro": "Extra developmentkracht die meteen aansluit bij je team: senior profielen, geen lange onboarding, flexibel qua stack.",
@@ -302,13 +346,13 @@
   },
   "EngagementModes": {
     "eyebrow": "Drie manieren om samen te werken",
-    "title": "Wij passen ons aan het project aan, niet omgekeerd",
-    "intro": "De meeste studio's doen één ding. Wij schakelen tussen drie, zodat je precies de samenwerking krijgt die je project nodig heeft, van één developer tot een volledige digitale partner.",
+    "title": "Jouw project bepaalt onze aanpak, niet andersom.",
+    "intro": "Waar veel studio's een vaste aanpak hanteren, stemmen wij onze samenwerking af op jouw project. Van een developer die je team versterkt tot een volwaardige digitale partner: wij bieden de juiste expertise en ondersteuning, afgestemd op wat jouw project nodig heeft.",
     "learnMore": "Meer info",
-    "aiTitle": "We bouwen AI-versneld, met de engineeringdiscipline om dat waar te maken.",
-    "aiBody": "En als het bij je product past, bouwen we er ook AI in, als functionaliteit, in welke formule je ook met ons samenwerkt.",
-    "standaloneTitle": "Maar één ding nodig? Dat kan ook.",
-    "standaloneBody": "Je hebt geen volledige samenwerking nodig voor één opdracht. We nemen ook graag een losse opdracht op:",
+    "aiTitle": "Slimmer ontwikkelen met AI, ondersteund door technische expertise.",
+    "aiBody": "We zetten AI in om efficiënter en sneller te ontwikkelen, zonder in te leveren op kwaliteit. En wanneer het écht meerwaarde biedt, integreren we AI ook in jouw digitale producten, ongeacht de samenwerkingsvorm.",
+    "standaloneTitle": "Slechts één ding nodig? Dat kan ook.",
+    "standaloneBody": "JNiet elk project vraagt om een volledige samenwerking. Of het nu gaat om branding, hosting of een specifieke digitale opdracht: ook voor afzonderlijke diensten kun je bij ons terecht.",
     "standaloneServices": [
       "Branding & logo",
       "Hosting, domeinen & e-mail",
@@ -366,28 +410,32 @@
     "intro": "Veelgestelde vragen over samenwerken met C-Shine Digital",
     "items": [
       {
-        "question": "Welke diensten biedt C-Shine Digital aan?",
-        "answer": "C-Shine Digital is gespecialiseerd in webontwikkeling op maat, app-ontwikkeling en IT-consultancy. Van bedrijfswebsites en e-commerceplatformen tot complexe web applicaties: we leveren schaalbare digitale oplossingen, afgestemd op de noden van elke klant."
+        "question": "Wat kost een website of web app?",
+        "answer": "Dat hangt af van wat je nodig hebt, daarom werken we niet met vaste pakketten. Na een kort, vrijblijvend gesprek over je project krijg je een duidelijk voorstel met een vaste prijs voor de afgesproken scope, nog voor er iets gebeurt. Kleine projecten zijn even welkom als grote."
       },
       {
-        "question": "Welke soorten projecten nemen jullie aan?",
-        "answer": "We nemen projecten van elke omvang aan - van kleine bedrijfswebsites tot complexe enterprise-applicaties. Denk aan web applicaties op maat, mobiele apps, e-commerceoplossingen en technisch advies voor grotere organisaties. Elk project krijgt dezelfde toewijding aan kwaliteit en oog voor detail."
+        "question": "Hoe lang duurt een project?",
+        "answer": "Dat hangt volledig af van het project: een paar pagina’s is iets anders dan een webshop of een platform op maat. In je voorstel staat een realistische planning, zodat je weet waar je aan toe bent voor we starten."
       },
       {
-        "question": "Hoe wordt de prijs van een project bepaald?",
-        "answer": "De kostprijs hangt af van verschillende factoren, zoals scope, complexiteit, timing en specifieke vereisten. We werken met flexibele prijsmodellen, waaronder vaste prijzen voor afgebakende projecten en tarieven op basis van tijd voor consultancy. Elke offerte wordt op maat gemaakt, zodat je de beste waarde krijgt voor jouw noden."
+        "question": "Van wie zijn het domein, de code en de content?",
+        "answer": "Het domein is altijd van jou. Zolang wij je website beheren, houden wij het technisch beheer, inclusief de code en de hosting. Wil je het beheer zelf overnemen of naar een andere partij gaan, dan dragen we alles aan je over."
       },
       {
-        "question": "Wat is jullie aanpak?",
-        "answer": "We werken agile, met heldere communicatie en regelmatige updates. Het traject start met een grondige analyse van de vereisten, gevolgd door iteratieve ontwikkelfases met regelmatige feedback van de klant. Zo sluit het eindproduct perfect aan bij jouw visie, met behoud van een hoge kwaliteitsstandaard."
+        "question": "Wat gebeurt er na de lancering? Is onderhoud inbegrepen?",
+        "answer": "We bieden onderhoud aan voor een vast jaarbedrag. Daarin zitten het basisonderhoud, beveiligingsupdates en snelle kleine vragen. Nieuwe functies of grotere wijzigingen rekenen we apart aan, zodat er geen verrassingen zijn."
       },
       {
         "question": "Met welke technologieën werken jullie?",
-        "answer": "C-Shine Digital is technologie-onafhankelijk en kiest per project de beste tools. We hebben uitgebreide ervaring met moderne webtechnologieën zoals React, Next.js, Node.js en diverse databaseoplossingen. Voor mobiele apps gebruiken we cross-platform technologieën, voor een kostenefficiënte en vlotte oplevering."
+        "answer": "We zijn niet gebonden aan één technologie en kiezen wat bij je project past: bijvoorbeeld Next.js, React, Angular, Java met Spring Boot, Shopify, of een CMS zoals Contentful of Strapi."
       },
       {
-        "question": "Bieden jullie support na de lancering?",
-        "answer": "Ja, we bieden uitgebreide support na de lancering, waaronder onderhoud, updates en technische ondersteuning. Onze supportpakketten kunnen hostingbeheer, regelmatige updates, performance monitoring en doorlopende optimalisaties omvatten, zodat je digitale oplossing optimaal blijft presteren."
+        "question": "Werken jullie alleen in Limburg?",
+        "answer": "Nee. We zijn gevestigd in Zutendaal (Limburg), maar werken voor klanten in heel België en Europa, remote of op locatie."
+      },
+      {
+        "question": "Kan ik jullie ook voor één losse opdracht inschakelen?",
+        "answer": "Ja. Naast een volledige bouw, een volledig IT-partnerschap of een embedded developer nemen we ook graag een losse opdracht op, zoals een logo, hosting en e-mail, of één specifieke functie."
       }
     ],
     "ctaIntro": "Heb je een specifieke vraag?",
@@ -408,10 +456,19 @@
     "messagePlaceholder": "Vertel ons over je project, timing en budget.",
     "submit": "Verstuur bericht",
     "hours": "Ma - vr: 9:00 - 17:00",
-    "connect": "Volg ons",
     "linkedin": "C-Shine Digital op LinkedIn",
     "instagram": "C-Shine Digital op Instagram",
-    "mapTitle": "Locatie van C-Shine Digital, Zutendaal, België"
+    "breadcrumb": "Contact",
+    "eyebrow": "Meestal antwoord binnen één werkdag",
+    "privacyNote": "We gebruiken je gegevens enkel om je bericht te beantwoorden. Lees ons <link>privacybeleid</link>.",
+    "emailLabel": "E-mail",
+    "hoursLabel": "Kantooruren",
+    "areaLabel": "Waar we werken",
+    "area": "Gevestigd in Zutendaal (Limburg), actief in heel België en Europa — remote of op locatie.",
+    "writtenFirst": "Elke eerste vraag behandelen we schriftelijk. Zo kunnen we je vraag goed bekijken en komen we terug met een doordacht antwoord.",
+    "ctaTitle": "Een project in gedachten?",
+    "ctaBody": "Vertel ons wat je nodig hebt — meestal antwoorden we binnen één werkdag.",
+    "ctaButton": "Neem contact op"
   },
   "ServicesPage": {
     "breadcrumb": "Diensten",
@@ -609,13 +666,16 @@
     "facts": {
       "company": { "label": "Bedrijf", "value": "C-Shine Digital" },
       "basedIn": { "label": "Gevestigd in", "value": "Zutendaal, België" },
-      "since": { "label": "Actief sinds", "value": "5+ jaar" },
-      "engagements": { "label": "Formules", "value": "Build · Volledige IT · Embedded" }
+      "since": { "label": "Opgericht", "value": "2023" },
+      "engagements": {
+        "label": "Formules",
+        "value": "Build · Volledige IT · Embedded"
+      }
     },
     "cta": "Laten we praten over je project"
   },
   "WorkPage": {
-    "breadcrumb": "Realisaties",
+    "breadcrumb": "Projecten",
     "eyebrow": "Cases",
     "title": "Dezelfde standaard, in welke vorm ook",
     "subtitle": "Van een digitaal enterprise-platform tot een reismerk dat we van A tot Z bouwden. Vier projecten, vier manieren van samenwerken, één senior standaard.",
@@ -627,7 +687,12 @@
         "role": "Embedded developer",
         "headline": "Een digitaal platform voor een volledige productgroep",
         "body": "Als deel van het platformteam droegen we bij aan Digital Platform: een multi-tenant systeem waarin elk businesskanaal van Ravago wordt onboarded met een eigen branding en domein, op één gedeelde engine.",
-        "tags": ["Multi-tenant", "Frontend & backend", "Contentful", "Systeemintegraties"],
+        "tags": [
+          "Multi-tenant",
+          "Frontend & backend",
+          "Contentful",
+          "Systeemintegraties"
+        ],
         "noLinkNote": "Geen live link: het platform zit achter de login van elk kanaal.",
         "modules": {
           "portfolio": {
@@ -660,7 +725,12 @@
         "role": "Volledige IT-partner",
         "headline": "De volledige digitale & IT-afdeling",
         "body": "Grondwerken en infrastructuur in heel België. We ontwierpen en bouwden de website en het merk, en zetten hosting, domeinen en e-mail op. Eén aanspreekbare partner voor alles wat digitaal is.",
-        "tags": ["Webontwikkeling", "Branding", "Hosting & e-mail", "Doorlopende support"],
+        "tags": [
+          "Webontwikkeling",
+          "Branding",
+          "Hosting & e-mail",
+          "Doorlopende support"
+        ],
         "shotAlt": "De dienstensectie van de MKM Solutions-website die we bouwden"
       },
       "mkmCarrosserie": {
@@ -674,13 +744,33 @@
         "role": "Design & development",
         "headline": "De digitale toegangspoort tot het authentieke Türkiye",
         "body": "Een Belgische reisspecialist die reizen op maat door Türkiye samenstelt. We ontwierpen en bouwden hun website van A tot Z: vijf reisstijlen, zeven regio's, een filterbare reiscatalogus en uitgebreide reisroutes — die allemaal leiden naar een rechtstreeks contact met hun reisontwerpers.",
-        "tags": ["Webdesign & development", "Reiscatalogus", "Content & SEO", "Hosting & domeinen"],
+        "tags": [
+          "Webdesign & development",
+          "Reiscatalogus",
+          "Content & SEO",
+          "Hosting & domeinen"
+        ],
         "slides": [
-          { "alt": "De homepage hero van Xplore Türkiye die we bouwden", "label": "homepage hero" },
-          { "alt": "De sectie met vijf reisstijlen op de homepage van Xplore Türkiye", "label": "vijf reisstijlen" },
-          { "alt": "De interactieve kaart van de zeven regio's van Türkiye", "label": "interactieve regiokaart" },
-          { "alt": "De filterbare reiscatalogus van de Xplore Türkiye-website", "label": "filterbare reiscatalogus" },
-          { "alt": "De dag-tot-dag reisroute van een rondreis door Cappadocië", "label": "dag-tot-dag reisroute" }
+          {
+            "alt": "De homepage hero van Xplore Türkiye die we bouwden",
+            "label": "homepage hero"
+          },
+          {
+            "alt": "De sectie met vijf reisstijlen op de homepage van Xplore Türkiye",
+            "label": "vijf reisstijlen"
+          },
+          {
+            "alt": "De interactieve kaart van de zeven regio's van Türkiye",
+            "label": "interactieve regiokaart"
+          },
+          {
+            "alt": "De filterbare reiscatalogus van de Xplore Türkiye-website",
+            "label": "filterbare reiscatalogus"
+          },
+          {
+            "alt": "De dag-tot-dag reisroute van een rondreis door Cappadocië",
+            "label": "dag-tot-dag reisroute"
+          }
         ]
       }
     }
@@ -723,7 +813,11 @@
     "qualifiers": {
       "size": {
         "question": "Hoeveel pagina's of schermen, ongeveer?",
-        "options": { "few": "Maar een paar", "around-ten": "Een tiental", "many": "Veel / uitgebreid" }
+        "options": {
+          "few": "Maar een paar",
+          "around-ten": "Een tiental",
+          "many": "Veel / uitgebreid"
+        }
       },
       "payments": {
         "question": "Moet je online betalingen kunnen ontvangen?",
@@ -735,11 +829,19 @@
       },
       "content": {
         "question": "Wie maakt de teksten en beelden?",
-        "options": { "client": "Die lever ik aan", "partly": "Gedeeltelijk", "cshine": "Jullie maken ze" }
+        "options": {
+          "client": "Die lever ik aan",
+          "partly": "Gedeeltelijk",
+          "cshine": "Jullie maken ze"
+        }
       },
       "timeline": {
         "question": "Wanneer heb je het nodig?",
-        "options": { "relaxed": "Geen haast", "months": "Binnen enkele maanden", "asap": "Zo snel mogelijk" }
+        "options": {
+          "relaxed": "Geen haast",
+          "months": "Binnen enkele maanden",
+          "asap": "Zo snel mogelijk"
+        }
       }
     },
     "bands": {
@@ -774,14 +876,18 @@
     "contents": "Inhoud",
     "privacy": {
       "title": "Privacybeleid",
-      "lastUpdated": "december 2024",
+      "lastUpdated": "oktober 2026",
       "contact": "Voor vragen over ons privacybeleid kun je ons contacteren via <email>info@cshinedigital.com</email>",
       "sections": [
         {
           "title": "1. Inleiding en overzicht",
           "blocks": [
-            { "p": "Welkom op de website van C-Shine Digital, gevestigd in Zutendaal, Limburg (BE), met ondernemingsnummer BE0802.504.061. Dit privacybeleid legt uit hoe we je gegevens verzamelen, gebruiken, delen en beschermen wanneer je onze website bezoekt of gebruikmaakt van onze diensten. Lees dit privacybeleid aandachtig. Als je niet akkoord gaat met de voorwaarden van dit privacybeleid, gebruik de site dan niet." },
-            { "p": "We behouden ons het recht voor om dit privacybeleid op elk moment en om eender welke reden te wijzigen. We brengen je op de hoogte van wijzigingen door de datum \"Laatst bijgewerkt\" van dit privacybeleid aan te passen. We raden je aan dit privacybeleid regelmatig na te lezen om op de hoogte te blijven van wijzigingen." }
+            {
+              "p": "Welkom op de website van C-Shine Digital, gevestigd in Zutendaal, Limburg (BE), met ondernemingsnummer BE0802.504.061. Dit privacybeleid legt uit hoe we je gegevens verzamelen, gebruiken, delen en beschermen wanneer je onze website bezoekt of gebruikmaakt van onze diensten. Lees dit privacybeleid aandachtig. Als je niet akkoord gaat met de voorwaarden van dit privacybeleid, gebruik de site dan niet."
+            },
+            {
+              "p": "We behouden ons het recht voor om dit privacybeleid op elk moment en om eender welke reden te wijzigen. We brengen je op de hoogte van wijzigingen door de datum \"Laatst bijgewerkt\" van dit privacybeleid aan te passen. We raden je aan dit privacybeleid regelmatig na te lezen om op de hoogte te blijven van wijzigingen."
+            }
           ]
         },
         {
@@ -789,61 +895,133 @@
           "blocks": [
             { "p": "We verzamelen gegevens op de volgende manieren:" },
             { "h3": "Gegevens die je zelf verstrekt:" },
-            { "ul": ["Contactgegevens (naam, e-mailadres, telefoonnummer)", "Bedrijfsgegevens voor de samenwerking rond een project", "Projectvereisten en specificaties", "Communicatievoorkeuren"] },
+            {
+              "ul": [
+                "Contactgegevens (naam, e-mailadres, telefoonnummer)",
+                "Bedrijfsgegevens voor de samenwerking rond een project",
+                "Projectvereisten en specificaties",
+                "Communicatievoorkeuren"
+              ]
+            },
             { "h3": "Automatisch verzamelde gegevens:" },
-            { "ul": ["Apparaatgegevens (type browser, besturingssysteem)", "IP-adres en locatiegegevens", "Gebruiksgegevens van de website", "Cookies en vergelijkbare technologieën"] }
+            {
+              "ul": [
+                "Apparaatgegevens (type browser, besturingssysteem)",
+                "IP-adres en locatiegegevens",
+                "Gebruiksgegevens van de website",
+                "Cookies en vergelijkbare technologieën"
+              ]
+            }
           ]
         },
         {
           "title": "3. Gebruik van cookies en analytics",
           "blocks": [
-            { "p": "We gebruiken Google Analytics om te begrijpen hoe bezoekers onze website gebruiken. Deze dienst kan het volgende verzamelen:" },
-            { "ul": ["Bezochte pagina's en bezoekduur", "Verkeersbronnen en navigatiepaden", "Apparaat- en browsergegevens", "Geografische locatie (op land- of stadsniveau)"] },
-            { "p": "Je kunt je afmelden voor Google Analytics door de Google Analytics Opt-out Browser Add-on te installeren of door je cookievoorkeuren te beheren via onze cookiebanner." }
+            {
+              "p": "We gebruiken Google Analytics 4 (aangeboden door Google Ireland Ltd.) enkel als je daarvoor toestemming geeft via onze cookiebanner. Zonder jouw toestemming worden er geen analytische cookies geplaatst en worden er geen gegevens naar Google verstuurd."
+            },
+            {
+              "p": "Met jouw toestemming kan Google Analytics het volgende verzamelen:"
+            },
+            {
+              "ul": [
+                "Bezochte pagina's en bezoekduur",
+                "Verkeersbronnen en navigatiepaden",
+                "Type toestel en browser",
+                "Benaderende locatie (op land- of stadsniveau)"
+              ]
+            },
+            {
+              "p": "Cookies die we gebruiken: cc_cookie (onthoudt je keuze over cookies; strikt noodzakelijk; 6 maanden) en _ga / _ga_* (Google Analytics; enkel met jouw toestemming; maximaal 2 jaar). Je kunt je toestemming op elk moment wijzigen of intrekken via “Cookie-instellingen” onderaan elke pagina."
+            }
           ]
         },
         {
           "title": "4. Hoe we je gegevens gebruiken",
           "blocks": [
             { "p": "We gebruiken de verzamelde gegevens voor:" },
-            { "ul": ["Het leveren en verbeteren van onze diensten", "Communicatie over projecten en diensten", "Optimalisatie en beveiliging van de website", "Naleving van wettelijke verplichtingen en bedrijfsvoering"] },
-            { "p": "Alle verwerkingen zijn gebaseerd op gerechtvaardigd belang, de uitvoering van een overeenkomst, wettelijke verplichtingen of je uitdrukkelijke toestemming." }
+            {
+              "ul": [
+                "Het leveren en verbeteren van onze diensten",
+                "Communicatie over projecten en diensten",
+                "Optimalisatie en beveiliging van de website",
+                "Naleving van wettelijke verplichtingen en bedrijfsvoering"
+              ]
+            },
+            {
+              "p": "Alle verwerkingen zijn gebaseerd op gerechtvaardigd belang, de uitvoering van een overeenkomst, wettelijke verplichtingen of je uitdrukkelijke toestemming."
+            }
           ]
         },
         {
           "title": "5. Externe dienstverleners",
           "blocks": [
             { "p": "We werken samen met betrouwbare dienstverleners voor:" },
-            { "ul": ["Websitehosting en -onderhoud", "Analysediensten", "Projectmanagementtools", "Communicatieplatformen"] },
-            { "p": "Alle dienstverleners worden zorgvuldig geselecteerd en zijn verplicht passende beveiligingsmaatregelen te nemen. We delen enkel de gegevens die nodig zijn voor de dienstverlening." }
+            {
+              "ul": [
+                "Websitehosting en -onderhoud",
+                "Het versturen van berichten via ons contactformulier (Resend)",
+                "Websitestatistieken (Google Analytics, enkel met jouw toestemming)",
+                "Tools voor projectmanagement en communicatie"
+              ]
+            },
+            {
+              "p": "Alle dienstverleners worden zorgvuldig geselecteerd en zijn verplicht passende beveiligingsmaatregelen te nemen. We delen enkel de gegevens die nodig zijn voor de dienstverlening."
+            }
           ]
         },
         {
           "title": "6. Gegevensbescherming en beveiliging",
           "blocks": [
-            { "p": "We nemen passende technische en organisatorische maatregelen om je persoonsgegevens te beschermen, waaronder:" },
-            { "ul": ["Beveiligde gegevensoverdracht (SSL/TLS-encryptie)", "Toegangscontrole en authenticatie", "Regelmatige beveiligingsevaluaties", "Back-up- en herstelprocedures"] }
+            {
+              "p": "We nemen passende technische en organisatorische maatregelen om je persoonsgegevens te beschermen, waaronder:"
+            },
+            {
+              "ul": [
+                "Beveiligde gegevensoverdracht (SSL/TLS-encryptie)",
+                "Toegangscontrole en authenticatie",
+                "Regelmatige beveiligingsevaluaties",
+                "Back-up- en herstelprocedures"
+              ]
+            }
           ]
         },
         {
           "title": "7. Je privacyrechten",
           "blocks": [
             { "p": "Onder de GDPR (AVG) heb je het recht om:" },
-            { "ul": ["Je persoonsgegevens in te zien", "Onjuiste gegevens te laten corrigeren", "Verwijdering van je gegevens te vragen", "De verwerking te laten beperken", "Je gegevens over te dragen (dataportabiliteit)", "Bezwaar te maken tegen de verwerking"] },
-            { "p": "Om deze rechten uit te oefenen, kun je ons contacteren via info@cshinedigital.com. We beantwoorden je verzoek binnen 30 dagen." }
+            {
+              "ul": [
+                "Je persoonsgegevens in te zien",
+                "Onjuiste gegevens te laten corrigeren",
+                "Verwijdering van je gegevens te vragen",
+                "De verwerking te laten beperken",
+                "Je gegevens over te dragen (dataportabiliteit)",
+                "Bezwaar te maken tegen de verwerking"
+              ]
+            },
+            {
+              "p": "Om deze rechten uit te oefenen, kun je ons contacteren via info@cshinedigital.com. We beantwoorden je verzoek binnen 30 dagen."
+            }
           ]
         },
         {
           "title": "8. Contactformulieren en communicatie",
           "blocks": [
-            { "p": "Wanneer je onze contactformulieren gebruikt, verzamelen we de gegevens die nodig zijn om je vraag te beantwoorden. Deze gegevens worden veilig bewaard en enkel gebruikt voor communicatiedoeleinden." },
-            { "p": "Als je je aanmeldt voor marketingcommunicatie, kun je je op elk moment afmelden via de link in onze e-mails of door ons rechtstreeks te contacteren." }
+            {
+              "p": "Wanneer je onze contactformulieren gebruikt, verzamelen we de gegevens die nodig zijn om je vraag te beantwoorden. Deze gegevens worden veilig bewaard en enkel gebruikt voor communicatiedoeleinden."
+            },
+            {
+              "p": "Als je je aanmeldt voor marketingcommunicatie, kun je je op elk moment afmelden via de link in onze e-mails of door ons rechtstreeks te contacteren."
+            }
           ]
         },
         {
           "title": "9. Wijzigingen aan dit beleid",
           "blocks": [
-            { "p": "Dit privacybeleid kan periodiek worden bijgewerkt. Belangrijke wijzigingen communiceren we via onze website of rechtstreeks." }
+            {
+              "p": "Dit privacybeleid kan periodiek worden bijgewerkt. Belangrijke wijzigingen communiceren we via onze website of rechtstreeks."
+            }
           ]
         }
       ]
@@ -858,16 +1036,46 @@
           "blocks": [
             {
               "dl": [
-                { "term": "C-Shine Digital", "text": "Gevestigd in Zutendaal, België, met btw-nummer BE0802.504.061." },
-                { "term": "Klant", "text": "De persoon of entiteit met wie C-Shine Digital een overeenkomst heeft gesloten." },
-                { "term": "Partijen", "text": "C-Shine Digital en de klant samen." },
-                { "term": "Consument", "text": "Een klant die een natuurlijke persoon is en handelt als particulier." },
-                { "term": "Offerte", "text": "Elk aanbod van C-Shine Digital aan (rechts)personen met het oog op het sluiten van een overeenkomst." },
-                { "term": "Overeenkomst", "text": "De overeenkomst tussen C-Shine Digital en de klant." },
-                { "term": "Opdracht", "text": "De dienst of het product dat C-Shine Digital levert." },
-                { "term": "Annulering", "text": "De beëindiging of ontbinding van de overeenkomst." },
-                { "term": "Schriftelijk", "text": "Elektronische communicatie zoals e-mail, op voorwaarde dat de identiteit van de afzender en de authenticiteit van de communicatie voldoende vaststaan. De bewijslast met betrekking tot de ontvangst van elektronische communicatie ligt bij de klant." },
-                { "term": "Gebruik", "text": "Verveelvoudiging en/of openbaarmaking in de zin van de toepasselijke wetgeving." }
+                {
+                  "term": "C-Shine Digital",
+                  "text": "Gevestigd in Zutendaal, België, met btw-nummer BE0802.504.061."
+                },
+                {
+                  "term": "Klant",
+                  "text": "De persoon of entiteit met wie C-Shine Digital een overeenkomst heeft gesloten."
+                },
+                {
+                  "term": "Partijen",
+                  "text": "C-Shine Digital en de klant samen."
+                },
+                {
+                  "term": "Consument",
+                  "text": "Een klant die een natuurlijke persoon is en handelt als particulier."
+                },
+                {
+                  "term": "Offerte",
+                  "text": "Elk aanbod van C-Shine Digital aan (rechts)personen met het oog op het sluiten van een overeenkomst."
+                },
+                {
+                  "term": "Overeenkomst",
+                  "text": "De overeenkomst tussen C-Shine Digital en de klant."
+                },
+                {
+                  "term": "Opdracht",
+                  "text": "De dienst of het product dat C-Shine Digital levert."
+                },
+                {
+                  "term": "Annulering",
+                  "text": "De beëindiging of ontbinding van de overeenkomst."
+                },
+                {
+                  "term": "Schriftelijk",
+                  "text": "Elektronische communicatie zoals e-mail, op voorwaarde dat de identiteit van de afzender en de authenticiteit van de communicatie voldoende vaststaan. De bewijslast met betrekking tot de ontvangst van elektronische communicatie ligt bij de klant."
+                },
+                {
+                  "term": "Gebruik",
+                  "text": "Verveelvoudiging en/of openbaarmaking in de zin van de toepasselijke wetgeving."
+                }
               ]
             }
           ]
@@ -875,61 +1083,81 @@
         {
           "title": "2. Toepasselijkheid",
           "blocks": [
-            { "p": "Deze algemene voorwaarden zijn van toepassing op alle offertes, aanbiedingen, werkzaamheden, bestellingen, overeenkomsten en leveringen van diensten of producten door of namens C-Shine Digital. Afwijkingen van deze voorwaarden zijn enkel geldig als ze uitdrukkelijk schriftelijk zijn overeengekomen. Aanvullende en/of afwijkende voorwaarden van de klant of van derden worden uitdrukkelijk uitgesloten." }
+            {
+              "p": "Deze algemene voorwaarden zijn van toepassing op alle offertes, aanbiedingen, werkzaamheden, bestellingen, overeenkomsten en leveringen van diensten of producten door of namens C-Shine Digital. Afwijkingen van deze voorwaarden zijn enkel geldig als ze uitdrukkelijk schriftelijk zijn overeengekomen. Aanvullende en/of afwijkende voorwaarden van de klant of van derden worden uitdrukkelijk uitgesloten."
+            }
           ]
         },
         {
           "title": "3. Aanbiedingen en offertes",
           "blocks": [
-            { "p": "Aanbiedingen en offertes van C-Shine Digital zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld. Een aanbieding of offerte is 14 dagen geldig vanaf de datum van uitgifte, tenzij anders vermeld in de aanbieding of offerte. Als de klant een aanbieding of offerte niet binnen de geldende termijn aanvaardt, vervalt deze, tenzij schriftelijk anders overeengekomen." }
+            {
+              "p": "Aanbiedingen en offertes van C-Shine Digital zijn vrijblijvend, tenzij uitdrukkelijk anders vermeld. Een aanbieding of offerte is 14 dagen geldig vanaf de datum van uitgifte, tenzij anders vermeld in de aanbieding of offerte. Als de klant een aanbieding of offerte niet binnen de geldende termijn aanvaardt, vervalt deze, tenzij schriftelijk anders overeengekomen."
+            }
           ]
         },
         {
           "title": "4. Aanvaarding",
           "blocks": [
-            { "p": "De klant moet de offerte uitdrukkelijk en schriftelijk aanvaarden. Doet de klant dat niet, maar stemt hij er toch mee in of wekt hij de indruk dat C-Shine Digital werkzaamheden uitvoert in het kader van de overeenkomst, dan wordt de offerte als aanvaard beschouwd. C-Shine Digital behoudt zich het recht voor een opdracht te weigeren als er na de aanvaarding nieuwe informatie beschikbaar wordt die de uitvoering door C-Shine Digital onaanvaardbaar maakt. Na aanvaarding kan de overeenkomst enkel in onderling akkoord worden gewijzigd. In dat geval heeft C-Shine Digital het recht de prijs van de overeenkomst aan te passen." }
+            {
+              "p": "De klant moet de offerte uitdrukkelijk en schriftelijk aanvaarden. Doet de klant dat niet, maar stemt hij er toch mee in of wekt hij de indruk dat C-Shine Digital werkzaamheden uitvoert in het kader van de overeenkomst, dan wordt de offerte als aanvaard beschouwd. C-Shine Digital behoudt zich het recht voor een opdracht te weigeren als er na de aanvaarding nieuwe informatie beschikbaar wordt die de uitvoering door C-Shine Digital onaanvaardbaar maakt. Na aanvaarding kan de overeenkomst enkel in onderling akkoord worden gewijzigd. In dat geval heeft C-Shine Digital het recht de prijs van de overeenkomst aan te passen."
+            }
           ]
         },
         {
           "title": "5. Uitvoering van een opdracht",
           "blocks": [
-            { "p": "C-Shine Digital voert de opdracht uit naar beste weten en kunnen en volgens de regels van goed vakmanschap, in de stijl waarin C-Shine Digital doorgaans werkt. C-Shine Digital levert tijdens de uitvoering van de opdracht alle redelijke inspanningen en handelt naar best vermogen in de gegeven omstandigheden. De uitvoering van de opdracht gebeurt in overleg en na schriftelijk akkoord en betaling van een eventueel overeengekomen voorschot door de klant. De klant is verplicht alles te doen en na te laten wat redelijkerwijs nodig en wenselijk is om een tijdige en correcte uitvoering van de opdracht mogelijk te maken. Als de klant er niet voor heeft gezorgd dat C-Shine Digital tijdig met de uitvoering van de overeenkomst kan starten, zijn de extra kosten en/of extra uren die daaruit voortvloeien ten laste van de klant." }
+            {
+              "p": "C-Shine Digital voert de opdracht uit naar beste weten en kunnen en volgens de regels van goed vakmanschap, in de stijl waarin C-Shine Digital doorgaans werkt. C-Shine Digital levert tijdens de uitvoering van de opdracht alle redelijke inspanningen en handelt naar best vermogen in de gegeven omstandigheden. De uitvoering van de opdracht gebeurt in overleg en na schriftelijk akkoord en betaling van een eventueel overeengekomen voorschot door de klant. De klant is verplicht alles te doen en na te laten wat redelijkerwijs nodig en wenselijk is om een tijdige en correcte uitvoering van de opdracht mogelijk te maken. Als de klant er niet voor heeft gezorgd dat C-Shine Digital tijdig met de uitvoering van de overeenkomst kan starten, zijn de extra kosten en/of extra uren die daaruit voortvloeien ten laste van de klant."
+            }
           ]
         },
         {
           "title": "6. Intellectuele eigendom",
           "blocks": [
-            { "p": "C-Shine Digital behoudt alle intellectuele eigendomsrechten op de voortbrengselen van de geest die het gebruikt of heeft gebruikt en/of ontwikkelt of heeft ontwikkeld in het kader van de uitvoering van de overeenkomst, en waarop het auteursrecht of andere intellectuele eigendomsrechten heeft of kan doen gelden." }
+            {
+              "p": "C-Shine Digital behoudt alle intellectuele eigendomsrechten op de voortbrengselen van de geest die het gebruikt of heeft gebruikt en/of ontwikkelt of heeft ontwikkeld in het kader van de uitvoering van de overeenkomst, en waarop het auteursrecht of andere intellectuele eigendomsrechten heeft of kan doen gelden."
+            }
           ]
         },
         {
           "title": "7. Betaling",
           "blocks": [
-            { "p": "De klant moet de facturen van C-Shine Digital betalen binnen 30 dagen na factuurdatum, tenzij schriftelijk anders overeengekomen. Betaalt de klant niet tijdig, dan is hij van rechtswege in gebreke en is hij de wettelijke interest verschuldigd. Alle gerechtelijke en buitengerechtelijke kosten die C-Shine Digital maakt als gevolg van de tekortkoming van de klant, zijn volledig ten laste van de klant." }
+            {
+              "p": "De klant moet de facturen van C-Shine Digital betalen binnen 30 dagen na factuurdatum, tenzij schriftelijk anders overeengekomen. Betaalt de klant niet tijdig, dan is hij van rechtswege in gebreke en is hij de wettelijke interest verschuldigd. Alle gerechtelijke en buitengerechtelijke kosten die C-Shine Digital maakt als gevolg van de tekortkoming van de klant, zijn volledig ten laste van de klant."
+            }
           ]
         },
         {
           "title": "8. Annulering en beëindiging",
           "blocks": [
-            { "p": "C-Shine Digital behoudt zich het recht voor de overeenkomst met onmiddellijke ingang te annuleren of op te schorten in geval van faillissement, opschorting van betaling, schuldherschikking, beslag of andere omstandigheden waardoor de klant niet langer vrij over zijn vermogen kan beschikken. Annulering of beëindiging ontslaat de klant niet van zijn betalingsverplichtingen. Bij annulering door de klant is de klant verplicht C-Shine Digital alle redelijkerwijs gemaakte kosten in verband met de uitvoering van de overeenkomst te vergoeden." }
+            {
+              "p": "C-Shine Digital behoudt zich het recht voor de overeenkomst met onmiddellijke ingang te annuleren of op te schorten in geval van faillissement, opschorting van betaling, schuldherschikking, beslag of andere omstandigheden waardoor de klant niet langer vrij over zijn vermogen kan beschikken. Annulering of beëindiging ontslaat de klant niet van zijn betalingsverplichtingen. Bij annulering door de klant is de klant verplicht C-Shine Digital alle redelijkerwijs gemaakte kosten in verband met de uitvoering van de overeenkomst te vergoeden."
+            }
           ]
         },
         {
           "title": "9. Aansprakelijkheid",
           "blocks": [
-            { "p": "C-Shine Digital is enkel aansprakelijk voor rechtstreekse schade die de klant lijdt als gevolg van een toerekenbare tekortkoming van C-Shine Digital bij de uitvoering van de overeenkomst. C-Shine Digital is nooit aansprakelijk voor onrechtstreekse schade, zoals gevolgschade, gederfde winst, gemiste besparingen of schade aan derden." }
+            {
+              "p": "C-Shine Digital is enkel aansprakelijk voor rechtstreekse schade die de klant lijdt als gevolg van een toerekenbare tekortkoming van C-Shine Digital bij de uitvoering van de overeenkomst. C-Shine Digital is nooit aansprakelijk voor onrechtstreekse schade, zoals gevolgschade, gederfde winst, gemiste besparingen of schade aan derden."
+            }
           ]
         },
         {
           "title": "10. Klachten",
           "blocks": [
-            { "p": "Klachten over de uitgevoerde werkzaamheden of over de factuur moeten schriftelijk aan C-Shine Digital worden gemeld binnen 3 dagen na de ontdekking van het gebrek, maar uiterlijk 14 dagen na de voltooiing van de betrokken werkzaamheden. De klant moet C-Shine Digital de gelegenheid geven een klacht te onderzoeken." }
+            {
+              "p": "Klachten over de uitgevoerde werkzaamheden of over de factuur moeten schriftelijk aan C-Shine Digital worden gemeld binnen 3 dagen na de ontdekking van het gebrek, maar uiterlijk 14 dagen na de voltooiing van de betrokken werkzaamheden. De klant moet C-Shine Digital de gelegenheid geven een klacht te onderzoeken."
+            }
           ]
         },
         {
           "title": "11. Toepasselijk recht en geschillen",
           "blocks": [
-            { "p": "Alle overeenkomsten tussen C-Shine Digital en de klant zijn onderworpen aan het Belgisch recht. Geschillen die voortvloeien uit een overeenkomst tussen C-Shine Digital en de klant en die niet in onderling overleg kunnen worden opgelost, worden voorgelegd aan de bevoegde rechtbank in het gerechtelijk arrondissement Limburg, België." }
+            {
+              "p": "Alle overeenkomsten tussen C-Shine Digital en de klant zijn onderworpen aan het Belgisch recht. Geschillen die voortvloeien uit een overeenkomst tussen C-Shine Digital en de klant en die niet in onderling overleg kunnen worden opgelost, worden voorgelegd aan de bevoegde rechtbank in het gerechtelijk arrondissement Limburg, België."
+            }
           ]
         }
       ]

@@ -1,6 +1,7 @@
 import { cacheLife } from "next/cache";
 import { getTranslations } from "next-intl/server";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { CookieSettingsButton } from "@/components/CookieConsent";
 import { Link } from "@/i18n/navigation";
 
 // The copyright year is the only time-dependent value on the site. Caching it
@@ -43,6 +44,7 @@ const Footer = async () => {
                   { href: "/work", label: tNav("work") },
                   { href: "/how-we-work", label: tNav("howWeWork") },
                   { href: "/about", label: tNav("about") },
+                  { href: "/contact", label: tNav("contact") },
                 ] as const
               ).map((l) => (
                 <li key={l.href}>
@@ -76,15 +78,15 @@ const Footer = async () => {
                   info@cshinedigital.com
                 </a>
               </li>
-              {/* TODO: add official company registration / BTW-VAT number once confirmed */}
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-neutral-500">
-            {t("rights", { year })}
-          </p>
+          <div className="text-sm text-neutral-500 text-center sm:text-left">
+            <p>{t("rights", { year })}</p>
+            <p className="mt-1 text-xs">{t("companyNumber")}</p>
+          </div>
           <div className="flex gap-6 text-sm">
             <Link href="/privacy" className="text-neutral-400 hover:text-cshine-blue-400 transition-colors">
               {t("privacy")}
@@ -92,6 +94,7 @@ const Footer = async () => {
             <Link href="/terms" className="text-neutral-400 hover:text-cshine-blue-400 transition-colors">
               {t("terms")}
             </Link>
+            <CookieSettingsButton className="text-neutral-400 hover:text-cshine-blue-400 transition-colors" />
           </div>
         </div>
       </div>

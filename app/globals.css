@@ -94,3 +94,36 @@
      @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
   }
 }
+/* Cookie banner (vanilla-cookieconsent) in the brand's dark palette. */
+#cc-main {
+  --cc-font-family: var(--font-display), system-ui, sans-serif;
+  --cc-bg: #080917;
+  --cc-primary-color: #ffffff;
+  --cc-secondary-color: #a3a3a3;
+  --cc-link-color: #33dfef;
+  --cc-modal-border-radius: 1rem;
+  --cc-btn-border-radius: 0.5rem;
+  --cc-btn-primary-bg: #04c4d4;
+  --cc-btn-primary-color: #04050c;
+  --cc-btn-primary-border-color: #04c4d4;
+  --cc-btn-primary-hover-bg: #33dfef;
+  --cc-btn-primary-hover-color: #04050c;
+  --cc-btn-primary-hover-border-color: #33dfef;
+  --cc-btn-secondary-bg: rgba(255, 255, 255, 0.06);
+  --cc-btn-secondary-color: #ffffff;
+  --cc-btn-secondary-border-color: rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-hover-bg: rgba(255, 255, 255, 0.12);
+  --cc-btn-secondary-hover-color: #ffffff;
+  --cc-btn-secondary-hover-border-color: rgba(255, 255, 255, 0.2);
+  --cc-separator-border-color: rgba(255, 255, 255, 0.1);
+  --cc-toggle-on-bg: #04c4d4;
+  --cc-toggle-off-bg: #4b5563;
+  --cc-toggle-on-knob-bg: #04050c;
+  --cc-toggle-readonly-bg: #1f2937;
+  --cc-section-category-border: rgba(255, 255, 255, 0.1);
+  --cc-cookie-category-block-bg: rgba(255, 255, 255, 0.04);
+  --cc-cookie-category-block-border: rgba(255, 255, 255, 0.1);
+  --cc-cookie-category-block-hover-bg: rgba(255, 255, 255, 0.07);
+  --cc-cookie-category-block-hover-border: rgba(255, 255, 255, 0.14);
+  --cc-overlay-bg: rgba(4, 5, 12, 0.7);
+}

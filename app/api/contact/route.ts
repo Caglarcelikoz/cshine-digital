@@ -33,6 +33,13 @@ function checkRateLimit(ip: string): boolean {
   return true;
 }
 
+const escapeHtml = (s: string): string =>
+  s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
 export async function POST(req: Request) {
   try {
     // Get IP address for rate limiting
@@ -47,11 +54,14 @@ export async function POST(req: Request) {
       );
     }
 
-    const { name, email, subject, message, locale } = await req.json();
+    const { name, email, subject, message, locale, website } = await req.json();
+
+    if (website) {
+      return NextResponse.json({ message: "Email sent successfully" });
+    }
 
     // Validate the input
     if (!name || !email || !subject || !message) {
-      console.log("Validation failed:", { name, email, subject, message });
       return NextResponse.json(
         { error: "All fields are required" },
         { status: 400 }
@@ -72,19 +82,18 @@ export async function POST(req: Request) {
       from: "C-Shine Digital <info@cshinedigital.com>",
       replyTo: email,
       to: ["info@cshinedigital.com"],
-      subject: `New Contact Form Submission: ${subject}`,
+      subject: `New Contact Form Submission: ${String(subject).replace(/[\r\n]+/g, " ")}`,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Name:</strong> ${escapeHtml(String(name))}</p>
+        <p><strong>Email:</strong> ${escapeHtml(String(email))}</p>
+        <p><strong>Subject:</strong> ${escapeHtml(String(subject))}</p>
         <p><strong>Language:</strong> ${locale === "nl" ? "Dutch" : "English"}</p>
         <p><strong>Message:</strong></p>
-        <p>${message.replace(/\n/g, "<br>")}</p>
+        <p>${escapeHtml(String(message)).replace(/\n/g, "<br>")}</p>
       `,
     });
 
-    console.log("Email sent successfully:", data);
     return NextResponse.json({ message: "Email sent successfully", data });
   } catch (error) {
     console.error("Detailed error sending email:", error);

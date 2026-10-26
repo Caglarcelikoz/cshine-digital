@@ -75,10 +75,10 @@ const Hero = () => {
               centred stack pushes the CTAs toward the fold. */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-8">
             {[
-              { icon: UsersIcon, value: "+10", label: t("stats.partners") },
-              { icon: RocketLaunchIcon, value: "+10", label: t("stats.projects") },
+              { icon: UsersIcon, value: "10+", label: t("stats.partners") },
+              { icon: RocketLaunchIcon, value: "10+", label: t("stats.projects") },
               { icon: StarIcon, value: "100%", label: t("stats.satisfaction") },
-              { icon: CalendarDaysIcon, value: "+6", label: t("stats.years") },
+              { icon: CalendarDaysIcon, value: "6+", label: t("stats.years") },
             ].map((stat) => (
               <div
                 key={stat.label}

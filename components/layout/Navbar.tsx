@@ -9,8 +9,8 @@ const NAV_ITEMS = [
   { href: "/", key: "home" },
   { href: "/services", key: "services" },
   { href: "/how-we-work", key: "howWeWork" },
+  { href: "/work", key: "work" },
   { href: "/about", key: "about" },
-  { href: { pathname: "/", hash: "contact" }, key: "contact" },
 ] as const;
 
 const Navbar = () => {
@@ -55,12 +55,12 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center h-full gap-1">
+          <div className="hidden lg:flex items-center h-full gap-1">
             {NAV_ITEMS.map(({ href, key }) => (
               <Link
                 key={key}
                 href={href}
-                className={`relative h-full px-4 lg:px-5 flex items-center text-sm lg:text-base font-medium transition-all duration-300 group
+                className={`relative h-full px-3 xl:px-5 flex items-center text-sm xl:text-base font-medium transition-all duration-300 group
                   hover:bg-cshine-blue-500/5 cursor-pointer
                   ${
                     currentRoute === href
@@ -79,12 +79,20 @@ const Navbar = () => {
                 />
               </Link>
             ))}
+            <Link
+              href="/contact"
+              className={`btn-primary on-dark ml-3 px-5 py-2.5 text-sm ${
+                currentRoute === "/contact" ? "shadow-glow" : ""
+              }`}
+            >
+              {t("contact")}
+            </Link>
             <LocaleSwitcher className="ml-3" />
           </div>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden relative w-10 h-10 rounded-lg bg-white/5 
+            className="lg:hidden relative w-10 h-10 rounded-lg bg-white/5 
               hover:bg-white/10 hover:shadow-inner-glow
               transition-all duration-200 flex items-center justify-center"
             aria-label={t("toggleMenu")}
@@ -108,7 +116,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`md:hidden absolute left-0 right-0 top-20 overflow-hidden bg-midnight-900 border-b border-cshine-blue-500/10
+          className={`lg:hidden absolute left-0 right-0 top-20 overflow-hidden bg-midnight-900 border-b border-cshine-blue-500/10
             transition-all duration-300 ease-in-out
             ${
               isMenuOpen
@@ -136,7 +144,16 @@ const Navbar = () => {
                   {t(key)}
                 </Link>
               ))}
-              <div className="px-4 pt-2 pb-1">
+              <div className="px-4 pt-3">
+                <Link
+                  href="/contact"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="btn-primary on-dark w-full"
+                >
+                  {t("contact")}
+                </Link>
+              </div>
+              <div className="px-4 pt-3 pb-1">
                 <LocaleSwitcher
                   className="inline-flex"
                   onNavigate={() => setIsMenuOpen(false)}

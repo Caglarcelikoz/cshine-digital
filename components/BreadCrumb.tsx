@@ -10,16 +10,36 @@ interface BreadcrumbProps {
   current: string;
   /** Optional intermediate link between Home and the current page */
   parent?: BreadcrumbParent;
+  /** "dark" when placed on a dark background, e.g. inside PageHero */
+  tone?: "light" | "dark";
 }
 
-const Breadcrumb: React.FC<BreadcrumbProps> = ({ current, parent }) => {
+const TONES = {
+  light: {
+    link: "text-cshine-blue-700 hover:text-cshine-blue-800",
+    separator: "text-neutral-500",
+    current: "text-midnight-900",
+  },
+  dark: {
+    link: "text-cshine-blue-300 hover:text-white",
+    separator: "text-white/40",
+    current: "text-white",
+  },
+};
+
+const Breadcrumb: React.FC<BreadcrumbProps> = ({
+  current,
+  parent,
+  tone = "light",
+}) => {
   const t = useTranslations("Common");
+  const c = TONES[tone];
   return (
     <nav aria-label={t("breadcrumbLabel")} className="py-4 px-6">
       <ol className="list-reset flex items-center text-sm">
         <li>
           <Link
-            className="flex items-center text-cshine-blue-700 hover:text-cshine-blue-800 transition-colors"
+            className={`flex items-center transition-colors ${c.link}`}
             href="/"
           >
             <svg
@@ -43,11 +63,11 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ current, parent }) => {
         {parent && (
           <>
             <li aria-hidden="true">
-              <ChevronRightIcon className="h-[18px] w-[18px] text-neutral-500 mx-1.5" />
+              <ChevronRightIcon className={`h-[18px] w-[18px] mx-1.5 ${c.separator}`} />
             </li>
             <li>
               <Link
-                className="font-medium text-cshine-blue-700 hover:text-cshine-blue-800 transition-colors"
+                className={`font-medium transition-colors ${c.link}`}
                 href={parent.href}
               >
                 {parent.label}
@@ -56,11 +76,11 @@ const Breadcrumb: React.FC<BreadcrumbProps> = ({ current, parent }) => {
           </>
         )}
         <li aria-hidden="true">
-          <ChevronRightIcon className="h-[18px] w-[18px] text-neutral-500 mx-1.5" />
+          <ChevronRightIcon className={`h-[18px] w-[18px] mx-1.5 ${c.separator}`} />
         </li>
         <li>
           <span
-            className="flex items-center font-semibold text-midnight-900"
+            className={`flex items-center font-semibold ${c.current}`}
             aria-current="page"
           >
             {current}

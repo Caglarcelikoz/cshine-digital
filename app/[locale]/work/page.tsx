@@ -304,7 +304,7 @@ const WorkPage = async () => {
           {/* CTA */}
           <div className="mt-10 md:mt-16 text-center">
             <Link
-              href={{ pathname: "/", hash: "contact" }}
+              href="/contact"
               className="btn-primary"
             >
               {t("cta")}

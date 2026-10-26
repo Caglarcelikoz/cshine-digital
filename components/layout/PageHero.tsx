@@ -24,15 +24,8 @@ const PageHero = ({
 }: PageHeroProps) => {
   return (
     <>
-      {breadcrumb && (
-        <section className="mt-20">
-          <div className="container mx-auto">
-            <Breadcrumb current={breadcrumb} parent={breadcrumbParent} />
-          </div>
-        </section>
-      )}
-
-      <section className="relative text-white py-16 md:py-24 overflow-hidden">
+      {/* mt-20 clears the fixed navbar. */}
+      <section className="relative mt-20 text-white pb-16 md:pb-24 overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 w-full bg-cover bg-center"
@@ -47,7 +40,15 @@ const PageHero = ({
         {/* Top hairline */}
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cshine-blue-500/40 to-transparent" />
 
-        <div className="container mx-auto relative z-10 text-center px-4">
+        <div className="container mx-auto relative z-10">
+          {breadcrumb ? (
+            <Breadcrumb current={breadcrumb} parent={breadcrumbParent} tone="dark" />
+          ) : (
+            <div className="h-14" aria-hidden="true" />
+          )}
+        </div>
+
+        <div className="container mx-auto relative z-10 text-center px-4 pt-6 md:pt-10">
           {eyebrow && (
             <Eyebrow tone="glass" className="mb-6">
               {eyebrow}

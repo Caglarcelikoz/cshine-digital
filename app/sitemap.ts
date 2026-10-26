@@ -11,6 +11,7 @@ const staticRoutes: { href: Href; priority: number }[] = [
   { href: "/how-we-work", priority: 0.7 },
   { href: "/about", priority: 0.7 },
   { href: "/work", priority: 0.8 },
+  { href: "/contact", priority: 0.6 },
   { href: "/privacy", priority: 0.3 },
   { href: "/terms", priority: 0.3 },
 ];

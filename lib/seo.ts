@@ -11,6 +11,13 @@ const OG_LOCALE: Record<Locale, string> = { en: "en_US", nl: "nl_BE" };
 
 type Href = Parameters<typeof getPathname>[0]["href"];
 
+const ogImage = (locale: Locale) => ({
+  url: `${SITE_URL}${locale === routing.defaultLocale ? "" : `/${locale}`}/opengraph-image`,
+  width: 1200,
+  height: 630,
+  alt: SITE_NAME,
+});
+
 /** Absolute URL of a route in the given locale, using that locale's slug. */
 export const absoluteUrl = (locale: Locale, href: Href): string => {
   const pathname = getPathname({ locale, href });
@@ -64,11 +71,13 @@ export const pageMetadata = ({
       alternateLocale: routing.locales
         .filter((l) => l !== locale)
         .map((l) => OG_LOCALE[l]),
+      images: [ogImage(locale)],
     },
     twitter: {
       card: "summary_large_image",
       title: ogTitle,
       description: ogDescription,
+      images: [ogImage(locale).url],
     },
     alternates: {
       canonical: url,

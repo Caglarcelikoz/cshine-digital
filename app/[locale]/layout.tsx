@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import CookieConsent from "@/components/CookieConsent";
 import Layout from "@/components/layout/Layout";
 import StructuredData from "@/components/StructuredData";
+import { getClientMessages } from "@/i18n/clientMessages";
 import { routing } from "@/i18n/routing";
 import { SITE_URL } from "@/lib/seo";
 import "../globals.css";
@@ -51,9 +53,12 @@ export default async function LocaleLayout({
       <head>
         <StructuredData locale={locale} />
       </head>
-      <body className={spaceGrotesk.className}>
-        <NextIntlClientProvider>
+      {/* Dark like the footer, so overscroll and very tall screens never show
+          a white strip. Light sections set their own background. */}
+      <body className={`${spaceGrotesk.className} bg-midnight-900`}>
+        <NextIntlClientProvider messages={await getClientMessages()}>
           <Layout>{children}</Layout>
+          <CookieConsent />
         </NextIntlClientProvider>
       </body>
     </html>

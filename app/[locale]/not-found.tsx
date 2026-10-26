@@ -39,7 +39,7 @@ const NotFound = async () => {
               {t("home")}
             </Link>
             <Link
-              href={{ pathname: "/", hash: "contact" }}
+              href="/contact"
               className="btn-secondary"
             >
               {t("contact")}

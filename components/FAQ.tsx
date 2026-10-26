@@ -81,7 +81,7 @@ const FAQ = () => {
           <div className="text-center mt-8 md:mt-12">
             <p className="text-neutral-600 mb-4">{t("ctaIntro")}</p>
             <Link
-              href={{ pathname: "/", hash: "contact" }}
+              href="/contact"
               className="btn-primary"
             >
               {t("cta")}

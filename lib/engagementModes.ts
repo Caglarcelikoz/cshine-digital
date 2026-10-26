@@ -26,8 +26,8 @@ export type EngagementMode = {
   heroImage: string;
 };
 
-/** Every mode's primary action leads to the contact section. */
-export const MODE_CTA_HREF = { pathname: "/", hash: "contact" } as const;
+/** Every mode's primary action leads to the contact page. */
+export const MODE_CTA_HREF = "/contact";
 
 export const engagementModes: EngagementMode[] = [
   {

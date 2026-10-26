@@ -14,6 +14,7 @@ import {
 import PageHero from "@/components/layout/PageHero";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import Eyebrow from "@/components/Eyebrow";
+import { FounderProfile } from "@/components/Founder";
 import { Link } from "@/i18n/navigation";
 import { translatedPageMetadata } from "@/lib/seo";
 
@@ -61,6 +62,11 @@ const AboutPage = async () => {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+          </div>
+
+          {/* Founder */}
+          <div className="mb-12 md:mb-20">
+            <FounderProfile />
           </div>
 
           {/* Principles — same card vocabulary as EngagementModes/Capabilities:
@@ -130,7 +136,7 @@ const AboutPage = async () => {
           {/* CTA */}
           <div className="text-center">
             <Link
-              href={{ pathname: "/", hash: "contact" }}
+              href="/contact"
               className="btn-primary"
             >
               {t("cta")}
