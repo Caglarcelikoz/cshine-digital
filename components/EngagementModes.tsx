@@ -183,86 +183,84 @@ const EngagementModes = ({
           ))}
         </div>
 
-        {/* AI band — how we build, and what we can build for you */}
-        <div
-          className={`relative mt-10 flex flex-col gap-5 rounded-2xl border p-8 sm:flex-row sm:items-center
-            ${
-              dark
-                ? "border-white/10 bg-white/5 backdrop-blur-sm"
-                : "border-neutral-200 bg-white shadow-sm"
-            }`}
-        >
+        {/* Aside — how we build (AI) and standalone services. Deliberately
+            card-less so it reads as a footnote to the modes, not a fourth mode */}
+        <div className="mt-14 md:mt-20">
           <div
-            className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl
-              bg-gradient-to-br from-cshine-blue-500 to-cyan-500 text-white shadow-md shadow-cshine-blue-500/20"
-          >
-            <FaBolt className="h-6 w-6" aria-hidden="true" />
-          </div>
-          <div className="space-y-1.5">
-            <p
-              className={`text-base font-semibold ${
-                dark ? "text-white" : "text-midnight-900"
-              }`}
-            >
-              {t("aiTitle")}
-            </p>
-            <p
-              className={`text-sm leading-relaxed ${
-                dark ? "text-white/70" : "text-neutral-600"
-              }`}
-            >
-              {t("aiBody")}
-            </p>
-          </div>
-        </div>
-
-        {/* Standalone-services band — you don't need a full engagement for a
-            single job */}
-        <div
-          className={`relative mt-5 flex flex-col gap-5 rounded-2xl border p-8 sm:flex-row sm:items-center
-            ${
-              dark
-                ? "border-white/10 bg-white/5 backdrop-blur-sm"
-                : "border-neutral-200 bg-white shadow-sm"
-            }`}
-        >
-          <div
-            className="flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-xl
-              bg-gradient-to-br from-cshine-blue-500 to-cyan-500 text-white shadow-md shadow-cshine-blue-500/20"
-          >
-            <FaPuzzlePiece className="h-6 w-6" aria-hidden="true" />
-          </div>
-          <div className="space-y-2.5">
-            <p
-              className={`text-base font-semibold ${
-                dark ? "text-white" : "text-midnight-900"
-              }`}
-            >
-              {t("standaloneTitle")}
-            </p>
-            <p
-              className={`text-sm leading-relaxed ${
-                dark ? "text-white/70" : "text-neutral-600"
-              }`}
-            >
-              {t("standaloneBody")}
-            </p>
-            <div className="flex flex-wrap gap-2 pt-0.5">
-              {(t.raw("standaloneServices") as string[]).map(
-                (svc) => (
-                  <span
-                    key={svc}
-                    className={`inline-flex items-center rounded-lg px-3 py-1 text-xs font-medium ${
-                      dark
-                        ? "bg-cshine-blue-500/10 text-cshine-blue-300 border border-cshine-blue-500/20"
-                        : "bg-cshine-blue-500/[0.08] text-cshine-blue-700 border border-cshine-blue-500/20"
-                    }`}
-                  >
-                    {svc}
-                  </span>
-                )
-              )}
-            </div>
+            className={`h-px w-full bg-gradient-to-r from-transparent ${
+              dark ? "via-white/15" : "via-neutral-300"
+            } to-transparent`}
+            aria-hidden="true"
+          />
+          <div className="grid gap-10 pt-10 md:grid-cols-2 md:gap-16 md:pt-14">
+            {[
+              {
+                key: "ai",
+                icon: FaBolt,
+                label: t("aiLabel"),
+                title: t("aiTitle"),
+                body: t("aiBody"),
+                chips: [] as string[],
+              },
+              {
+                key: "standalone",
+                icon: FaPuzzlePiece,
+                label: t("standaloneLabel"),
+                title: t("standaloneTitle"),
+                body: t("standaloneBody"),
+                chips: t.raw("standaloneServices") as string[],
+              },
+            ].map((item) => (
+              <div key={item.key} className="relative pl-6">
+                {/* Accent rail */}
+                <span
+                  className="absolute left-0 top-1 bottom-1 w-[3px] rounded-full bg-gradient-to-b from-cshine-blue-500 via-cyan-400 to-transparent"
+                  aria-hidden="true"
+                />
+                <div
+                  className={`mb-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider ${
+                    dark ? "text-cshine-blue-400" : "text-cshine-blue-700"
+                  }`}
+                >
+                  <item.icon className="h-3.5 w-3.5" aria-hidden="true" />
+                  {item.label}
+                </div>
+                <h3
+                  className={`mb-3 text-xl font-bold text-balance md:text-2xl ${
+                    dark ? "text-white" : "text-midnight-900"
+                  }`}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  className={`leading-relaxed ${
+                    dark ? "text-white/70" : "text-neutral-600"
+                  }`}
+                >
+                  {item.body}
+                </p>
+                {item.chips.length > 0 && (
+                  <ul className="mt-5 flex flex-wrap gap-2">
+                    {item.chips.map((chip) => (
+                      <li
+                        key={chip}
+                        className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium ${
+                          dark
+                            ? "bg-white/[0.06] text-white/85 ring-1 ring-inset ring-white/10"
+                            : "bg-white/70 text-midnight-900 ring-1 ring-inset ring-neutral-200 backdrop-blur-sm"
+                        }`}
+                      >
+                        <span
+                          className="h-1.5 w-1.5 rounded-full bg-cshine-blue-500"
+                          aria-hidden="true"
+                        />
+                        {chip}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
