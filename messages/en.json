@@ -351,8 +351,10 @@
     "title": "We shape to the project, not the other way around",
     "intro": "While most studios follow a fixed approach, we adapt to what your project needs. From a single developer strengthening your team to a full-service digital partner, we offer the right expertise and level of involvement for every project.",
     "learnMore": "Learn more",
+    "aiLabel": "How we build",
     "aiTitle": "AI-powered development. Backed by engineering expertise.",
     "aiBody": "We use AI to work smarter and accelerate development, without compromising on quality. And when it adds real value, we integrate AI into your digital products, regardless of how we work together.",
+    "standaloneLabel": "Standalone services",
     "standaloneTitle": "Just need one thing? We've got you covered.",
     "standaloneBody": "Not every project needs a full-service partnership. Whether it's branding, hosting or a specific digital task, we're happy to help with standalone services too.",
     "standaloneServices": [
