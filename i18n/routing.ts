@@ -21,7 +21,18 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/services": { en: "/services", nl: "/diensten" },
-    "/services/[slug]": { en: "/services/[slug]", nl: "/diensten/[slug]" },
+    "/services/product-build": {
+      en: "/services/product-build",
+      nl: "/diensten/product-build",
+    },
+    "/services/it-partner": {
+      en: "/services/it-partner",
+      nl: "/diensten/it-partner",
+    },
+    "/services/embedded": {
+      en: "/services/embedded",
+      nl: "/diensten/embedded",
+    },
     "/how-we-work": { en: "/how-we-work", nl: "/werkwijze" },
     "/about": { en: "/about", nl: "/over-ons" },
     "/work": { en: "/work", nl: "/projecten" },
@@ -35,4 +46,7 @@ export const routing = defineRouting({
 export type Locale = (typeof routing.locales)[number];
 export type AppPathname = keyof typeof routing.pathnames;
 /** Routes without dynamic segments — usable as a plain string href. */
-export type StaticPathname = Exclude<AppPathname, `${string}[${string}]${string}`>;
+export type StaticPathname = Exclude<
+  AppPathname,
+  `${string}[${string}]${string}`
+>;

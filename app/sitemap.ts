@@ -29,10 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     ...staticRoutes,
     ...engagementModes.map((mode) => ({
-      href: {
-        pathname: "/services/[slug]",
-        params: { slug: mode.slug },
-      } as Href,
+      href: mode.href,
       priority: 0.8,
     })),
   ];
@@ -43,6 +40,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority,
       alternates: { languages: languageAlternates(href) },
-    }))
+    })),
   );
 }

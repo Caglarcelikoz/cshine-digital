@@ -23,8 +23,8 @@ const compile = (pattern: string) => {
 };
 
 /**
- * Every spelling of every route — the internal pathname ("/services/[slug]")
- * and each locale's public one ("/diensten/[slug]") — compiled once, static
+ * Every spelling of every route — the internal pathname ("/services/embedded")
+ * and each locale's public one ("/diensten/embedded") — compiled once, static
  * routes first so they win over dynamic ones.
  */
 const patterns = Object.entries(routing.pathnames)
@@ -45,7 +45,7 @@ const patterns = Object.entries(routing.pathnames)
  * to its route in `routing.pathnames` and the params it fills in. Returns
  * undefined for paths that aren't a known route (e.g. a 404).
  *
- *   /nl/diensten/embedded → { pathname: "/services/[slug]", params: { slug: "embedded" } }
+ *   /nl/diensten/embedded → { pathname: "/services/embedded", params: {} }
  *   /about                → { pathname: "/about", params: {} }
  */
 export const matchRoute = (path: string): RouteMatch | undefined => {

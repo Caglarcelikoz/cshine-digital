@@ -9,14 +9,19 @@ import { FaRocket, FaServer, FaUsers } from "react-icons/fa";
  *
  * Single source of truth for the modes' structure: the section cards
  * (components/EngagementModes.tsx) and the detail pages
- * (app/[locale]/services/[slug]/page.tsx) both read from here. All copy (title,
+ * (app/[locale]/services/<slug>/page.tsx, via components/ModeDetail.tsx) both
+ * read from here. All copy (title,
  * forWho, description, capabilities, detail narrative, meta tags) lives in
  * messages/<locale>.json under `Modes.<slug>`.
  */
 export type EngagementModeSlug = "product-build" | "it-partner" | "embedded";
 
+/** Each mode has its own static page; this is its route in i18n/routing.ts. */
+export type EngagementModeHref = `/services/${EngagementModeSlug}`;
+
 export type EngagementMode = {
   slug: EngagementModeSlug;
+  href: EngagementModeHref;
   icon: typeof FaRocket;
   /**
    * Hero background for the detail page. Composed for PageHero's bg-cover +
@@ -32,20 +37,20 @@ export const MODE_CTA_HREF = "/contact";
 export const engagementModes: EngagementMode[] = [
   {
     slug: "product-build",
+    href: "/services/product-build",
     icon: FaRocket,
     heroImage: "/images/service-product-build.svg",
   },
   {
     slug: "it-partner",
+    href: "/services/it-partner",
     icon: FaServer,
     heroImage: "/images/service-it-partner.svg",
   },
   {
     slug: "embedded",
+    href: "/services/embedded",
     icon: FaUsers,
     heroImage: "/images/service-embedded.svg",
   },
 ];
-
-export const getEngagementMode = (slug: string) =>
-  engagementModes.find((mode) => mode.slug === slug);

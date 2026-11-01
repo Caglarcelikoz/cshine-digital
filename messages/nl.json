@@ -229,34 +229,17 @@
     "subtitle": "Of je nu een developer zoekt om je team te versterken, een volledige IT-afdeling nodig hebt of een digitaal idee van nul wilt realiseren: wij zorgen voor alles, van webapplicaties en branding tot hosting en onderhoud. Eén digitale partner, afgestemd op jouw ambities en de noden van je project.",
     "primaryCta": "Zo werken we samen",
     "secondaryCta": "Onze werkwijze",
-    "stats": {
-      "partners": "Partners",
-      "projects": "Projecten",
-      "satisfaction": "Tevredenheid",
-      "years": "Jaar ervaring"
-    }
+    "modesLabel": "Drie manieren om samen te werken"
+  },
+  "Stats": {
+    "projects": "Projecten",
+    "satisfaction": "Tevredenheid",
+    "years": "Jaar ervaring"
   },
   "AboutSection": {
     "eyebrow": "Over C-Shine Digital",
-    "title": "Eén partner, wat het project ook vraagt",
-    "intro": "C-Shine Digital is een Belgische digitale studio die zich aanpast aan jouw behoeften. Van een extra developer in je team tot het volledig beheren van je IT of het ontwikkelen van een digitaal product van idee tot lancering. Welke rol we ook opnemen, kwaliteit blijft onze standaard.",
-    "features": {
-      "innovative": {
-        "title": "Innovatieve oplossingen",
-        "description": "We combineren moderne technologie met creatief denkwerk om digitale oplossingen te ontwikkelen die echte uitdagingen aanpakken en meegroeien met jouw onderneming."
-      },
-      "collaborative": {
-        "title": "Nauwe samenwerking",
-        "description": "Sterke digitale oplossingen ontstaan door samen te werken. We luisteren, denken actief mee en communiceren helder tijdens het hele traject, van het eerste gesprek tot de oplevering."
-      },
-      "quality": {
-        "title": "Kwaliteit & betrouwbaarheid",
-        "description": "Kwaliteit zit in elk detail. We schrijven doordachte code, testen grondig en bouwen betrouwbare digitale oplossingen die vandaag presteren en klaar zijn voor morgen."
-      }
-    },
-    "imageAlt": "Van code tot een gelanceerd product — zo bouwt C-Shine Digital, vanuit België",
     "whyTitle": "Waarom kiezen voor C-Shine Digital?",
-    "whyBody": "Je werkt rechtstreeks samen met ervaren professionals die verantwoordelijkheid nemen voor jouw project. Geen onnodige tussenpersonen of standaardaanpak. We sluiten aan op jouw manier van werken, kiezen de technologie die het beste past en blijven ook na de lancering betrokken.",
+    "whyBody": "Je werkt rechtstreeks samen met een ervaren professional die verantwoordelijkheid neemt voor jouw project. Geen onnodige tussenpersonen of standaardaanpak. We sluiten aan op jouw manier van werken, kiezen de technologie die het beste past en blijven ook na de lancering betrokken.",
     "values": {
       "innovation": {
         "title": "Technologie op maat",
@@ -267,9 +250,61 @@
         "description": "Geen onnodige tussenpersonen. Je werkt rechtstreeks met de mensen die jouw oplossing bouwen, met korte communicatielijnen en snellere beslissingen."
       },
       "excellence": {
-        "title": "Blijvende betrokkenheid",
-        "description": "Onze betrokkenheid stopt niet bij de lancering. We blijven beschikbaar om jouw digitale oplossingen te ondersteunen, verbeteren en verder te ontwikkelen naarmate je onderneming groeit."
+        "title": "Kwaliteit die blijft",
+        "description": "We schrijven doordachte code, testen grondig en blijven ook na de lancering betrokken om jouw oplossing te ondersteunen en verder te ontwikkelen."
       }
+    },
+    "experience": {
+      "title": "Ervaring in uiteenlopende sectoren",
+      "label": "Ervaring bij",
+      "sizes": [
+        "KMO",
+        "Scale-up",
+        "Multinational",
+        "Overheid"
+      ],
+      "sectors": [
+        {
+          "key": "government",
+          "label": "Overheid"
+        },
+        {
+          "key": "medtech",
+          "label": "Medische technologie"
+        },
+        {
+          "key": "wholesale",
+          "label": "Groothandel & distributie"
+        },
+        {
+          "key": "telecom",
+          "label": "Telecom"
+        },
+        {
+          "key": "industry",
+          "label": "Industrie"
+        },
+        {
+          "key": "energy",
+          "label": "Energie"
+        },
+        {
+          "key": "construction",
+          "label": "Bouw & infrastructuur"
+        },
+        {
+          "key": "automotive",
+          "label": "Automotive"
+        },
+        {
+          "key": "travel",
+          "label": "Reizen & toerisme"
+        },
+        {
+          "key": "consultancy",
+          "label": "Consultancy"
+        }
+      ]
     },
     "cta": "Onze werkwijze"
   },
@@ -342,6 +377,140 @@
       ],
       "metaTitle": "Embedded developer - C-Shine Digital | Extra developmentkracht",
       "metaDescription": "Extra developmentcapaciteit nodig? We voegen senior developers toe aan je team (frontend, backend, DevOps): geen lange onboarding, flexibel qua stack, per contract of per project."
+    }
+  },
+  "ProductBuild": {
+    "realisation": {
+      "title": "Van idee tot live product.",
+      "intro": "Sleep de schuif en zie hoe een eerste idee uitgroeit tot een afgewerkt product, tot in de details uitgewerkt.",
+      "sketchLabel": "Idee",
+      "productLabel": "Live product",
+      "hint": "Sleep om te vergelijken",
+      "sliderLabel": "Vergelijk het idee met het live product",
+      "note": "Fictief voorbeeld: een klantportaal in de stijl van C-Shine Digital, ontworpen en gebouwd zoals we elk product bouwen.",
+      "sketch": {
+        "logo": "logo",
+        "menu": "menu",
+        "user": "klant",
+        "greeting": "Hallo + naam",
+        "preview": "preview!",
+        "progress": "hoeveel % klaar?",
+        "milestones": "stappen",
+        "demo": "volgende demo",
+        "updates": "updates",
+        "stats": "cijfers",
+        "annotation": "klant ziet altijd waar we staan"
+      },
+      "mock": {
+        "brand": "C-Shine Digital",
+        "product": "Portaal",
+        "nav": [
+          "Overzicht",
+          "Roadmap",
+          "Updates",
+          "Bestanden",
+          "Facturen"
+        ],
+        "client": "Atelier Noord",
+        "clientRole": "Klant",
+        "greeting": "Goeiemiddag, Sarah",
+        "project": "Webshop Atelier Noord · Product build",
+        "preview": "Preview",
+        "progressLabel": "Voortgang",
+        "progress": "68%",
+        "sprint": "Sprint 4 van 6",
+        "milestones": [
+          "Idee",
+          "Voorstel",
+          "Bouwen",
+          "Lancering"
+        ],
+        "demoLabel": "Volgende demo",
+        "demoWhen": "do 6 nov · 14:00",
+        "demoMeta": "Online · 30 min",
+        "demoCta": "In agenda",
+        "updatesLabel": "Laatste updates",
+        "updates": [
+          {
+            "title": "Productfilters live op staging",
+            "when": "2 uur geleden"
+          },
+          {
+            "title": "Betaalflow getest met Bancontact",
+            "when": "gisteren"
+          },
+          {
+            "title": "Design productpagina goedgekeurd",
+            "when": "maandag"
+          },
+          {
+            "title": "Teksten categoriepagina's aangeleverd",
+            "when": "vorige week"
+          }
+        ],
+        "speedLabel": "Laadtijd",
+        "speed": "0,8 s",
+        "uptimeLabel": "Uptime",
+        "uptime": "99,98%"
+      }
+    }
+  },
+  "EmbeddedDeveloper": {
+    "teamBoard": {
+      "title": "Eén extra collega, meteen in jouw ritme.",
+      "intro": "Onze developer werkt in jouw repo, jouw tools en jouw standup, en levert werk dat klaar is voor productie: doordacht, getest en op tijd.",
+      "note": "Fictief voorbeeld van een sprintbord.",
+      "boardLabel": "Sprintbord waarop de tickets van een developer van C-Shine Digital tussen die van het team door verschuiven"
+    }
+  },
+  "DigitalPartner": {
+    "requests": {
+      "title": "Eén aanspreekpunt voor elke digitale vraag.",
+      "intro": "Een nieuwe koppeling op je site, een mailbox voor een nieuwe collega of nieuwe visitekaartjes: je vraagt het aan ons, wij regelen het. En wat op tijd moet gebeuren, plannen we zelf in.",
+      "note": "Fictief voorbeeld van het klantportaal van C-Shine Digital.",
+      "boardLabel": "Verzoekenoverzicht waarin vragen één voor één van nieuw naar opgelost gaan",
+      "heading": "Verzoeken",
+      "portal": "C-Shine Digital Portaal · Voorbeeldbedrijf (fictief)",
+      "stats": [
+        "1 aanspreekpunt",
+        "Proactief onderhoud"
+      ],
+      "open": "Nieuw",
+      "done": "Opgelost",
+      "newStatus": "nieuw",
+      "plannedBy": "Ingepland door C-Shine Digital",
+      "items": [
+        {
+          "id": "integration",
+          "title": "Online afspraken koppelen aan de website",
+          "day": "maandag",
+          "result": "Live na 2 dagen"
+        },
+        {
+          "id": "mailbox",
+          "title": "Nieuwe collega heeft een mailbox nodig",
+          "day": "dinsdag",
+          "result": "Klaar in 20 min"
+        },
+        {
+          "id": "security",
+          "title": "Beveiligingsupdate website",
+          "planned": true,
+          "result": "Uitgevoerd en getest"
+        },
+        {
+          "id": "renewal",
+          "title": "Domein en hosting verlengen",
+          "planned": true,
+          "result": "Verlengd tot 2027"
+        },
+        {
+          "id": "cards",
+          "title": "Nieuwe visitekaartjes ontwerpen en drukken",
+          "day": "donderdag",
+          "result": "Geleverd op kantoor"
+        }
+      ]
     }
   },
   "EngagementModes": {

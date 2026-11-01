@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import BackgroundPattern from "./layout/BackgroundPattern";
 import Eyebrow from "./Eyebrow";
+import Stats from "./Stats";
 
 type Partner = {
   name: string;
@@ -18,12 +19,48 @@ const partners: Partner[] = [
   // displayH is tuned per logo for balanced *perceived* size: logos with lots
   // of internal whitespace in their bounding box (mkm, decem — the mark sits in
   // the middle third) get a taller displayH to compensate.
-  { name: "Ravago", logo: "/images/ravago-logo.png", w: 522, h: 585, displayH: 56 },
-  { name: "MKM Solutions", logo: "/images/mkm.png", w: 3125, h: 1875, displayH: 76 },
-  { name: "MKM Carrosserie", logo: "/images/mkm-carrosserie.png", w: 1912, h: 510, displayH: 34 },
-  { name: "Decem Energy", logo: "/images/decem-energy-logo.png", w: 3125, h: 1875, displayH: 74 },
-  { name: "Pauwels Consulting", logo: "/images/logo-pauwels.png", w: 4194, h: 1339, displayH: 44 },
-  { name: "Telenet", logo: "/images/telenet.png", w: 2969, h: 762, displayH: 44 },
+  {
+    name: "Ravago",
+    logo: "/images/ravago-logo.png",
+    w: 522,
+    h: 585,
+    displayH: 56,
+  },
+  {
+    name: "MKM Solutions",
+    logo: "/images/mkm.png",
+    w: 3125,
+    h: 1875,
+    displayH: 76,
+  },
+  {
+    name: "MKM Carrosserie",
+    logo: "/images/mkm-carrosserie.png",
+    w: 1912,
+    h: 510,
+    displayH: 34,
+  },
+  {
+    name: "Decem Energy",
+    logo: "/images/decem-energy-logo.png",
+    w: 3125,
+    h: 1875,
+    displayH: 74,
+  },
+  {
+    name: "Pauwels Consulting",
+    logo: "/images/logo-pauwels.png",
+    w: 4194,
+    h: 1339,
+    displayH: 44,
+  },
+  {
+    name: "Telenet",
+    logo: "/images/telenet.png",
+    w: 2969,
+    h: 762,
+    displayH: 44,
+  },
 ];
 
 const Partners = () => {
@@ -75,11 +112,24 @@ const Partners = () => {
           ))}
         </div>
 
+        <Stats className="max-w-5xl mx-auto mt-10 md:mt-14" />
+
         <div className="text-center mt-10 md:mt-14">
           <Link href="/work" className="btn-primary on-dark">
             {t("cta")}
-            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </div>

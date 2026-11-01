@@ -7,7 +7,6 @@ import { SITE_URL } from "@/lib/seo";
 
 const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 
-
 const StructuredData = async ({ locale }: { locale: Locale }) => {
   const t = await getTranslations({ locale, namespace: "StructuredData" });
   const tModes = await getTranslations({ locale, namespace: "Modes" });
@@ -79,7 +78,7 @@ const StructuredData = async ({ locale }: { locale: Locale }) => {
             SITE_URL +
             getPathname({
               locale,
-              href: { pathname: "/services/[slug]", params: { slug: mode.slug } },
+              href: mode.href,
             }),
         },
       })),

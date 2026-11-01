@@ -83,6 +83,10 @@ module.exports = {
         "slide-down": "slideDown 0.3s ease-out",
         "pulse-slow": "pulse 3s infinite",
         fadeIn: "fadeIn 0.2s ease-out",
+        landed: "landed 0.6s ease",
+        // Hero formules: each lights up for a third of the cycle (staggered delays).
+        "hero-pick-line": "heroPickLine 9s ease-in-out infinite",
+        "hero-pick-text": "heroPickText 9s ease-in-out infinite",
       },
       keyframes: {
         fadeIn: {
@@ -96,6 +100,24 @@ module.exports = {
         slideDown: {
           "0%": { transform: "translateY(-20px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        heroPickLine: {
+          "0%, 33%, 100%": { opacity: "0" },
+          "4%, 29%": { opacity: "1" },
+        },
+        heroPickText: {
+          "0%, 33%, 100%": { color: "#ffffff" },
+          "4%, 29%": { color: "#66e7f3" },
+        },
+        // A card arriving in its new column on the team board.
+        landed: {
+          "0%": {
+            boxShadow: "0 0 0 1.5px #04c4d4, 0 0 0 6px rgba(4,196,212,0.35)",
+          },
+          "100%": {
+            boxShadow:
+              "0 0 0 1.5px #04c4d4, 0 8px 18px -12px rgba(4,196,212,0.6)",
+          },
         },
       },
       boxShadow: {

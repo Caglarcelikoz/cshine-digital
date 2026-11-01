@@ -231,34 +231,17 @@
     "subtitle": "A developer inside your team, your whole IT department, or the studio that builds your idea from scratch: web app, brand, hosting and all. One partner for the whole digital side of your business, shaped to the project.",
     "primaryCta": "Ways to work with us",
     "secondaryCta": "How We Work",
-    "stats": {
-      "partners": "Partners",
-      "projects": "Projects",
-      "satisfaction": "Satisfaction",
-      "years": "Years of experience"
-    }
+    "modesLabel": "Three ways to work with us"
+  },
+  "Stats": {
+    "projects": "Projects",
+    "satisfaction": "Satisfaction",
+    "years": "Years of experience"
   },
   "AboutSection": {
     "eyebrow": "About C-Shine Digital",
-    "title": "One partner, whatever the project needs",
-    "intro": "C-Shine Digital is a Belgian digital studio built around flexibility. For one client we’re a developer inside their team; for another we run the entire IT function; for a third we take an idea from a blank page to a launched product. Same standards, whatever the shape.",
-    "features": {
-      "innovative": {
-        "title": "Innovative Solutions",
-        "description": "We combine modern technologies with creative thinking to build digital solutions that solve real challenges and grow alongside your business."
-      },
-      "collaborative": {
-        "title": "Collaborative Approach",
-        "description": "Great digital products are built together. We listen, think alongside you and keep communication clear throughout the entire process, from the first conversation to the final delivery."
-      },
-      "quality": {
-        "title": "Quality & Reliability",
-        "description": "Quality is in the details. We write thoughtful code, test thoroughly and build reliable digital solutions designed to perform today and evolve tomorrow."
-      }
-    },
-    "imageAlt": "From code to a launched product — the way C-Shine Digital builds, from Belgium",
     "whyTitle": "Why Choose C-Shine Digital?",
-    "whyBody": "Work directly with experienced professionals who take ownership of your project. No unnecessary middlemen, no one-size-fits-all approach. We adapt to your way of working, choose the right technologies for your needs and remain involved long after launch.",
+    "whyBody": "Work directly with an experienced professional who takes ownership of your project. No unnecessary middlemen, no one-size-fits-all approach. We adapt to your way of working, choose the right technologies for your needs and remain involved long after launch.",
     "values": {
       "innovation": {
         "title": "Technology That Fits",
@@ -269,9 +252,61 @@
         "description": "No unnecessary layers. You work directly with the people building your solution, ensuring clear communication and faster decisions."
       },
       "excellence": {
-        "title": "Long-Term Commitment",
-        "description": "Our involvement doesn't end at launch. We remain available to support, improve and evolve your digital solutions as your business grows."
+        "title": "Quality That Lasts",
+        "description": "We write thoughtful code, test thoroughly and stay involved after launch to support and keep developing your solution."
       }
+    },
+    "experience": {
+      "title": "Experience across sectors",
+      "label": "Experience with",
+      "sizes": [
+        "SMEs",
+        "Scale-ups",
+        "Multinationals",
+        "Government"
+      ],
+      "sectors": [
+        {
+          "key": "government",
+          "label": "Government"
+        },
+        {
+          "key": "medtech",
+          "label": "Medical technology"
+        },
+        {
+          "key": "wholesale",
+          "label": "Wholesale & distribution"
+        },
+        {
+          "key": "telecom",
+          "label": "Telecom"
+        },
+        {
+          "key": "industry",
+          "label": "Industry"
+        },
+        {
+          "key": "energy",
+          "label": "Energy"
+        },
+        {
+          "key": "construction",
+          "label": "Construction & infrastructure"
+        },
+        {
+          "key": "automotive",
+          "label": "Automotive"
+        },
+        {
+          "key": "travel",
+          "label": "Travel & tourism"
+        },
+        {
+          "key": "consultancy",
+          "label": "Consultancy"
+        }
+      ]
     },
     "cta": "How we work"
   },
@@ -344,6 +379,140 @@
       ],
       "metaTitle": "Embedded Developer - C-Shine Digital | Extra Engineering Firepower",
       "metaDescription": "Need extra engineering capacity? We embed senior developers with your team (frontend, backend, DevOps): no long onboarding, flexible on stack, contract or per-project."
+    }
+  },
+  "ProductBuild": {
+    "realisation": {
+      "title": "From idea to live product.",
+      "intro": "Drag the slider and see how a first idea grows into a finished product, worked out down to the details.",
+      "sketchLabel": "Idea",
+      "productLabel": "Live product",
+      "hint": "Drag to compare",
+      "sliderLabel": "Compare the idea with the live product",
+      "note": "Fictional example: a client portal in the C-Shine Digital style, designed and built the way we build every product.",
+      "sketch": {
+        "logo": "logo",
+        "menu": "menu",
+        "user": "client",
+        "greeting": "Hi + name",
+        "preview": "preview!",
+        "progress": "how much % done?",
+        "milestones": "steps",
+        "demo": "next demo",
+        "updates": "updates",
+        "stats": "numbers",
+        "annotation": "client always sees where we are"
+      },
+      "mock": {
+        "brand": "C-Shine Digital",
+        "product": "Portal",
+        "nav": [
+          "Overview",
+          "Roadmap",
+          "Updates",
+          "Files",
+          "Invoices"
+        ],
+        "client": "Atelier Noord",
+        "clientRole": "Client",
+        "greeting": "Good afternoon, Sarah",
+        "project": "Atelier Noord webshop · Product build",
+        "preview": "Preview",
+        "progressLabel": "Progress",
+        "progress": "68%",
+        "sprint": "Sprint 4 of 6",
+        "milestones": [
+          "Idea",
+          "Proposal",
+          "Build",
+          "Launch"
+        ],
+        "demoLabel": "Next demo",
+        "demoWhen": "Thu 6 Nov · 2:00 pm",
+        "demoMeta": "Online · 30 min",
+        "demoCta": "Add to calendar",
+        "updatesLabel": "Latest updates",
+        "updates": [
+          {
+            "title": "Product filters live on staging",
+            "when": "2 hours ago"
+          },
+          {
+            "title": "Checkout tested with Bancontact",
+            "when": "yesterday"
+          },
+          {
+            "title": "Product page design approved",
+            "when": "Monday"
+          },
+          {
+            "title": "Category page copy delivered",
+            "when": "last week"
+          }
+        ],
+        "speedLabel": "Load time",
+        "speed": "0.8 s",
+        "uptimeLabel": "Uptime",
+        "uptime": "99.98%"
+      }
+    }
+  },
+  "EmbeddedDeveloper": {
+    "teamBoard": {
+      "title": "One extra teammate, in your rhythm from day one.",
+      "intro": "Our developer works in your repo, your tools and your standup, and ships work that's ready for production: thoughtful, tested and on time.",
+      "note": "Fictional example of a sprint board.",
+      "boardLabel": "Sprint board where a C-Shine Digital developer's tickets move along with the team's"
+    }
+  },
+  "DigitalPartner": {
+    "requests": {
+      "title": "One point of contact for every digital question.",
+      "intro": "A new integration on your site, a mailbox for a new colleague or new business cards: you ask us, we take care of it. And whatever needs doing on time, we schedule ourselves.",
+      "note": "Fictional example of the C-Shine Digital client portal.",
+      "boardLabel": "Requests overview where questions move from new to resolved one by one",
+      "heading": "Requests",
+      "portal": "C-Shine Digital Portal · Example company (fictional)",
+      "stats": [
+        "1 point of contact",
+        "Proactive maintenance"
+      ],
+      "open": "New",
+      "done": "Resolved",
+      "newStatus": "new",
+      "plannedBy": "Scheduled by C-Shine Digital",
+      "items": [
+        {
+          "id": "integration",
+          "title": "Connect online booking to the website",
+          "day": "Monday",
+          "result": "Live after 2 days"
+        },
+        {
+          "id": "mailbox",
+          "title": "New colleague needs a mailbox",
+          "day": "Tuesday",
+          "result": "Done in 20 min"
+        },
+        {
+          "id": "security",
+          "title": "Website security update",
+          "planned": true,
+          "result": "Applied and tested"
+        },
+        {
+          "id": "renewal",
+          "title": "Renew domain and hosting",
+          "planned": true,
+          "result": "Renewed until 2027"
+        },
+        {
+          "id": "cards",
+          "title": "Design and print new business cards",
+          "day": "Thursday",
+          "result": "Delivered to the office"
+        }
+      ]
     }
   },
   "EngagementModes": {

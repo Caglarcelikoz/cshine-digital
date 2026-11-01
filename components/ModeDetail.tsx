@@ -1,44 +1,47 @@
-import { Metadata } from "next";
+import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
-import { notFound } from "next/navigation";
 import PageHero from "@/components/layout/PageHero";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import { Link } from "@/i18n/navigation";
 import {
   engagementModes,
-  getEngagementMode,
   MODE_CTA_HREF,
+  type EngagementModeSlug,
 } from "@/lib/engagementModes";
 import { pageMetadata } from "@/lib/seo";
 
-export function generateStaticParams() {
-  return engagementModes.map((mode) => ({ slug: mode.slug }));
-}
+const modeFor = (slug: EngagementModeSlug) =>
+  engagementModes.find((mode) => mode.slug === slug)!;
 
-export async function generateMetadata({
-  params,
-}: PageProps<"/[locale]/services/[slug]">): Promise<Metadata> {
-  const { slug } = await params;
-  const mode = getEngagementMode(slug);
-  if (!mode) return {};
-
+/** Title, description and hreflang alternates for a mode's detail page. */
+export async function modeDetailMetadata(
+  slug: EngagementModeSlug,
+): Promise<Metadata> {
+  const mode = modeFor(slug);
   const locale = await getLocale();
   const t = await getTranslations("Modes");
   return pageMetadata({
     locale,
-    href: { pathname: "/services/[slug]", params: { slug: mode.slug } },
-    title: t(`${mode.slug}.metaTitle`),
-    description: t(`${mode.slug}.metaDescription`),
+    href: mode.href,
+    title: t(`${slug}.metaTitle`),
+    description: t(`${slug}.metaDescription`),
   });
 }
 
-const ModeDetailPage = async ({
-  params,
-}: PageProps<"/[locale]/services/[slug]">) => {
-  const { slug } = await params;
-  const mode = getEngagementMode(slug);
-  if (!mode) notFound();
-
+/**
+ * The layout every engagement-mode page shares: hero, what it is, how we work,
+ * what's covered. Each page passes its own extra section as `children`,
+ * rendered at the bottom above the link back to all modes.
+ */
+const ModeDetail = async ({
+  slug,
+  children,
+}: {
+  slug: EngagementModeSlug;
+  children?: ReactNode;
+}) => {
+  const mode = modeFor(slug);
   const t = await getTranslations("ModeDetail");
   const tMode = await getTranslations(`Modes.${mode.slug}`);
   const Icon = mode.icon;
@@ -135,15 +138,14 @@ const ModeDetailPage = async ({
                   ))}
                 </ul>
 
-                <Link
-                  href={MODE_CTA_HREF}
-                  className="btn-primary mt-8 w-full"
-                >
+                <Link href={MODE_CTA_HREF} className="btn-primary mt-8 w-full">
                   {tMode("cta")}
                 </Link>
               </div>
             </aside>
           </div>
+
+          {children}
 
           {/* Back to all modes */}
           <div className="mt-10 md:mt-16 text-center">
@@ -174,4 +176,4 @@ const ModeDetailPage = async ({
   );
 };
 
-export default ModeDetailPage;
+export default ModeDetail;

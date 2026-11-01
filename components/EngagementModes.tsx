@@ -109,30 +109,32 @@ const EngagementModes = ({
               </p>
 
               <ul className="relative space-y-2.5 mb-8 flex-grow">
-                {(tModes.raw(`${mode.slug}.capabilities`) as string[]).map((cap) => (
-                  <li
-                    key={cap}
-                    className={`flex items-center gap-2.5 text-sm ${
-                      dark ? "text-white/80" : "text-neutral-700"
-                    }`}
-                  >
-                    <svg
-                      className="h-4 w-4 flex-shrink-0 text-cshine-blue-500"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
+                {(tModes.raw(`${mode.slug}.capabilities`) as string[]).map(
+                  (cap) => (
+                    <li
+                      key={cap}
+                      className={`flex items-center gap-2.5 text-sm ${
+                        dark ? "text-white/80" : "text-neutral-700"
+                      }`}
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2.5}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    {cap}
-                  </li>
-                ))}
+                      <svg
+                        className="h-4 w-4 flex-shrink-0 text-cshine-blue-500"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2.5}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      {cap}
+                    </li>
+                  ),
+                )}
               </ul>
 
               <div
@@ -141,10 +143,7 @@ const EngagementModes = ({
                 }`}
               >
                 <Link
-                  href={{
-                    pathname: "/services/[slug]",
-                    params: { slug: mode.slug },
-                  }}
+                  href={mode.href}
                   className={`inline-flex items-center gap-2 font-semibold transition-colors duration-300
                     ${
                       dark

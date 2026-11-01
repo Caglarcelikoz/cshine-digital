@@ -127,10 +127,7 @@ const Experience = () => {
             {modeTracks.map((track) => (
               <Link
                 key={track.slug}
-                href={{
-                  pathname: "/services/[slug]",
-                  params: { slug: track.slug },
-                }}
+                href={`/services/${track.slug}`}
                 className="group flex h-full flex-col gap-3 rounded-2xl border border-neutral-200
                   bg-white p-6 shadow-sm transition-all duration-300
                   hover:-translate-y-1 hover:border-cshine-blue-500/30 hover:shadow-xl"
@@ -162,8 +159,19 @@ const Experience = () => {
               className="inline-flex items-center gap-2 font-semibold text-cshine-blue-600 hover:text-cshine-blue-700 transition-colors"
             >
               {t("detailLink")}
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </div>
