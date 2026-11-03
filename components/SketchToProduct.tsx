@@ -111,6 +111,15 @@ const IconTile = ({
   </span>
 );
 
+/** Avatar initials for the fictional client, e.g. "Example company" → "EC". */
+const initials = (name: string) =>
+  name
+    .split(/\s+/)
+    .map((word) => word[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+
 /** Logo with the brand name, and the product name stacked underneath. */
 const Logo = ({ mock, size = 30 }: { mock: MockCopy; size?: number }) => (
   <span className="flex items-center gap-2.5">
@@ -356,7 +365,7 @@ const DesktopScene = ({ s, sketch, mock }: SceneProps) => (
         <span
           className={`flex h-9 w-9 items-center justify-center rounded-full text-[12px] font-bold ${s ? "border-2 border-[#3b3b3b]" : "bg-gradient-to-br from-cshine-blue-500 to-cyan-500 text-midnight-900"}`}
         >
-          {s ? "" : "AN"}
+          {s ? "" : initials(mock.client)}
         </span>
         {s ? (
           <span className="text-[21px]">{sketch.user}</span>
@@ -605,7 +614,7 @@ const MobileScene = ({ s, sketch, mock }: SceneProps) => (
       <span
         className={`relative flex h-8 w-8 items-center justify-center rounded-full text-[11px] font-bold ${s ? "border-2 border-[#3b3b3b]" : "bg-gradient-to-br from-cshine-blue-500 to-cyan-500 text-midnight-900"}`}
       >
-        {s ? "" : "AN"}
+        {s ? "" : initials(mock.client)}
       </span>
     </div>
 

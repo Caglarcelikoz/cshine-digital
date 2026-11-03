@@ -413,10 +413,10 @@
           "Files",
           "Invoices"
         ],
-        "client": "Atelier Noord",
+        "client": "Example company",
         "clientRole": "Client",
-        "greeting": "Good afternoon, Sarah",
-        "project": "Atelier Noord webshop · Product build",
+        "greeting": "Good afternoon",
+        "project": "Webshop · Product build (fictional example)",
         "preview": "Preview",
         "progressLabel": "Progress",
         "progress": "68%",

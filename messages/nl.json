@@ -411,10 +411,10 @@
           "Bestanden",
           "Facturen"
         ],
-        "client": "Atelier Noord",
+        "client": "Voorbeeldbedrijf",
         "clientRole": "Klant",
-        "greeting": "Goeiemiddag, Sarah",
-        "project": "Webshop Atelier Noord · Product build",
+        "greeting": "Goeiemiddag",
+        "project": "Webshop · Product build (fictief voorbeeld)",
         "preview": "Preview",
         "progressLabel": "Voortgang",
         "progress": "68%",
