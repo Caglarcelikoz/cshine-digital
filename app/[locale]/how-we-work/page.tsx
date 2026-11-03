@@ -6,6 +6,7 @@ import {
   LightBulbIcon,
 } from "@heroicons/react/24/outline";
 import PageHero from "@/components/layout/PageHero";
+import { SECTION_SPACING } from "@/components/layout/sectionSpacing";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import Eyebrow from "@/components/Eyebrow";
 import ProcessTracks from "@/components/ProcessTracks";
@@ -59,7 +60,7 @@ const HowWeWorkPage = async () => {
         subtitle={t("subtitle")}
       />
 
-      <BackgroundPattern variant="light" className="py-14 md:py-20">
+      <BackgroundPattern variant="light" className={SECTION_SPACING.afterHero}>
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
             <Eyebrow className="mb-6">{t("sectionEyebrow")}</Eyebrow>

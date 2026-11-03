@@ -9,6 +9,7 @@ import {
 import ContactForm from "@/components/ContactForm";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import PageHero from "@/components/layout/PageHero";
+import { SECTION_SPACING } from "@/components/layout/sectionSpacing";
 import { translatedPageMetadata } from "@/lib/seo";
 
 export function generateMetadata() {
@@ -45,7 +46,7 @@ const ContactPage = async () => {
         subtitle={t("intro")}
       />
 
-      <BackgroundPattern variant="light" className="py-14 md:py-20">
+      <BackgroundPattern variant="light" className={SECTION_SPACING.afterHero}>
         <div className="container mx-auto px-4">
           {/* Contact details, side by side above the form */}
           <ul className="grid gap-4 sm:grid-cols-3 max-w-4xl mx-auto mb-10">

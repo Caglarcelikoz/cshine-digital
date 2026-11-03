@@ -1,6 +1,6 @@
 import { CheckIcon } from "@heroicons/react/24/solid";
 import { useTranslations } from "next-intl";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 
 type Quality = {
@@ -12,11 +12,11 @@ type Quality = {
 // Capabilities ("what we build") on /services. Deliberately framework-agnostic:
 // we pick the right tools per project, so no specific stack is named here.
 // Copy lives in messages under BuildQuality.items.
-const BuildQuality = () => {
+const BuildQuality = ({ bare = false }: { bare?: boolean }) => {
   const t = useTranslations("BuildQuality");
   const qualities = t.raw("items") as Quality[];
   return (
-    <BackgroundPattern variant="light" className="py-14 md:py-20">
+    <Section bare={bare}>
       <div className="container relative mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
@@ -52,7 +52,7 @@ const BuildQuality = () => {
           ))}
         </ul>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

@@ -4,6 +4,7 @@ import Capabilities from "@/components/Capabilities";
 import BuildQuality from "@/components/BuildQuality";
 import PageHero from "@/components/layout/PageHero";
 import { translatedPageMetadata } from "@/lib/seo";
+import { SectionGroup } from "@/components/layout/Section";
 
 export function generateMetadata() {
   return translatedPageMetadata("services", "/services");
@@ -20,9 +21,11 @@ const ServicesPage = async () => {
         title={t("title")}
         subtitle={t("subtitle")}
       />
-      <EngagementModes showTitle={false} />
-      <Capabilities />
-      <BuildQuality />
+      <SectionGroup spacing="afterHero">
+        <EngagementModes showTitle={false} bare />
+        <Capabilities bare />
+        <BuildQuality bare />
+      </SectionGroup>
     </>
   );
 };

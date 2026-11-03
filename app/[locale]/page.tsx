@@ -6,6 +6,7 @@ import FAQ from "@/components/FAQ";
 import Partners from "@/components/Partners";
 import Hero from "@/components/Hero";
 import { translatedPageMetadata } from "@/lib/seo";
+import { SectionGroup } from "@/components/layout/Section";
 
 export function generateMetadata() {
   return translatedPageMetadata("home", "/");
@@ -32,11 +33,15 @@ export default async function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Hero />
-      <About />
-      <EngagementModes variant="light" />
+      <SectionGroup>
+        <About bare />
+        <EngagementModes bare />
+      </SectionGroup>
       <Partners />
-      <Experience />
-      <FAQ />
+      <SectionGroup>
+        <Experience bare />
+        <FAQ bare />
+      </SectionGroup>
     </>
   );
 }

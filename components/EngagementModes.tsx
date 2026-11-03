@@ -1,27 +1,30 @@
 import { useTranslations } from "next-intl";
 import { FaBolt, FaPuzzlePiece } from "react-icons/fa";
 import { Link } from "@/i18n/navigation";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 import { engagementModes, MODE_CTA_HREF } from "@/lib/engagementModes";
 
 type EngagementModesProps = {
   showTitle?: boolean;
   variant?: "dark" | "light";
+  /** Render inside a SectionGroup, without its own background. */
+  bare?: boolean;
 };
 
 const EngagementModes = ({
   showTitle = true,
   variant = "light",
+  bare = false,
 }: EngagementModesProps) => {
   const t = useTranslations("EngagementModes");
   const tModes = useTranslations("Modes");
   const dark = variant === "dark";
   return (
-    <BackgroundPattern variant={variant} className="py-14 md:py-20">
+    <Section variant={variant} bare={bare}>
       <div className="container relative mx-auto px-4">
         {showTitle && (
-          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
             <Eyebrow tone={dark ? "dark" : "light"} className="mb-6">
               {t("eyebrow")}
             </Eyebrow>
@@ -263,7 +266,7 @@ const EngagementModes = ({
           </div>
         </div>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

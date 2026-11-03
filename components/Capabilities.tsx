@@ -7,7 +7,7 @@ import {
   CpuChipIcon,
 } from "@heroicons/react/24/outline";
 import { useTranslations } from "next-intl";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 
 type Capability = {
@@ -26,12 +26,12 @@ const capabilities: Capability[] = [
   { key: "ai", id: "ai-integration", icon: CpuChipIcon, highlight: true },
 ];
 
-const Capabilities = () => {
+const Capabilities = ({ bare = false }: { bare?: boolean }) => {
   const t = useTranslations("Capabilities");
   return (
-    <BackgroundPattern variant="light" className="py-14 md:py-20">
+    <Section bare={bare}>
       <div className="container relative mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold text-midnight-900 mb-6">
             {t("title")}
@@ -72,7 +72,7 @@ const Capabilities = () => {
           ))}
         </div>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

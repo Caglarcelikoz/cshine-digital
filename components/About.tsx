@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 
 /* The three reasons to choose C-Shine Digital. */
@@ -45,7 +45,7 @@ const sectorIcons: Record<string, IconType> = {
  * experience behind them. The hero already says what C-Shine Digital does, so
  * this section answers why.
  */
-const About = () => {
+const About = ({ bare = false }: { bare?: boolean }) => {
   const t = useTranslations("AboutSection");
   const sectors = t.raw("experience.sectors") as {
     key: string;
@@ -54,7 +54,7 @@ const About = () => {
   const sizes = t.raw("experience.sizes") as string[];
 
   return (
-    <BackgroundPattern variant="light" className="py-14 md:py-20">
+    <Section bare={bare}>
       <div className="container relative mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-10 md:mb-14">
           <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
@@ -150,7 +150,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

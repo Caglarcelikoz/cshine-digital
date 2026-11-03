@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import BackgroundPattern from "./layout/BackgroundPattern";
+import { SECTION_SPACING } from "./layout/sectionSpacing";
 import Eyebrow from "./Eyebrow";
 import Stats from "./Stats";
 
@@ -66,7 +67,7 @@ const partners: Partner[] = [
 const Partners = () => {
   const t = useTranslations("Partners");
   return (
-    <BackgroundPattern variant="dark" className="py-14 md:py-20">
+    <BackgroundPattern variant="dark" className={SECTION_SPACING.default}>
       <div className="container relative mx-auto px-4">
         <div className="text-center mb-10 md:mb-14">
           <Eyebrow tone="dark" className="mb-6">

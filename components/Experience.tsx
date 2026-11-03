@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link } from "@/i18n/navigation";
 import type { EngagementModeSlug } from "@/lib/engagementModes";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 
 const ProcessStep = ({
@@ -62,7 +62,7 @@ const ProcessStep = ({
   </div>
 );
 
-const Experience = () => {
+const Experience = ({ bare = false }: { bare?: boolean }) => {
   const t = useTranslations("Experience");
   const tSteps = useTranslations("SharedSteps");
   const tModes = useTranslations("Modes");
@@ -93,10 +93,10 @@ const Experience = () => {
   ];
 
   return (
-    <BackgroundPattern variant="light" className="py-14 md:py-20">
+    <Section bare={bare}>
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-10 md:mb-16">
+          <div className="text-center mb-10 md:mb-14">
             <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
               {t("title")}
@@ -177,7 +177,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

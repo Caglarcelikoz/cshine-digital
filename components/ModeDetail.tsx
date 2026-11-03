@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import PageHero from "@/components/layout/PageHero";
+import { SECTION_SPACING } from "@/components/layout/sectionSpacing";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import { Link } from "@/i18n/navigation";
 import {
@@ -57,7 +58,7 @@ const ModeDetail = async ({
         image={mode.heroImage}
       />
 
-      <BackgroundPattern variant="light" className="py-14 md:py-20">
+      <BackgroundPattern variant="light" className={SECTION_SPACING.afterHero}>
         <div className="container mx-auto px-4">
           <div className="grid gap-12 lg:grid-cols-3 lg:gap-16">
             {/* What it is + how it works */}

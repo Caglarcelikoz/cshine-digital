@@ -12,6 +12,7 @@ import {
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 import PageHero from "@/components/layout/PageHero";
+import { SECTION_SPACING } from "@/components/layout/sectionSpacing";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import Eyebrow from "@/components/Eyebrow";
 import { FounderProfile } from "@/components/Founder";
@@ -49,10 +50,10 @@ const AboutPage = async () => {
         subtitle={t("subtitle")}
       />
 
-      <BackgroundPattern variant="light" className="py-14 md:py-20">
+      <BackgroundPattern variant="light" className={SECTION_SPACING.afterHero}>
         <div className="container mx-auto px-4">
           {/* Story */}
-          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
+          <div className="max-w-3xl mx-auto text-center mb-10 md:mb-14">
             <Eyebrow className="mb-6">{t("storyEyebrow")}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-6">
               {t("storyTitle")}
@@ -135,13 +136,21 @@ const AboutPage = async () => {
 
           {/* CTA */}
           <div className="text-center">
-            <Link
-              href="/contact"
-              className="btn-primary"
-            >
+            <Link href="/contact" className="btn-primary">
               {t("cta")}
-              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </Link>
           </div>

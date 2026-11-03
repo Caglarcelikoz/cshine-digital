@@ -11,6 +11,7 @@ import {
   ArrowUpRightIcon,
 } from "@heroicons/react/24/outline";
 import PageHero from "@/components/layout/PageHero";
+import { SECTION_SPACING } from "@/components/layout/sectionSpacing";
 import BackgroundPattern from "@/components/layout/BackgroundPattern";
 import CaseGallery, { type GallerySlide } from "@/components/CaseGallery";
 import { Link } from "@/i18n/navigation";
@@ -275,7 +276,7 @@ const WorkPage = async () => {
         subtitle={t("subtitle")}
       />
 
-      <BackgroundPattern variant="light" className="py-14 md:py-20">
+      <BackgroundPattern variant="light" className={SECTION_SPACING.afterHero}>
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-5xl space-y-8">
             {cases.map((c) => (

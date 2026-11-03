@@ -14,6 +14,7 @@ type PageHeroProps = {
   image?: string;
 };
 
+
 const PageHero = ({
   breadcrumb,
   breadcrumbParent,
@@ -25,7 +26,7 @@ const PageHero = ({
   return (
     <>
       {/* mt-20 clears the fixed navbar. */}
-      <section className="relative mt-20 text-white pb-16 md:pb-24 overflow-hidden">
+      <section className="relative mt-20 text-white pb-16 overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 w-full bg-cover bg-center"

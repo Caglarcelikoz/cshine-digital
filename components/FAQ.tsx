@@ -2,23 +2,24 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
-import BackgroundPattern from "./layout/BackgroundPattern";
+import { Section } from "./layout/Section";
 import Eyebrow from "./Eyebrow";
 import { Link } from "@/i18n/navigation";
 
 type FaqItem = { question: string; answer: string };
 
-const FAQ = () => {
+/** `bare`: render inside a SectionGroup, without its own background. */
+const FAQ = ({ bare = false }: { bare?: boolean }) => {
   const t = useTranslations("FAQ");
   const faqs = t.raw("items") as FaqItem[];
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <BackgroundPattern variant="light" className="py-14 md:py-20">
+    <Section bare={bare}>
       <div className="container relative mx-auto px-4 z-10">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10 md:mb-16">
+          <div className="text-center mb-10 md:mb-14">
             <Eyebrow className="mb-6">{t("eyebrow")}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-bold text-balance text-midnight-900 mb-4">
               {t("title")}
@@ -89,7 +90,7 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-    </BackgroundPattern>
+    </Section>
   );
 };
 

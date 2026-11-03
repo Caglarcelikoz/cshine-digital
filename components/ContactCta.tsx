@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { FaEnvelope } from "react-icons/fa";
 import { Link, usePathname } from "@/i18n/navigation";
+import { SECTION_SPACING } from "./layout/sectionSpacing";
 
 const ContactCta = () => {
   const t = useTranslations("Contact");
@@ -11,7 +12,7 @@ const ContactCta = () => {
   if (pathname === "/contact") return null;
 
   return (
-    <section className="py-14 md:py-20">
+    <section className={SECTION_SPACING.default}>
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-balance text-white mb-4">
